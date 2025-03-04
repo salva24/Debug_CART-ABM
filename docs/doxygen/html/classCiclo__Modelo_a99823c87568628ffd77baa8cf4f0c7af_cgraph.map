@@ -1,0 +1,4 @@
+<map id="Ciclo_Modelo::mostrar_ciclo" name="Ciclo_Modelo::mostrar_ciclo">
+<area shape="rect" id="node1" title="Displays the cell cycle model structure." alt="" coords="5,5,173,47"/>
+<area shape="rect" id="node2" href="$classCiclo__Modelo.html#a0fa1362fecca974e43fc56fe8998c289" title="Gets reference to the transition rate between phases." alt="" coords="221,5,367,47"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Microambiente::agregar_nodo_de_dirichlet" name="Microambiente::agregar_nodo_de_dirichlet">
+<area shape="rect" id="node1" title="Adds a Dirichlet node at a voxel." alt="" coords="525,39,704,80"/>
+<area shape="rect" id="node2" href="$classMicroambiente.html#a3d67e50d30c7ff84d011a3f9433c63ef" title="Creates a blood vessel in the specified region." alt="" coords="301,5,463,47"/>
+<area shape="rect" id="node3" href="$classMicroambiente.html#a4cc7a07f586279fd1edd6b4334b2bf15" title="Initializes the microenvironment with default settings." alt="" coords="287,71,477,112"/>
+<area shape="rect" id="node4" href="$classTejido.html#a8d94c109b9af0f05998d46397fa328fd" title="Initializes the tissue structure with cells and microenvironment." alt="" coords="108,71,239,112"/>
+<area shape="rect" id="node5" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,78,60,105"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Linfocito::intentar_adherirse" name="Linfocito::intentar_adherirse">
+<area shape="rect" id="node1" title="Attempts to adhere to a target cell." alt="" coords="5,64,143,105"/>
+<area shape="rect" id="node2" href="$classLinfocito.html#a2c52f014ba447b56d87753f2ce77c583" title="Adheres to a target cell." alt="" coords="207,5,339,47"/>
+<area shape="rect" id="node3" href="$Vector_8cpp.html#ae0ea02058c13c53fa1787baf89ba4318" title="Norm (magnitude) of a Vector." alt="" coords="241,71,305,98"/>
+<area shape="rect" id="node5" href="$classRNG.html#a6bdc54ea1f91d783919858e5d670c8f1" title="Generate a uniform random number between 0 and n_max." alt="" coords="191,122,356,149"/>
+<area shape="rect" id="node4" href="$Vector_8cpp.html#ae8885ef12d3fefe9bd88702c4ec9de94" title="Squared norm of a std::vector&lt;double&gt;." alt="" coords="404,71,519,98"/>
+</map>

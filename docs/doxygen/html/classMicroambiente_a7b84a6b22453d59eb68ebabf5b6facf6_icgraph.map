@@ -1,0 +1,6 @@
+<map id="Microambiente::aplicar_condiciones_de_dirichlet" name="Microambiente::aplicar_condiciones_de_dirichlet">
+<area shape="rect" id="node1" title="Applies Dirichlet conditions to the domain." alt="" coords="632,13,821,54"/>
+<area shape="rect" id="node2" href="$classMicroambiente.html#aee7840197152d4432a2e992b715ec519" title="Solver for diffusion&#45;decay using LOD (Locally One&#45;Dimensional) method." alt="" coords="333,5,584,61"/>
+<area shape="rect" id="node3" href="$classMicroambiente.html#a36e8a443722698e34ffe67516e459f13" title="Simulates diffusion and decay of substrates." alt="" coords="108,13,285,54"/>
+<area shape="rect" id="node4" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,20,60,47"/>
+</map>

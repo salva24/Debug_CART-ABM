@@ -1,0 +1,10 @@
+<map id="Muerte::encontrar_indice_del_ciclo_de_muerte" name="Muerte::encontrar_indice_del_ciclo_de_muerte">
+<area shape="rect" id="node1" title="Finds death cycle index by code." alt="" coords="545,147,729,188"/>
+<area shape="rect" id="node2" href="$classCelula.html#a63946b902512956016a7fc95571345ce" title="Updates cell and death parameters based on oxygen concentration." alt="" coords="285,59,459,115"/>
+<area shape="rect" id="node5" href="$classCelula.html#ac4db968a0db8295de48388c20d1aaa31" title="Updates cell and death parameters based on oxygen and oncoprotein." alt="" coords="247,139,497,195"/>
+<area shape="rect" id="node7" href="$classLinfocito.html#a1d3bbcbd7b73181b1392facbe7df02c3" title="Triggers apoptosis in an attached cell." alt="" coords="283,220,461,261"/>
+<area shape="rect" id="node3" href="$classCelula.html#a15102ed3890bde998a41934f500faaa8" title="Advances the cell&#39;s phenotypic functions over time." alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node4" href="$classCelula.html#a660dd8fa34ce510b1b93fcb10113903c" title="Advances the cell&#39;s phenotypic functions considering oxygen." alt="" coords="5,71,199,112"/>
+<area shape="rect" id="node6" href="$classCelula.html#a91bc02fb6125fcd4325a6428c88ae07a" title="Advances phenotypic functions considering oxygen and oncoprotein." alt="" coords="5,139,199,195"/>
+<area shape="rect" id="node8" href="$classLinfocito.html#a5a05f8c3693a17eb69b2c51bc140e877" title="Advances lymphocyte&#45;specific behaviors." alt="" coords="33,220,171,261"/>
+</map>

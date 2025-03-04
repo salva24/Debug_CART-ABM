@@ -1,0 +1,6 @@
+<map id="Microambiente::numero_de_voxeles" name="Microambiente::numero_de_voxeles">
+<area shape="rect" id="node1" title="Gets the total number of voxels in the domain." alt="" coords="525,5,704,47"/>
+<area shape="rect" id="node2" href="$classMicroambiente.html#a4cc7a07f586279fd1edd6b4334b2bf15" title="Initializes the microenvironment with default settings." alt="" coords="287,5,477,47"/>
+<area shape="rect" id="node3" href="$classTejido.html#a8d94c109b9af0f05998d46397fa328fd" title="Initializes the tissue structure with cells and microenvironment." alt="" coords="108,5,239,47"/>
+<area shape="rect" id="node4" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,13,60,39"/>
+</map>

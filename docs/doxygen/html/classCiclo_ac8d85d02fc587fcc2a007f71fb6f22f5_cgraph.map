@@ -1,0 +1,4 @@
+<map id="Ciclo::tasa_de_transicion" name="Ciclo::tasa_de_transicion">
+<area shape="rect" id="node1" title="Gets the current phase&#39;s transition rate." alt="" coords="5,13,189,39"/>
+<area shape="rect" id="node2" href="$classCiclo__Modelo.html#a1ddd77903fe47c704b3f00967cefb219" title="Gets the transition rate for a phase." alt="" coords="237,5,411,47"/>
+</map>

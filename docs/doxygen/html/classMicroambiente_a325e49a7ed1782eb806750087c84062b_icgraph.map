@@ -1,0 +1,5 @@
+<map id="Microambiente::voxeles" name="Microambiente::voxeles">
+<area shape="rect" id="node1" title="Gets a voxel by its linear index." alt="" coords="460,13,639,39"/>
+<area shape="rect" id="node2" href="$classCelula.html#ac2e977f860427c05dddcda6c82d2118b" title="Sets constants for internal consumption." alt="" coords="243,5,412,47"/>
+<area shape="rect" id="node3" href="$classCelula.html#adb003d6f33abe19b1634c855e53fee73" title="Simulates secretion and consumption of microenvironment substrates." alt="" coords="5,5,195,47"/>
+</map>

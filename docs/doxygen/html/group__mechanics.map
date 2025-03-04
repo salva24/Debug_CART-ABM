@@ -1,0 +1,4 @@
+<map id="Cell Mechanics" name="Cell Mechanics">
+<area shape="rect" id="node1" title="Physical interactions and mechanical forces." alt="" coords="159,5,279,31"/>
+<area shape="rect" id="node2" href="$group__core.html" title="Core components of the Cancer Cell Agent Simulation." alt="" coords="5,5,111,31"/>
+</map>

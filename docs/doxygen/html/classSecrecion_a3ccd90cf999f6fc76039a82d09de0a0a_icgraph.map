@@ -1,0 +1,9 @@
+<map id="Secrecion::multiplicar_los_consumos_por_un_factor" name="Secrecion::multiplicar_los_consumos_por_un_factor">
+<area shape="rect" id="node1" title="Scales all consumption rates by a factor." alt="" coords="659,108,876,149"/>
+<area shape="rect" id="node2" href="$classCelula.html#a15102ed3890bde998a41934f500faaa8" title="Advances the cell&#39;s phenotypic functions over time." alt="" coords="417,5,611,47"/>
+<area shape="rect" id="node3" href="$classCelula.html#a660dd8fa34ce510b1b93fcb10113903c" title="Advances the cell&#39;s phenotypic functions considering oxygen." alt="" coords="417,71,611,112"/>
+<area shape="rect" id="node4" href="$classCelula.html#a91bc02fb6125fcd4325a6428c88ae07a" title="Advances phenotypic functions considering oxygen and oncoprotein." alt="" coords="417,137,611,193"/>
+<area shape="rect" id="node5" href="$classCelula.html#a13749f1841d862b3c6923cfaa6587964" title="Starts the cell death process." alt="" coords="419,217,609,243"/>
+<area shape="rect" id="node6" href="$classLinfocito.html#a1d3bbcbd7b73181b1392facbe7df02c3" title="Triggers apoptosis in an attached cell." alt="" coords="192,209,369,251"/>
+<area shape="rect" id="node7" href="$classLinfocito.html#a5a05f8c3693a17eb69b2c51bc140e877" title="Advances lymphocyte&#45;specific behaviors." alt="" coords="5,209,144,251"/>
+</map>

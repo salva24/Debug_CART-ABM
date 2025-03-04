@@ -1,0 +1,4 @@
+<map id="Ciclo" name="Ciclo">
+<area shape="rect" id="node1" title="Tracks and manages an individual cell&#39;s progression through its cell cycle." alt="" coords="7,409,207,677"/>
+<area shape="rect" id="node2" href="$classCiclo__Modelo.html" title="Models the cell cycle with phases and transitions." alt="" coords="5,5,208,347"/>
+</map>

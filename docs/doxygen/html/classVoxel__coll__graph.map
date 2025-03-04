@@ -1,0 +1,4 @@
+<map id="Voxel" name="Voxel">
+<area shape="rect" id="node1" title="Basic spatial unit for microenvironment discretization in cancer modeling." alt="" coords="5,351,244,472"/>
+<area shape="rect" id="node2" href="$classVector.html" title="3D vector class for spatial calculations in cancer simulation." alt="" coords="58,5,191,288"/>
+</map>

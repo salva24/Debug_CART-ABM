@@ -1,0 +1,4 @@
+<map id="Microambiente::simular_difusion_decaimiento" name="Microambiente::simular_difusion_decaimiento">
+<area shape="rect" id="node1" title="Simulates diffusion and decay of substrates." alt="" coords="108,5,285,47"/>
+<area shape="rect" id="node2" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,13,60,39"/>
+</map>

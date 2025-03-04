@@ -1,0 +1,10 @@
+<map id="Ciclo_Modelo::encontrar_indice_de_la_fase" name="Ciclo_Modelo::encontrar_indice_de_la_fase">
+<area shape="rect" id="node1" title="Finds the index of a phase by its code." alt="" coords="545,184,724,225"/>
+<area shape="rect" id="node2" href="$classCelula.html#a63946b902512956016a7fc95571345ce" title="Updates cell and death parameters based on oxygen concentration." alt="" coords="285,59,459,115"/>
+<area shape="rect" id="node5" href="$classCelula.html#ac4db968a0db8295de48388c20d1aaa31" title="Updates cell and death parameters based on oxygen and oncoprotein." alt="" coords="247,139,497,195"/>
+<area shape="rect" id="node7" href="$classCelula.html#a130da453acaea187e2b0495cef78b6aa" title="Initializes a cell with healthy properties." alt="" coords="305,220,439,261"/>
+<area shape="rect" id="node8" href="$classLinfocito.html#a9a173d167f1d74a16a17036e6589ff27" title="Constructor for Lymphocyte." alt="" coords="301,286,443,313"/>
+<area shape="rect" id="node3" href="$classCelula.html#a15102ed3890bde998a41934f500faaa8" title="Advances the cell&#39;s phenotypic functions over time." alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node4" href="$classCelula.html#a660dd8fa34ce510b1b93fcb10113903c" title="Advances the cell&#39;s phenotypic functions considering oxygen." alt="" coords="5,71,199,112"/>
+<area shape="rect" id="node6" href="$classCelula.html#a91bc02fb6125fcd4325a6428c88ae07a" title="Advances phenotypic functions considering oxygen and oncoprotein." alt="" coords="5,139,199,195"/>
+</map>

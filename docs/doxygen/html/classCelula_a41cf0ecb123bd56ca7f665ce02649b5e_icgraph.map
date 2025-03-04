@@ -1,0 +1,8 @@
+<map id="Celula::vector_de_densidades_mas_cercano" name="Celula::vector_de_densidades_mas_cercano">
+<area shape="rect" id="node1" title="Gets the closest density vector from the microenvironment." alt="" coords="545,111,761,153"/>
+<area shape="rect" id="node2" href="$classCelula.html#a63946b902512956016a7fc95571345ce" title="Updates cell and death parameters based on oxygen concentration." alt="" coords="285,5,459,61"/>
+<area shape="rect" id="node4" href="$classCelula.html#a660dd8fa34ce510b1b93fcb10113903c" title="Advances the cell&#39;s phenotypic functions considering oxygen." alt="" coords="5,78,199,119"/>
+<area shape="rect" id="node5" href="$classCelula.html#ac4db968a0db8295de48388c20d1aaa31" title="Updates cell and death parameters based on oxygen and oncoprotein." alt="" coords="247,136,497,192"/>
+<area shape="rect" id="node6" href="$classCelula.html#a91bc02fb6125fcd4325a6428c88ae07a" title="Advances phenotypic functions considering oxygen and oncoprotein." alt="" coords="5,172,199,228"/>
+<area shape="rect" id="node3" href="$classCelula.html#a15102ed3890bde998a41934f500faaa8" title="Advances the cell&#39;s phenotypic functions over time." alt="" coords="5,13,199,54"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Ciclo_Modelo::mostrar_ciclo" name="Ciclo_Modelo::mostrar_ciclo">
+<area shape="rect" id="node1" title="Displays the cell cycle model structure." alt="" coords="260,5,428,47"/>
+<area shape="rect" id="node2" href="$classCelula.html#a2d879f88eb1bc7cd87eac3f10e4b6b8c" title="Outputs detailed cell information." alt="" coords="5,5,212,47"/>
+</map>

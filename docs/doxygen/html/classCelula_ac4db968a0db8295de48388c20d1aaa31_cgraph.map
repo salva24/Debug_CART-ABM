@@ -1,0 +1,12 @@
+<map id="Celula::actualizar_parametros_de_celula_y_muerte_con_o2_y_oncoproteina" name="Celula::actualizar_parametros_de_celula_y_muerte_con_o2_y_oncoproteina">
+<area shape="rect" id="node1" title="Updates cell and death parameters based on oxygen and oncoprotein." alt="" coords="5,151,256,207"/>
+<area shape="rect" id="node2" href="$classCiclo.html#af0ae75981992b0270de0a8a1895f1384" title="Updates transition rate between specified phases." alt="" coords="333,27,491,69"/>
+<area shape="rect" id="node5" href="$classMicroambiente.html#aaddc4391e17f20e6590d5857e1fa7cbf" title="Finds the index of a density by its name." alt="" coords="317,93,507,134"/>
+<area shape="rect" id="node6" href="$classCiclo__Modelo.html#a2873bfe8ef42820e688eb82065d273ca" title="Finds the index of a phase by its code." alt="" coords="323,158,501,199"/>
+<area shape="rect" id="node7" href="$classMuerte.html#adad5e0efbb8cf0ac9c91611c1c49fd82" title="Finds death cycle index by code." alt="" coords="320,223,504,265"/>
+<area shape="rect" id="node8" href="$classCelula.html#a41cf0ecb123bd56ca7f665ce02649b5e" title="Gets the closest density vector from the microenvironment." alt="" coords="304,289,520,330"/>
+<area shape="rect" id="node3" href="$classCiclo.html#a9717433bc9e8bccdd7921350d790865e" title="Gets reference to the current phase object." alt="" coords="609,5,746,32"/>
+<area shape="rect" id="node4" href="$classCiclo__Modelo.html#a085b917f0bbd62cdee29cacb8ddb78f5" title="Gets the inverse map index for a phase transition." alt="" coords="585,57,769,98"/>
+<area shape="rect" id="node9" href="$classMicroambiente.html#a263a323db95f242e5c6d9d0268f432a4" title="Returns the density vector of the voxel closest to the given position." alt="" coords="568,289,787,330"/>
+<area shape="rect" id="node10" href="$classGrillado__Cartesiano.html#ae7ce32f1f3ae0d18b705a4b2a9ee746a" title="Finds the nearest voxel to a given position." alt="" coords="835,281,1008,337"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="Ciclo::sync_con_ciclo_modelo" name="Ciclo::sync_con_ciclo_modelo">
+<area shape="rect" id="node1" title="Synchronizes this cycle instance with a cycle model." alt="" coords="659,209,817,251"/>
+<area shape="rect" id="node2" href="$classCelula.html#a15102ed3890bde998a41934f500faaa8" title="Advances the cell&#39;s phenotypic functions over time." alt="" coords="417,5,611,47"/>
+<area shape="rect" id="node3" href="$classCelula.html#a660dd8fa34ce510b1b93fcb10113903c" title="Advances the cell&#39;s phenotypic functions considering oxygen." alt="" coords="417,71,611,112"/>
+<area shape="rect" id="node4" href="$classCelula.html#a91bc02fb6125fcd4325a6428c88ae07a" title="Advances phenotypic functions considering oxygen and oncoprotein." alt="" coords="417,137,611,193"/>
+<area shape="rect" id="node5" href="$classCelula.html#a13749f1841d862b3c6923cfaa6587964" title="Starts the cell death process." alt="" coords="419,217,609,243"/>
+<area shape="rect" id="node8" href="$classCelula.html#aa416f150ebc5c9bb5144dfefbd6bfb24" title="Initializes a cell with default properties." alt="" coords="447,268,581,309"/>
+<area shape="rect" id="node11" href="$classCelula.html#a130da453acaea187e2b0495cef78b6aa" title="Initializes a cell with healthy properties." alt="" coords="447,333,581,375"/>
+<area shape="rect" id="node12" href="$classLinfocito.html#a9a173d167f1d74a16a17036e6589ff27" title="Constructor for Lymphocyte." alt="" coords="443,399,585,426"/>
+<area shape="rect" id="node6" href="$classLinfocito.html#a1d3bbcbd7b73181b1392facbe7df02c3" title="Triggers apoptosis in an attached cell." alt="" coords="192,205,369,247"/>
+<area shape="rect" id="node7" href="$classLinfocito.html#a5a05f8c3693a17eb69b2c51bc140e877" title="Advances lymphocyte&#45;specific behaviors." alt="" coords="5,205,144,247"/>
+<area shape="rect" id="node9" href="$classTejido.html#a8d94c109b9af0f05998d46397fa328fd" title="Initializes the tissue structure with cells and microenvironment." alt="" coords="215,271,346,312"/>
+<area shape="rect" id="node10" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="47,278,102,305"/>
+</map>

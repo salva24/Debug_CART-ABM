@@ -1,0 +1,5 @@
+<map id="Celula::vector_de_densidades_mas_cercano" name="Celula::vector_de_densidades_mas_cercano">
+<area shape="rect" id="node1" title="Gets the closest density vector from the microenvironment." alt="" coords="5,13,221,54"/>
+<area shape="rect" id="node2" href="$classMicroambiente.html#a263a323db95f242e5c6d9d0268f432a4" title="Returns the density vector of the voxel closest to the given position." alt="" coords="269,13,488,54"/>
+<area shape="rect" id="node3" href="$classGrillado__Cartesiano.html#ae7ce32f1f3ae0d18b705a4b2a9ee746a" title="Finds the nearest voxel to a given position." alt="" coords="536,5,709,61"/>
+</map>

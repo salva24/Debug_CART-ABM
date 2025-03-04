@@ -1,0 +1,9 @@
+<map id="Microambiente::indices_cartesianos" name="Microambiente::indices_cartesianos">
+<area shape="rect" id="node1" title="Converts a linear voxel index to 3D cartesian indices." alt="" coords="1109,39,1284,80"/>
+<area shape="rect" id="node2" href="$classMicroambiente.html#a3c125ac7803aa94899741bab7d59c262" title="Calculates gradient for a specific density." alt="" coords="883,39,1061,80"/>
+<area shape="rect" id="node3" href="$classMicroambiente.html#a8cbfcf69f5b68cf620068721771d7bef" title="Returns the gradient vector of the voxel closest to the given position." alt="" coords="628,5,835,47"/>
+<area shape="rect" id="node4" href="$classMicroambiente.html#a157d5d113d5dc7dd396cf1ca9c81dccb" title="Returns the gradient vector at the specified 3D voxel coordinates." alt="" coords="647,71,816,112"/>
+<area shape="rect" id="node5" href="$classCelula.html#aebc7f9f67d84f98fc37f1df378fd340e" title="Gets the gradient of a specific substrate." alt="" coords="412,71,580,112"/>
+<area shape="rect" id="node6" href="$classLinfocito.html#a44495f429d4b8f6ead4075cb6274b4a3" title="Processes lymphocyte motility behavior." alt="" coords="216,71,364,112"/>
+<area shape="rect" id="node7" href="$classLinfocito.html#ae8b5626514ecd32458df38eb8dcc32f1" title="Updates the lymphocyte&#39;s motility vector." alt="" coords="5,71,168,112"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Celula::comenzar_muerte" name="Celula::comenzar_muerte">
+<area shape="rect" id="node1" title="Starts the cell death process." alt="" coords="417,13,607,39"/>
+<area shape="rect" id="node2" href="$classLinfocito.html#a1d3bbcbd7b73181b1392facbe7df02c3" title="Triggers apoptosis in an attached cell." alt="" coords="192,5,369,47"/>
+<area shape="rect" id="node3" href="$classLinfocito.html#a5a05f8c3693a17eb69b2c51bc140e877" title="Advances lymphocyte&#45;specific behaviors." alt="" coords="5,5,144,47"/>
+</map>

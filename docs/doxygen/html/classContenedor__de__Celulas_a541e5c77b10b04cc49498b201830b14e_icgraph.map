@@ -1,0 +1,10 @@
+<map id="Contenedor_de_Celulas::agregar_celula_a_voxel" name="Contenedor_de_Celulas::agregar_celula_a_voxel">
+<area shape="rect" id="node1" title="Adds a cell to a specific voxel." alt="" coords="553,84,736,126"/>
+<area shape="rect" id="node2" href="$classContenedor__de__Celulas.html#a88c190501657e5d4e303b558f2d797d2" title="Updates voxel assignments for all cells." alt="" coords="331,8,505,64"/>
+<area shape="rect" id="node4" href="$classContenedor__de__Celulas.html#a38d909c340600d4a1a3e524ef06175e3" title="Registers a cell in the container." alt="" coords="331,120,505,162"/>
+<area shape="rect" id="node3" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,92,60,118"/>
+<area shape="rect" id="node5" href="$classContenedor__de__Celulas.html#ad59151ce04d6be97557704ca374c0220" title="Updates all cells for a simulation step." alt="" coords="108,40,283,96"/>
+<area shape="rect" id="node6" href="$classTejido.html#a8d94c109b9af0f05998d46397fa328fd" title="Initializes the tissue structure with cells and microenvironment." alt="" coords="130,120,261,162"/>
+<area shape="rect" id="node7" href="$classTejido.html#a4689bd60483dd423987d778ad0502a46" title="Introduces lymphocytes around the tumor periphery." alt="" coords="130,186,261,227"/>
+<area shape="rect" id="node8" href="$classTejido.html#adeb5044a116b919f8e05ddc249f76256" title="Introduces lymphocytes randomly in the domain." alt="" coords="115,251,276,292"/>
+</map>

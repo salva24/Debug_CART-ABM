@@ -1,0 +1,17 @@
+<map id="Grillado_Cartesiano::indice_de_voxel" name="Grillado_Cartesiano::indice_de_voxel">
+<area shape="rect" id="node1" title="Calculates the linear index from 3D Cartesian indices." alt="" coords="1065,137,1216,179"/>
+<area shape="rect" id="node2" href="$classGrillado__Cartesiano.html#a502bfa11c256e1eeb53e542b8817d959" title="Gets the center coordinates of a voxel." alt="" coords="859,55,1009,96"/>
+<area shape="rect" id="node4" href="$classMicroambiente.html#ad1994e8a49eca174b392c874b5f2c00b" title="Converts 3D Cartesian indices to a voxel index." alt="" coords="851,169,1017,211"/>
+<area shape="rect" id="node3" href="$classMicroambiente.html#a005b067846368f6de4aba4fe309f2f53" title="Gets the center position of a voxel." alt="" coords="609,5,778,47"/>
+<area shape="rect" id="node5" href="$classMicroambiente.html#a57b05d8abec8ed45a9a678700a69bb7a" title="Updates a Dirichlet node with new values." alt="" coords="597,71,789,112"/>
+<area shape="rect" id="node6" href="$classMicroambiente.html#ab823c676378d0ce8b1dc87a2284a2d18" title="Adds a Dirichlet node at a voxel." alt="" coords="604,136,783,177"/>
+<area shape="rect" id="node11" href="$classMicroambiente.html#a19a4f54b07d41302e79d37ed0e87d221" title="Checks if a voxel is a Dirichlet node." alt="" coords="602,201,785,243"/>
+<area shape="rect" id="node12" href="$classMicroambiente.html#a314dd035aa4cbe4f92bf53bae3b4cf53" title="Returns the density vector at the specified voxel index." alt="" coords="584,267,803,308"/>
+<area shape="rect" id="node13" href="$classMicroambiente.html#a325e49a7ed1782eb806750087c84062b" title="Gets a voxel by its linear index." alt="" coords="604,333,783,359"/>
+<area shape="rect" id="node7" href="$classMicroambiente.html#a3d67e50d30c7ff84d011a3f9433c63ef" title="Creates a blood vessel in the specified region." alt="" coords="360,104,521,145"/>
+<area shape="rect" id="node8" href="$classMicroambiente.html#a4cc7a07f586279fd1edd6b4334b2bf15" title="Initializes the microenvironment with default settings." alt="" coords="345,169,536,211"/>
+<area shape="rect" id="node9" href="$classTejido.html#a8d94c109b9af0f05998d46397fa328fd" title="Initializes the tissue structure with cells and microenvironment." alt="" coords="137,169,268,211"/>
+<area shape="rect" id="node10" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,177,60,203"/>
+<area shape="rect" id="node14" href="$classCelula.html#ac2e977f860427c05dddcda6c82d2118b" title="Sets constants for internal consumption." alt="" coords="356,325,525,367"/>
+<area shape="rect" id="node15" href="$classCelula.html#adb003d6f33abe19b1634c855e53fee73" title="Simulates secretion and consumption of microenvironment substrates." alt="" coords="108,325,297,367"/>
+</map>

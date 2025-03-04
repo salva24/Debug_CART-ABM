@@ -1,0 +1,5 @@
+<map id="Celula::mostrar_informacion_de_la_celula" name="Celula::mostrar_informacion_de_la_celula">
+<area shape="rect" id="node1" title="Outputs detailed cell information." alt="" coords="5,5,212,47"/>
+<area shape="rect" id="node2" href="$classCiclo__Modelo.html#a99823c87568628ffd77baa8cf4f0c7af" title="Displays the cell cycle model structure." alt="" coords="260,5,428,47"/>
+<area shape="rect" id="node3" href="$classCiclo__Modelo.html#a0fa1362fecca974e43fc56fe8998c289" title="Gets reference to the transition rate between phases." alt="" coords="476,5,621,47"/>
+</map>

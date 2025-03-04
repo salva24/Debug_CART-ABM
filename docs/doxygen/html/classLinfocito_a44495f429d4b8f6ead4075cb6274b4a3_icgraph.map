@@ -1,0 +1,4 @@
+<map id="Linfocito::motilidad_de_linfocito" name="Linfocito::motilidad_de_linfocito">
+<area shape="rect" id="node1" title="Processes lymphocyte motility behavior." alt="" coords="216,5,364,47"/>
+<area shape="rect" id="node2" href="$classLinfocito.html#ae8b5626514ecd32458df38eb8dcc32f1" title="Updates the lymphocyte&#39;s motility vector." alt="" coords="5,5,168,47"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Ciclo_Modelo::get_actualizar_volumen" name="Ciclo_Modelo::get_actualizar_volumen">
+<area shape="rect" id="node1" title="Checks if volume should be updated in the given phase." alt="" coords="485,71,695,112"/>
+<area shape="rect" id="node2" href="$classCiclo.html#af941adf174c7a8db27b1ec65c399e38a" title="Checks if volume should be updated in current phase." alt="" coords="247,78,437,105"/>
+<area shape="rect" id="node3" href="$classCelula.html#a15102ed3890bde998a41934f500faaa8" title="Advances the cell&#39;s phenotypic functions over time." alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node4" href="$classCelula.html#a660dd8fa34ce510b1b93fcb10113903c" title="Advances the cell&#39;s phenotypic functions considering oxygen." alt="" coords="5,71,199,112"/>
+<area shape="rect" id="node5" href="$classCelula.html#a91bc02fb6125fcd4325a6428c88ae07a" title="Advances phenotypic functions considering oxygen and oncoprotein." alt="" coords="5,137,199,193"/>
+</map>

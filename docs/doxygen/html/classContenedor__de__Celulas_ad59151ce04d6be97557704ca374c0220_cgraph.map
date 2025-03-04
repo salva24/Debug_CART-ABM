@@ -1,0 +1,9 @@
+<map id="Contenedor_de_Celulas::actualizar_todas_las_celulas" name="Contenedor_de_Celulas::actualizar_todas_las_celulas">
+<area shape="rect" id="node1" title="Updates all cells for a simulation step." alt="" coords="5,63,180,119"/>
+<area shape="rect" id="node2" href="$classContenedor__de__Celulas.html#aa3693e6d73759e311bcbe3ba429921fc" title="Calculates mechanical forces between two cells." alt="" coords="228,5,419,47"/>
+<area shape="rect" id="node3" href="$classContenedor__de__Celulas.html#a38d909c340600d4a1a3e524ef06175e3" title="Registers a cell in the container." alt="" coords="236,71,411,112"/>
+<area shape="rect" id="node7" href="$classContenedor__de__Celulas.html#ab7d3fe2dc03019e7168018f924a622c9" title="Removes a cell from a voxel." alt="" coords="235,136,411,177"/>
+<area shape="rect" id="node4" href="$classContenedor__de__Celulas.html#a541e5c77b10b04cc49498b201830b14e" title="Adds a cell to a specific voxel." alt="" coords="467,5,649,47"/>
+<area shape="rect" id="node5" href="$classGrillado__General.html#a016424dcb7736fd4535fe432c9167a3d" title="Checks if a position is valid within the grid domain." alt="" coords="481,71,635,112"/>
+<area shape="rect" id="node6" href="$classGrillado__Cartesiano.html#ae7ce32f1f3ae0d18b705a4b2a9ee746a" title="Finds the nearest voxel to a given position." alt="" coords="471,137,645,193"/>
+</map>

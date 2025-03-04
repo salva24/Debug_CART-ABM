@@ -1,0 +1,6 @@
+<map id="Celula::get_microambiente" name="Celula::get_microambiente">
+<area shape="rect" id="node1" title="Gets the microenvironment associated with this cell." alt="" coords="412,35,611,61"/>
+<area shape="rect" id="node2" href="$classLinfocito.html#a9a173d167f1d74a16a17036e6589ff27" title="Constructor for Lymphocyte." alt="" coords="219,5,361,32"/>
+<area shape="rect" id="node3" href="$classLinfocito.html#a44495f429d4b8f6ead4075cb6274b4a3" title="Processes lymphocyte motility behavior." alt="" coords="216,57,364,98"/>
+<area shape="rect" id="node4" href="$classLinfocito.html#ae8b5626514ecd32458df38eb8dcc32f1" title="Updates the lymphocyte&#39;s motility vector." alt="" coords="5,57,168,98"/>
+</map>

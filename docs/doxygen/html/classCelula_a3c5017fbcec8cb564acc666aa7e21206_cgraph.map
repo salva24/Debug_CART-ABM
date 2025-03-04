@@ -1,0 +1,6 @@
+<map id="Celula::Celula" name="Celula::Celula">
+<area shape="rect" id="node1" title="Default constructor for Cell." alt="" coords="5,31,117,57"/>
+<area shape="rect" id="node2" href="$Microambiente_8cpp.html#afd86f74c94fadd0aa7f42b70b54e640d" title="Returns a pointer to the default microenvironment." alt="" coords="180,5,383,32"/>
+<area shape="rect" id="node3" href="$classCelula.html#a757b0a7c36cd781d492306824de3bf81" title="Registers the microenvironment with the cell." alt="" coords="165,56,397,83"/>
+<area shape="rect" id="node4" href="$classMicroambiente.html#a873c46b40e4d1204d53ed47785a48c65" title=" " alt="" coords="445,49,615,90"/>
+</map>

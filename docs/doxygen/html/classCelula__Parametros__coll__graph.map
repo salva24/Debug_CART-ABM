@@ -1,0 +1,4 @@
+<map id="Celula_Parametros" name="Celula_Parametros">
+<area shape="rect" id="node1" title="Parameter class defining cell&#45;type specific behaviors for cancer simulation." alt="" coords="5,409,215,589"/>
+<area shape="rect" id="node2" href="$classCiclo__Modelo.html" title="Models the cell cycle with phases and transitions." alt="" coords="9,5,211,347"/>
+</map>

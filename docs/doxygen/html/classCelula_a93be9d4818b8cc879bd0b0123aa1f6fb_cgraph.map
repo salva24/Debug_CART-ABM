@@ -1,0 +1,8 @@
+<map id="Celula::actualizar_posicion" name="Celula::actualizar_posicion">
+<area shape="rect" id="node1" title="Updates cell position based on velocity." alt="" coords="5,68,140,109"/>
+<area shape="rect" id="node2" href="$classCelula.html#a8f54e9ec1ff954a57f4de9078b23ad60" title="Updates the microenvironment voxel containing the cell." alt="" coords="188,39,385,80"/>
+<area shape="rect" id="node6" href="$classCelula.html#a048f5404c15cd7ec12ce06b8153beb7c" title="Sets the cell&#39;s position using coordinates." alt="" coords="211,105,363,131"/>
+<area shape="rect" id="node3" href="$classGrillado__General.html#a016424dcb7736fd4535fe432c9167a3d" title="Checks if a position is valid within the grid domain." alt="" coords="448,5,603,47"/>
+<area shape="rect" id="node4" href="$classMicroambiente.html#a9b192c81b785bd8fc3df04f1a1236368" title="Finds the voxel index closest to a given position." alt="" coords="433,71,617,112"/>
+<area shape="rect" id="node5" href="$classGrillado__Cartesiano.html#ae7ce32f1f3ae0d18b705a4b2a9ee746a" title="Finds the nearest voxel to a given position." alt="" coords="665,63,839,119"/>
+</map>

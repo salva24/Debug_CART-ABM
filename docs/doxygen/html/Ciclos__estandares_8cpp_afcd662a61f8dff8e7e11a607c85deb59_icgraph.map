@@ -1,0 +1,6 @@
+<map id="Ki67_fase_positiva_funcion_de_entrada" name="Ki67_fase_positiva_funcion_de_entrada">
+<area shape="rect" id="node1" title="Implementation of entry function for Ki67 positive phase." alt="" coords="473,5,631,47"/>
+<area shape="rect" id="node2" href="$Ciclos__estandares_8cpp.html#a2e592bd27f6a2cf9cbe16e7925efdeff" title="Creates and initializes the Ki67&#45;based cell cycle model." alt="" coords="299,13,425,39"/>
+<area shape="rect" id="node3" href="$Ciclos__estandares_8cpp.html#a8e0bf0a231f4e723dfe4749a88d7f9c9" title="Creates and initializes all standard cell cycles." alt="" coords="108,5,251,47"/>
+<area shape="rect" id="node4" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,13,60,39"/>
+</map>

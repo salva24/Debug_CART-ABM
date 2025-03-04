@@ -1,0 +1,9 @@
+<map id="Microambiente::crear_vaso_sanguineo" name="Microambiente::crear_vaso_sanguineo">
+<area shape="rect" id="node1" title="Creates a blood vessel in the specified region." alt="" coords="5,76,167,117"/>
+<area shape="rect" id="node2" href="$classMicroambiente.html#ab823c676378d0ce8b1dc87a2284a2d18" title="Adds a Dirichlet node at a voxel." alt="" coords="217,7,396,48"/>
+<area shape="rect" id="node5" href="$classMicroambiente.html#a9b192c81b785bd8fc3df04f1a1236368" title="Finds the voxel index closest to a given position." alt="" coords="215,76,399,117"/>
+<area shape="rect" id="node7" href="$classMicroambiente.html#a3b4933b10bb30ad91869a48d02c40caf" title="Sets activation status for a substrate&#39;s Dirichlet condition." alt="" coords="217,142,396,198"/>
+<area shape="rect" id="node3" href="$classMicroambiente.html#ad1994e8a49eca174b392c874b5f2c00b" title="Converts 3D Cartesian indices to a voxel index." alt="" coords="450,5,617,47"/>
+<area shape="rect" id="node4" href="$classGrillado__Cartesiano.html#ae10f6dd8d647ef1c05c7c60bb22b6dd8" title="Calculates the linear index from 3D Cartesian indices." alt="" coords="668,5,819,47"/>
+<area shape="rect" id="node6" href="$classGrillado__Cartesiano.html#ae7ce32f1f3ae0d18b705a4b2a9ee746a" title="Finds the nearest voxel to a given position." alt="" coords="447,71,620,127"/>
+</map>

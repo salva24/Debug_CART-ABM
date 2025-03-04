@@ -1,0 +1,35 @@
+<map id="Tejido::inicializar_tejido" name="Tejido::inicializar_tejido">
+<area shape="rect" id="node1" title="Initializes the tissue structure with cells and microenvironment." alt="" coords="5,375,136,417"/>
+<area shape="rect" id="node2" href="$Celula_8cpp.html#a8af318ae8be33a5e66283bc69013d62e" title="Creates a new cell and registers it in the simulation." alt="" coords="229,172,330,199"/>
+<area shape="rect" id="node3" href="$classTejido.html#ace9d6b2de7f4cec2580d24637d7d77c9" title="Creates a spherical arrangement of cells." alt="" coords="205,223,354,265"/>
+<area shape="rect" id="node4" href="$classContenedor__de__Celulas.html#a3da1a358deeb366510f0132f77f78f73" title="Initializes the spatial domain of the cell container." alt="" coords="192,463,367,505"/>
+<area shape="rect" id="node6" href="$classCelula.html#aa416f150ebc5c9bb5144dfefbd6bfb24" title="Initializes a cell with default properties." alt="" coords="212,289,347,330"/>
+<area shape="rect" id="node16" href="$classRNG.html#a4ef28dcf90c29762fe3aca08a4c50e15" title="Generate a normally distributed random number with custom parameters." alt="" coords="439,355,629,381"/>
+<area shape="rect" id="node18" href="$classMicroambiente.html#a4cc7a07f586279fd1edd6b4334b2bf15" title="Initializes the microenvironment with default settings." alt="" coords="184,706,375,747"/>
+<area shape="rect" id="node31" href="$classContenedor__de__Celulas.html#a38d909c340600d4a1a3e524ef06175e3" title="Registers a cell in the container." alt="" coords="447,406,621,447"/>
+<area shape="rect" id="node33" href="$classCelula.html#a048f5404c15cd7ec12ce06b8153beb7c" title="Sets the cell&#39;s position using coordinates." alt="" coords="203,772,355,799"/>
+<area shape="rect" id="node5" href="$classGrillado__Cartesiano.html#ab902709a9c871e94c320daa2d26bba1a" title="Resizes the grid with specified number of nodes." alt="" coords="710,517,861,558"/>
+<area shape="rect" id="node7" href="$classCiclo.html#af0ae75981992b0270de0a8a1895f1384" title="Updates transition rate between specified phases." alt="" coords="455,27,613,69"/>
+<area shape="rect" id="node10" href="$classCelula.html#a8f54e9ec1ff954a57f4de9078b23ad60" title="Updates the microenvironment voxel containing the cell." alt="" coords="435,289,633,330"/>
+<area shape="rect" id="node14" href="$classMuerte.html#afa81cebde47dc25ca0da53e29ba9bc4b" title="Adds a new death cycle to the cell." alt="" coords="453,223,615,265"/>
+<area shape="rect" id="node15" href="$classMicroambiente.html#aaddc4391e17f20e6590d5857e1fa7cbf" title="Finds the index of a density by its name." alt="" coords="439,93,629,134"/>
+<area shape="rect" id="node17" href="$classCiclo.html#a96a050f92187735d00fd0d492b51e12c" title="Synchronizes this cycle instance with a cycle model." alt="" coords="455,158,613,199"/>
+<area shape="rect" id="node8" href="$classCiclo.html#a9717433bc9e8bccdd7921350d790865e" title="Gets reference to the current phase object." alt="" coords="717,5,854,32"/>
+<area shape="rect" id="node9" href="$classCiclo__Modelo.html#a085b917f0bbd62cdee29cacb8ddb78f5" title="Gets the inverse map index for a phase transition." alt="" coords="693,57,877,98"/>
+<area shape="rect" id="node11" href="$classGrillado__General.html#a016424dcb7736fd4535fe432c9167a3d" title="Checks if a position is valid within the grid domain." alt="" coords="708,334,863,375"/>
+<area shape="rect" id="node12" href="$classMicroambiente.html#a9b192c81b785bd8fc3df04f1a1236368" title="Finds the voxel index closest to a given position." alt="" coords="693,269,877,310"/>
+<area shape="rect" id="node13" href="$classGrillado__Cartesiano.html#ae7ce32f1f3ae0d18b705a4b2a9ee746a" title="Finds the nearest voxel to a given position." alt="" coords="925,324,1099,380"/>
+<area shape="rect" id="node19" href="$classMicroambiente.html#a5b58f8287e2e37f8380b004d63399297" title="Adds a new density/substrate with default properties." alt="" coords="445,983,623,1025"/>
+<area shape="rect" id="node20" href="$classMicroambiente.html#ab823c676378d0ce8b1dc87a2284a2d18" title="Adds a Dirichlet node at a voxel." alt="" coords="445,1049,623,1090"/>
+<area shape="rect" id="node23" href="$classMicroambiente.html#a78c1ba072dcf8822dfad1b9fc4dd0d0b" title="Outputs information about the microenvironment." alt="" coords="445,641,623,682"/>
+<area shape="rect" id="node25" href="$classMicroambiente.html#a4c012fdcb47db4efed0d77ef80c393e9" title="Gets the number of tracked densities/substrates." alt="" coords="696,582,875,623"/>
+<area shape="rect" id="node26" href="$classMicroambiente.html#af256697875e8e3d1fab2b27a3f47bfb3" title="Gets the total number of voxels in the domain." alt="" coords="445,706,623,747"/>
+<area shape="rect" id="node27" href="$classMicroambiente.html#a23bc0ca66401f1f388123173cc9c6f3d" title="Resizes the spatial domain of the microenvironment." alt="" coords="423,523,645,565"/>
+<area shape="rect" id="node28" href="$classMicroambiente.html#a3b4933b10bb30ad91869a48d02c40caf" title="Sets activation status for a substrate&#39;s Dirichlet condition." alt="" coords="445,772,623,828"/>
+<area shape="rect" id="node29" href="$classMicroambiente.html#ac4436973c41e196494ac947f0410530a" title="Sets properties for an existing density/substrate." alt="" coords="460,853,608,894"/>
+<area shape="rect" id="node30" href="$classMicroambiente.html#a873c46b40e4d1204d53ed47785a48c65" title=" " alt="" coords="449,918,619,959"/>
+<area shape="rect" id="node21" href="$classMicroambiente.html#ad1994e8a49eca174b392c874b5f2c00b" title="Converts 3D Cartesian indices to a voxel index." alt="" coords="702,1049,869,1090"/>
+<area shape="rect" id="node22" href="$classGrillado__Cartesiano.html#ae10f6dd8d647ef1c05c7c60bb22b6dd8" title="Calculates the linear index from 3D Cartesian indices." alt="" coords="937,1049,1087,1090"/>
+<area shape="rect" id="node24" href="$classGrillado__Cartesiano.html#abb4cf8e4a08f943425b9efc91724463f" title="Displays information about the Cartesian grid." alt="" coords="702,648,869,704"/>
+<area shape="rect" id="node32" href="$classContenedor__de__Celulas.html#a541e5c77b10b04cc49498b201830b14e" title="Adds a cell to a specific voxel." alt="" coords="694,451,877,493"/>
+</map>

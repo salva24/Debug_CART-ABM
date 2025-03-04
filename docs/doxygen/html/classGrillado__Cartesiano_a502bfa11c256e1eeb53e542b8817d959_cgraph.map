@@ -1,0 +1,4 @@
+<map id="Grillado_Cartesiano::get_centro_voxel" name="Grillado_Cartesiano::get_centro_voxel">
+<area shape="rect" id="node1" title="Gets the center coordinates of a voxel." alt="" coords="5,5,156,47"/>
+<area shape="rect" id="node2" href="$classGrillado__Cartesiano.html#ae10f6dd8d647ef1c05c7c60bb22b6dd8" title="Calculates the linear index from 3D Cartesian indices." alt="" coords="204,5,355,47"/>
+</map>

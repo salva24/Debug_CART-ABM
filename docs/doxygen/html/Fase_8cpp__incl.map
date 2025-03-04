@@ -1,0 +1,9 @@
+<map id="Fase.cpp" name="Fase.cpp">
+<area shape="rect" id="node1" title="Implementation of the Fase (Phase) class for cancer cell cycle modeling." alt="" coords="64,5,143,32"/>
+<area shape="rect" id="node2" href="$Fase_8h.html" title="Cell phase definitions for cancer cell cycle modeling." alt="" coords="72,80,135,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="15,229,74,256"/>
+<area shape="rect" id="node4" href="$Geometria_8h.html" title="Header file defining the cell geometry class for cancer simulations." alt="" coords="208,155,311,181"/>
+<area shape="rect" id="node7" href="$Muerte__Parametros_8h.html" title="Cell death parameters for cancer simulation." alt="" coords="23,155,184,181"/>
+<area shape="rect" id="node5" href="$Volumen_8h.html" title="Cell volume class that models volumetric properties of cancer cells." alt="" coords="214,229,305,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="225,304,293,331"/>
+</map>

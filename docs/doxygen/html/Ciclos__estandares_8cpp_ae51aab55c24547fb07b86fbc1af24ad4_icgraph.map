@@ -1,0 +1,4 @@
+<map id="crear_ciclo_de_muerte_estandar" name="crear_ciclo_de_muerte_estandar">
+<area shape="rect" id="node1" title="Creates and initializes all standard death cycles." alt="" coords="108,5,277,47"/>
+<area shape="rect" id="node2" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,13,60,39"/>
+</map>

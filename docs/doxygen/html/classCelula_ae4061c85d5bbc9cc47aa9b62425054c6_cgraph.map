@@ -1,0 +1,6 @@
+<map id="Celula::actualizar_volumen" name="Celula::actualizar_volumen">
+<area shape="rect" id="node1" title="Updates the cell volume based on growth/shrinkage rates." alt="" coords="5,39,140,80"/>
+<area shape="rect" id="node2" href="$classGeometria.html#a844f13dca25cb0285396db0b6154c23e" title="Updates all geometric properties based on volume." alt="" coords="188,46,351,73"/>
+<area shape="rect" id="node3" href="$classGeometria.html#a1432d0a1c0dec427806cd9b1f41303c6" title="Updates the cell radius based on total volume." alt="" coords="399,5,561,47"/>
+<area shape="rect" id="node4" href="$classGeometria.html#a488cad392bb52af0cb6783de2d4a43a4" title="Updates the nuclear radius based on nuclear volume." alt="" coords="399,71,561,112"/>
+</map>

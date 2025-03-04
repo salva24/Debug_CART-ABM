@@ -1,0 +1,13 @@
+<map id="Linfocito::desencadenar_apoptosis" name="Linfocito::desencadenar_apoptosis">
+<area shape="rect" id="node1" title="Triggers apoptosis in an attached cell." alt="" coords="5,209,183,250"/>
+<area shape="rect" id="node2" href="$classCelula.html#a13749f1841d862b3c6923cfaa6587964" title="Starts the cell death process." alt="" coords="231,187,420,213"/>
+<area shape="rect" id="node11" href="$classMuerte.html#adad5e0efbb8cf0ac9c91611c1c49fd82" title="Finds death cycle index by code." alt="" coords="233,238,417,279"/>
+<area shape="rect" id="node3" href="$classMuerte.html#a0f95d024373da0008481fb2c2ba5e693" title="Gets the currently active death cycle model." alt="" coords="500,5,653,32"/>
+<area shape="rect" id="node4" href="$classMuerte.html#adb28860f424af6671c3b94e3dd5dec91" title="Initiates a specific death process." alt="" coords="479,56,674,83"/>
+<area shape="rect" id="node5" href="$classCelula.html#adc456f68f9dc6a7f537d8a7925ac2685" title="Sets whether the cell is mobile (overridden in derived classes)" alt="" coords="511,107,642,133"/>
+<area shape="rect" id="node6" href="$classCiclo.html#a9717433bc9e8bccdd7921350d790865e" title="Gets reference to the current phase object." alt="" coords="508,157,645,184"/>
+<area shape="rect" id="node7" href="$classSecrecion.html#a3ccd90cf999f6fc76039a82d09de0a0a" title="Scales all consumption rates by a factor." alt="" coords="468,209,685,250"/>
+<area shape="rect" id="node8" href="$classMuerte.html#aa6d9d814790aeb3bab1583119b278630" title="Gets the parameters for the current death cycle." alt="" coords="501,274,652,315"/>
+<area shape="rect" id="node9" href="$classSecrecion.html#ae54f425f2fd5afc88fc76b2c0af97a24" title="Sets all secretion rates to zero." alt="" coords="485,339,668,381"/>
+<area shape="rect" id="node10" href="$classCiclo.html#a96a050f92187735d00fd0d492b51e12c" title="Synchronizes this cycle instance with a cycle model." alt="" coords="497,405,656,446"/>
+</map>

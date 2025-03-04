@@ -1,0 +1,13 @@
+<map id="crear_ciclo_de_muerte_estandar" name="crear_ciclo_de_muerte_estandar">
+<area shape="rect" id="node1" title="Creates and initializes standard death cycles (necrosis, apoptosis)" alt="" coords="5,181,175,223"/>
+<area shape="rect" id="node2" href="$Ciclos__estandares_8cpp.html#a5e1941e7fc9a9c416a3532fccb5f3c3c" title="Creates and initializes the apoptosis death cycle model." alt="" coords="223,163,385,190"/>
+<area shape="rect" id="node8" href="$Ciclos__estandares_8cpp.html#a342e6ce4db7e333b356c2cdb24a107b7" title="Creates and initializes the necrosis death cycle model." alt="" coords="227,214,381,241"/>
+<area shape="rect" id="node3" href="$classCiclo__Modelo.html#a1f2cbb483c62bbdb28b187e954e09fd9" title="Adds a new phase to the cell cycle model." alt="" coords="433,189,636,215"/>
+<area shape="rect" id="node4" href="$classCiclo__Modelo.html#aa3f238b992e07df86a228a952d248d39" title="Creates a link between two phases." alt="" coords="435,239,634,266"/>
+<area shape="rect" id="node5" href="$classCiclo__Modelo.html#a34d2b1e4ac87c001ecf07846369950ea" title="Gets the phase link between two phases." alt="" coords="447,71,623,98"/>
+<area shape="rect" id="node6" href="$Ciclos__estandares_8cpp.html#adabada6621a0f192874cffb651886042" title="Implementation of entry function for apoptosis phase." alt="" coords="456,5,613,47"/>
+<area shape="rect" id="node7" href="$classCiclo__Modelo.html#a0fa1362fecca974e43fc56fe8998c289" title="Gets reference to the transition rate between phases." alt="" coords="462,123,607,164"/>
+<area shape="rect" id="node9" href="$Ciclos__estandares_8cpp.html#a1b335a3b7831c4c31d3a6152bac63b51" title="Implementation of entry function for lysis phase." alt="" coords="449,291,620,332"/>
+<area shape="rect" id="node10" href="$Ciclos__estandares_8cpp.html#aa6830ac62e76d8399480e5c67d071a49" title="Determines if a necrotic cell should transition to the lysed phase." alt="" coords="437,356,632,397"/>
+<area shape="rect" id="node11" href="$Ciclos__estandares_8cpp.html#a6bb6cf2f5a115324b08df57054efac23" title="Implementation of entry function for necrosis phase." alt="" coords="437,421,632,463"/>
+</map>

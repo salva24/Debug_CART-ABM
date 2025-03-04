@@ -1,0 +1,4 @@
+<map id="Linfocito::chequear_vecinos_para_adherirse" name="Linfocito::chequear_vecinos_para_adherirse">
+<area shape="rect" id="node1" title="Checks neighboring cells for potential adhesion." alt="" coords="192,5,375,47"/>
+<area shape="rect" id="node2" href="$classLinfocito.html#a5a05f8c3693a17eb69b2c51bc140e877" title="Advances lymphocyte&#45;specific behaviors." alt="" coords="5,5,144,47"/>
+</map>

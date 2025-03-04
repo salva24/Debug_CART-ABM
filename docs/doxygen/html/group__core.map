@@ -1,0 +1,8 @@
+<map id="Core System" name="Core System">
+<area shape="rect" id="node1" href="$group__mechanics.html" title="Physical interactions and mechanical forces." alt="" coords="174,5,294,31"/>
+<area shape="rect" id="node2" href="$group__biology.html" title="Biological processes and cell behaviors." alt="" coords="184,55,284,80"/>
+<area shape="rect" id="node3" href="$group__cells.html" title="Cell agents and related functionality." alt="" coords="184,104,284,129"/>
+<area shape="rect" id="node4" href="$group__microenvironment.html" title="Microenvironmental modeling components." alt="" coords="163,153,305,179"/>
+<area shape="rect" id="node5" href="$group__tissue.html" title="Tissue&#45;level organization and management." alt="" coords="159,203,309,228"/>
+<area shape="rect" id="node6" title="Core components of the Cancer Cell Agent Simulation." alt="" coords="5,104,111,129"/>
+</map>

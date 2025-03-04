@@ -1,0 +1,10 @@
+<map id="Tejido::introducir_linfocitos_aleatorios" name="Tejido::introducir_linfocitos_aleatorios">
+<area shape="rect" id="node1" title="Introduces lymphocytes randomly in the domain." alt="" coords="5,78,167,119"/>
+<area shape="rect" id="node2" href="$Vector_8cpp.html#ae8885ef12d3fefe9bd88702c4ec9de94" title="Squared norm of a std::vector&lt;double&gt;." alt="" coords="245,5,359,32"/>
+<area shape="rect" id="node3" href="$classRNG.html#a6bdc54ea1f91d783919858e5d670c8f1" title="Generate a uniform random number between 0 and n_max." alt="" coords="219,56,385,83"/>
+<area shape="rect" id="node4" href="$classContenedor__de__Celulas.html#a38d909c340600d4a1a3e524ef06175e3" title="Registers a cell in the container." alt="" coords="215,107,389,149"/>
+<area shape="rect" id="node8" href="$classCelula.html#a048f5404c15cd7ec12ce06b8153beb7c" title="Sets the cell&#39;s position using coordinates." alt="" coords="226,173,378,200"/>
+<area shape="rect" id="node5" href="$classContenedor__de__Celulas.html#a541e5c77b10b04cc49498b201830b14e" title="Adds a cell to a specific voxel." alt="" coords="437,42,620,83"/>
+<area shape="rect" id="node6" href="$classGrillado__General.html#a016424dcb7736fd4535fe432c9167a3d" title="Checks if a position is valid within the grid domain." alt="" coords="451,107,606,149"/>
+<area shape="rect" id="node7" href="$classGrillado__Cartesiano.html#ae7ce32f1f3ae0d18b705a4b2a9ee746a" title="Finds the nearest voxel to a given position." alt="" coords="442,173,615,229"/>
+</map>

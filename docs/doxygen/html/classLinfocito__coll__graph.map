@@ -1,0 +1,18 @@
+<map id="Linfocito" name="Linfocito">
+<area shape="rect" id="node1" title="Specialized cell class representing a lymphocyte (immune cell)" alt="" coords="149,2399,369,2828"/>
+<area shape="rect" id="node2" href="$classCelula.html" title="Base class for cell agents in the simulation." alt="" coords="278,1643,533,2336"/>
+<area shape="rect" id="node3" href="$classVector.html" title="3D vector class for spatial calculations in cancer simulation." alt="" coords="93,1085,227,1367"/>
+<area shape="rect" id="node16" href="$classMotilidad.html" title="Models how cancer cells move through their microenvironment." alt="" coords="5,1914,200,2065"/>
+<area shape="rect" id="node4" href="$classParametros.html" title="Parameter class defining oxygen thresholds and cell responses." alt="" coords="269,1143,480,1309"/>
+<area shape="rect" id="node5" href="$classMicroambiente.html" title="Models the biochemical environment where cells exist." alt="" coords="504,916,731,1536"/>
+<area shape="rect" id="node6" href="$classGrillado__Cartesiano.html" title="Implements a Cartesian grid for cancer microenvironment modeling." alt="" coords="318,409,522,853"/>
+<area shape="rect" id="node7" href="$classGrillado__General.html" title="Base class for grid systems used in cancer microenvironment modeling." alt="" coords="325,64,515,288"/>
+<area shape="rect" id="node8" href="$classFenotipo.html" title="Integrated cell phenotype model that combines all functional aspects of a cancer cell." alt="" coords="1049,1187,1151,1265"/>
+<area shape="rect" id="node9" href="$classVolumen.html" title="Models the volumetric properties of a cell with specific cancer research relevance." alt="" coords="547,505,725,758"/>
+<area shape="rect" id="node10" href="$classGeometria.html" title="Class for managing cell geometric properties in cancer simulations." alt="" coords="749,541,971,721"/>
+<area shape="rect" id="node11" href="$classMuerte.html" title=" " alt="" coords="995,483,1205,780"/>
+<area shape="rect" id="node12" href="$classMecanica.html" title="Cell mechanical properties for modeling physical interactions in cancer." alt="" coords="1230,541,1426,721"/>
+<area shape="rect" id="node13" href="$classSecrecion.html" title="Models how cancer cells secrete substances into and consume substances from their microenvironment." alt="" coords="1450,497,1667,765"/>
+<area shape="rect" id="node14" href="$classCiclo.html" title="Tracks and manages an individual cell&#39;s progression through its cell cycle." alt="" coords="1692,497,1892,765"/>
+<area shape="rect" id="node15" href="$classCiclo__Modelo.html" title="Models the cell cycle with phases and transitions." alt="" coords="1691,5,1893,347"/>
+</map>

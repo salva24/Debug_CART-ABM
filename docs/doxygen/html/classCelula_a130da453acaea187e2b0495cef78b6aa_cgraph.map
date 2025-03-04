@@ -1,0 +1,12 @@
+<map id="Celula::inicializar_celula_sana" name="Celula::inicializar_celula_sana">
+<area shape="rect" id="node1" title="Initializes a cell with healthy properties." alt="" coords="5,201,140,243"/>
+<area shape="rect" id="node2" href="$classCelula.html#a8f54e9ec1ff954a57f4de9078b23ad60" title="Updates the microenvironment voxel containing the cell." alt="" coords="188,37,385,79"/>
+<area shape="rect" id="node6" href="$classMuerte.html#afa81cebde47dc25ca0da53e29ba9bc4b" title="Adds a new death cycle to the cell." alt="" coords="205,103,368,144"/>
+<area shape="rect" id="node7" href="$classMicroambiente.html#aaddc4391e17f20e6590d5857e1fa7cbf" title="Finds the index of a density by its name." alt="" coords="191,168,382,209"/>
+<area shape="rect" id="node8" href="$classCiclo__Modelo.html#a2873bfe8ef42820e688eb82065d273ca" title="Finds the index of a phase by its code." alt="" coords="197,233,376,275"/>
+<area shape="rect" id="node9" href="$classCiclo.html#a96a050f92187735d00fd0d492b51e12c" title="Synchronizes this cycle instance with a cycle model." alt="" coords="207,299,366,340"/>
+<area shape="rect" id="node10" href="$classCiclo__Modelo.html#a0fa1362fecca974e43fc56fe8998c289" title="Gets reference to the transition rate between phases." alt="" coords="214,364,359,405"/>
+<area shape="rect" id="node3" href="$classGrillado__General.html#a016424dcb7736fd4535fe432c9167a3d" title="Checks if a position is valid within the grid domain." alt="" coords="448,5,603,47"/>
+<area shape="rect" id="node4" href="$classMicroambiente.html#a9b192c81b785bd8fc3df04f1a1236368" title="Finds the voxel index closest to a given position." alt="" coords="433,71,617,112"/>
+<area shape="rect" id="node5" href="$classGrillado__Cartesiano.html#ae7ce32f1f3ae0d18b705a4b2a9ee746a" title="Finds the nearest voxel to a given position." alt="" coords="665,63,839,119"/>
+</map>

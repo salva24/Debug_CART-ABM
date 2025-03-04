@@ -1,0 +1,4 @@
+<map id="Ciclo_Modelo::avanzar_en_el_modelo" name="Ciclo_Modelo::avanzar_en_el_modelo">
+<area shape="rect" id="node1" title="Advances the cell in its current cell cycle phase." alt="" coords="5,5,175,47"/>
+<area shape="rect" id="node2" href="$classRNG.html#a6bdc54ea1f91d783919858e5d670c8f1" title="Generate a uniform random number between 0 and n_max." alt="" coords="223,13,388,39"/>
+</map>

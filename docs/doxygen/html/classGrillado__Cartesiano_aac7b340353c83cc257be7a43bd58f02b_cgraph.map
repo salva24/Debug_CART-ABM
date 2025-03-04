@@ -1,0 +1,4 @@
+<map id="Grillado_Cartesiano::voxel_mas_cercano" name="Grillado_Cartesiano::voxel_mas_cercano">
+<area shape="rect" id="node1" title="Gets a reference to the voxel nearest to a position." alt="" coords="5,13,164,54"/>
+<area shape="rect" id="node2" href="$classGrillado__Cartesiano.html#ae7ce32f1f3ae0d18b705a4b2a9ee746a" title="Finds the nearest voxel to a given position." alt="" coords="212,5,385,61"/>
+</map>

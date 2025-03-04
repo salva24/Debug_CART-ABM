@@ -1,0 +1,7 @@
+<map id="Vector::Vector" name="Vector::Vector">
+<area shape="rect" id="node1" title="Default constructor, initializes vector to (0,0,0)." alt="" coords="191,81,303,108"/>
+<area shape="rect" id="node2" href="$classVector.html#a55da397d5123bae60d78f75b4929aed9" title="Vector scaling (multiplication by scalar)." alt="" coords="7,5,141,32"/>
+<area shape="rect" id="node3" href="$classVector.html#abaef65985e13ec3799dfcbdaf273c896" title="Vector addition operator." alt="" coords="5,56,143,83"/>
+<area shape="rect" id="node4" href="$classVector.html#a80ed2a39e0e6a5966ad23f339ff1f31a" title="Vector subtraction operator." alt="" coords="9,107,139,133"/>
+<area shape="rect" id="node5" href="$classVector.html#aaea758931128837d57458e016a59dd6b" title="Component&#45;wise vector division." alt="" coords="9,157,139,184"/>
+</map>

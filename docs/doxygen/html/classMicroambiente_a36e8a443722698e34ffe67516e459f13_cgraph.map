@@ -1,0 +1,7 @@
+<map id="Microambiente::simular_difusion_decaimiento" name="Microambiente::simular_difusion_decaimiento">
+<area shape="rect" id="node1" title="Simulates diffusion and decay of substrates." alt="" coords="5,35,183,76"/>
+<area shape="rect" id="node2" href="$classMicroambiente.html#aee7840197152d4432a2e992b715ec519" title="Solver for diffusion&#45;decay using LOD (Locally One&#45;Dimensional) method." alt="" coords="231,27,481,83"/>
+<area shape="rect" id="node3" href="$classMicroambiente.html#a7b84a6b22453d59eb68ebabf5b6facf6" title="Applies Dirichlet conditions to the domain." alt="" coords="529,5,719,47"/>
+<area shape="rect" id="node5" href="$Vector_8cpp.html#a845438dcdc3f8dbcc6647c8e6115612b" title="Vector axpy operation (y = y + a*x)." alt="" coords="597,71,651,98"/>
+<area shape="rect" id="node4" href="$classMicroambiente.html#a873c46b40e4d1204d53ed47785a48c65" title=" " alt="" coords="767,5,936,47"/>
+</map>

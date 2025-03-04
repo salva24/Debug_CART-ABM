@@ -1,0 +1,6 @@
+<map id="standard_apoptosis_funcion_de_entrada" name="standard_apoptosis_funcion_de_entrada">
+<area shape="rect" id="node1" title="Implementation of entry function for apoptosis phase." alt="" coords="536,5,693,47"/>
+<area shape="rect" id="node2" href="$Ciclos__estandares_8cpp.html#a5e1941e7fc9a9c416a3532fccb5f3c3c" title="Creates and initializes the apoptosis death cycle model." alt="" coords="325,13,488,39"/>
+<area shape="rect" id="node3" href="$Ciclos__estandares_8cpp.html#ae51aab55c24547fb07b86fbc1af24ad4" title="Creates and initializes all standard death cycles." alt="" coords="108,5,277,47"/>
+<area shape="rect" id="node4" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,13,60,39"/>
+</map>

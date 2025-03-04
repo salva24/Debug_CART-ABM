@@ -1,0 +1,5 @@
+<map id="Microambiente::mostrar_informacion" name="Microambiente::mostrar_informacion">
+<area shape="rect" id="node1" title="Outputs information about the microenvironment." alt="" coords="5,50,184,91"/>
+<area shape="rect" id="node2" href="$classGrillado__Cartesiano.html#abb4cf8e4a08f943425b9efc91724463f" title="Displays information about the Cartesian grid." alt="" coords="238,5,405,61"/>
+<area shape="rect" id="node3" href="$classMicroambiente.html#a4c012fdcb47db4efed0d77ef80c393e9" title="Gets the number of tracked densities/substrates." alt="" coords="232,86,411,127"/>
+</map>

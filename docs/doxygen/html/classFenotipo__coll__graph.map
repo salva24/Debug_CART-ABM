@@ -1,0 +1,10 @@
+<map id="Fenotipo" name="Fenotipo">
+<area shape="rect" id="node1" title="Integrated cell phenotype model that combines all functional aspects of a cancer cell." alt="" coords="621,769,723,847"/>
+<area shape="rect" id="node2" href="$classVolumen.html" title="Models the volumetric properties of a cell with specific cancer research relevance." alt="" coords="5,431,184,685"/>
+<area shape="rect" id="node3" href="$classGeometria.html" title="Class for managing cell geometric properties in cancer simulations." alt="" coords="208,468,429,648"/>
+<area shape="rect" id="node4" href="$classMuerte.html" title=" " alt="" coords="453,409,664,707"/>
+<area shape="rect" id="node5" href="$classMecanica.html" title="Cell mechanical properties for modeling physical interactions in cancer." alt="" coords="689,468,885,648"/>
+<area shape="rect" id="node6" href="$classSecrecion.html" title="Models how cancer cells secrete substances into and consume substances from their microenvironment." alt="" coords="909,424,1126,692"/>
+<area shape="rect" id="node7" href="$classCiclo.html" title="Tracks and manages an individual cell&#39;s progression through its cell cycle." alt="" coords="1151,424,1351,692"/>
+<area shape="rect" id="node8" href="$classCiclo__Modelo.html" title="Models the cell cycle with phases and transitions." alt="" coords="1149,5,1352,347"/>
+</map>

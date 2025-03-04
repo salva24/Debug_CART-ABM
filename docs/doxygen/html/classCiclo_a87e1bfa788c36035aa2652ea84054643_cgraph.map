@@ -1,0 +1,5 @@
+<map id="Ciclo::avanzar_en_el_ciclo" name="Ciclo::avanzar_en_el_ciclo">
+<area shape="rect" id="node1" title="Advances the cell through its cycle for a time step." alt="" coords="5,5,161,47"/>
+<area shape="rect" id="node2" href="$classCiclo__Modelo.html#a5fc49e208d50e734a2cac2b70fbf2593" title="Advances the cell in its current cell cycle phase." alt="" coords="209,5,379,47"/>
+<area shape="rect" id="node3" href="$classRNG.html#a6bdc54ea1f91d783919858e5d670c8f1" title="Generate a uniform random number between 0 and n_max." alt="" coords="427,13,592,39"/>
+</map>

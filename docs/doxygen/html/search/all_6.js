@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['g_5findice_5fde_5fvoxel_230',['g_indice_de_voxel',['../Macros_8h.html#a38e691d4f71e281ce2ed50668c06a373',1,'Macros.h']]],
+  ['generator_231',['generator',['../classRNG.html#af05bae3a8f1ccd6e5b753088359e8c20',1,'RNG']]],
+  ['geometria_232',['Geometria',['../classGeometria.html',1,'']]],
+  ['geometria_233',['geometria',['../classFenotipo.html#a2234c085b4adca58fc267c94b613e12a',1,'Fenotipo']]],
+  ['geometria_234',['Geometria',['../classGeometria.html#aa2f34b3bbc8fc95b69f8516e22e48136',1,'Geometria']]],
+  ['geometria_2ecpp_235',['Geometria.cpp',['../Geometria_8cpp.html',1,'']]],
+  ['geometria_2eh_236',['Geometria.h',['../Geometria_8h.html',1,'']]],
+  ['geometria_5fdel_5ftumor_237',['geometria_del_tumor',['../classTejido.html#ac44e32dcfb0b820e4a2792262e3baad1',1,'Tejido']]],
+  ['get_5factivacion_5fde_5fsustrato_5fde_5fdirichlet_238',['get_activacion_de_sustrato_de_dirichlet',['../classMicroambiente.html#ab26042d02ec0e712a7fdcab1638f4520',1,'Microambiente']]],
+  ['get_5factualizar_5fvolumen_239',['get_actualizar_volumen',['../classCiclo__Modelo.html#a3e41b9ddc095afd1c643d7a6f57b8ca5',1,'Ciclo_Modelo']]],
+  ['get_5fcentro_5fvoxel_240',['get_centro_voxel',['../classGrillado__Cartesiano.html#a502bfa11c256e1eeb53e542b8817d959',1,'Grillado_Cartesiano']]],
+  ['get_5findice_5fde_5fmapa_5finverso_241',['get_indice_de_mapa_inverso',['../classCiclo__Modelo.html#a085b917f0bbd62cdee29cacb8ddb78f5',1,'Ciclo_Modelo']]],
+  ['get_5findice_5fdel_5fvoxel_5fdel_5fmicroambiente_242',['get_indice_del_voxel_del_microambiente',['../classCelula.html#a9a91a7dd1136780bb9768150d9115587',1,'Celula']]],
+  ['get_5fmicroambiente_243',['get_microambiente',['../classCelula.html#a570da9b25c991055a91858941413ca4f',1,'Celula']]],
+  ['get_5fmicroambiente_5fdefault_244',['get_microambiente_default',['../Microambiente_8cpp.html#afd86f74c94fadd0aa7f42b70b54e640d',1,'get_microambiente_default(void):&#160;Microambiente.cpp'],['../Microambiente_8h.html#afd86f74c94fadd0aa7f42b70b54e640d',1,'get_microambiente_default(void):&#160;Microambiente.cpp']]],
+  ['get_5ftasa_5fde_5ftransicion_245',['get_tasa_de_transicion',['../classCiclo__Modelo.html#a1ddd77903fe47c704b3f00967cefb219',1,'Ciclo_Modelo']]],
+  ['gradiente_246',['gradiente',['../Microambiente_8h.html#a234ad5e809775af015cbb259e1abed75',1,'Microambiente.h']]],
+  ['gradiente_5fmas_5fcercano_247',['gradiente_mas_cercano',['../classCelula.html#aebc7f9f67d84f98fc37f1df378fd340e',1,'Celula']]],
+  ['grillado_248',['grillado',['../classContenedor__de__Celulas.html#a3db77c5e114100f0fc057db5d8f6bde2',1,'Contenedor_de_Celulas']]],
+  ['grillado_2ecpp_249',['Grillado.cpp',['../Grillado_8cpp.html',1,'']]],
+  ['grillado_2eh_250',['Grillado.h',['../Grillado_8h.html',1,'']]],
+  ['grillado_5fcartesiano_251',['Grillado_Cartesiano',['../classGrillado__Cartesiano.html#a4fffa6a516bb654d57672c4bb817c212',1,'Grillado_Cartesiano::Grillado_Cartesiano()'],['../classGrillado__Cartesiano.html#a35b09f7d0b3fdc52edaf713b6a866582',1,'Grillado_Cartesiano::Grillado_Cartesiano(int x_nodes, int y_nodes, int z_nodes)'],['../classGrillado__Cartesiano.html',1,'Grillado_Cartesiano']]],
+  ['grillado_5fgeneral_252',['Grillado_General',['../classGrillado__General.html#a7f7601a215b580f4870c24c0bd087e92',1,'Grillado_General::Grillado_General()'],['../classGrillado__General.html',1,'Grillado_General']]]
+];

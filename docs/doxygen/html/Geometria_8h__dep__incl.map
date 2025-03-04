@@ -1,0 +1,30 @@
+<map id="Geometria.h" name="Geometria.h">
+<area shape="rect" id="node1" title="Header file defining the cell geometry class for cancer simulations." alt="" coords="489,5,592,32"/>
+<area shape="rect" id="node2" href="$Fase_8h.html" title="Cell phase definitions for cancer cell cycle modeling." alt="" coords="452,80,515,107"/>
+<area shape="rect" id="node28" href="$Geometria_8cpp.html" title="Implementation of cell geometry functions for cancer simulations." alt="" coords="539,80,657,107"/>
+<area shape="rect" id="node3" href="$Ciclo__Modelo_8h.html" title="Cell Cycle Model abstract class for cancer simulation." alt="" coords="361,155,483,181"/>
+<area shape="rect" id="node27" href="$Fase_8cpp.html" title="Implementation of the Fase (Phase) class for cancer cell cycle modeling." alt="" coords="507,155,585,181"/>
+<area shape="rect" id="node4" href="$Celula__Parametros_8h.html" title="Cell parameter definitions for cancer cell simulation." alt="" coords="5,229,161,256"/>
+<area shape="rect" id="node5" href="$Ciclo__Modelo_8cpp.html" title="Implementation of the Cell Cycle Model class for cancer simulation." alt="" coords="186,229,322,256"/>
+<area shape="rect" id="node6" href="$Ciclos__estandares_8h.html" title="Standard cell cycle implementations for cancer simulation modeling." alt="" coords="346,229,498,256"/>
+<area shape="rect" id="node19" href="$Muerte_8h.html" title="Cell death modeling system for the cancer simulation." alt="" coords="522,229,602,256"/>
+<area shape="rect" id="node21" href="$Parametros__globales_8h.html" title="Global configuration parameters for the cell&#45;based cancer simulation model." alt="" coords="694,229,865,256"/>
+<area shape="rect" id="node7" href="$Ciclo_8h.html" title="Cell cycle instance definition for individual cancer cells." alt="" coords="389,304,455,331"/>
+<area shape="rect" id="node18" href="$Ciclos__estandares_8cpp.html" title="Implementation of standard cell cycle models used in cancer simulation." alt="" coords="197,304,364,331"/>
+<area shape="rect" id="node8" href="$Ciclo_8cpp.html" title="Implementation of the Cycle class." alt="" coords="381,379,463,405"/>
+<area shape="rect" id="node9" href="$Fenotipo_8h.html" title="Cell phenotype definition integrating all behavioral components for cancer research." alt="" coords="522,379,613,405"/>
+<area shape="rect" id="node10" href="$Celula_8h.html" title=" " alt="" coords="631,453,706,480"/>
+<area shape="rect" id="node17" href="$Fenotipo_8cpp.html" title="Implementation of the cell phenotype class for cancer research." alt="" coords="503,453,608,480"/>
+<area shape="rect" id="node11" href="$Celula_8cpp.html" title="Implementation of the Cell (Celula) class and Lymphocyte (Linfocito) class for cancer simulation." alt="" coords="623,528,714,555"/>
+<area shape="rect" id="node12" href="$Contenedor__de__Celulas_8h.html" title=" " alt="" coords="747,528,934,555"/>
+<area shape="rect" id="node13" href="$Contenedor__de__celulas_8cpp.html" title=" " alt="" coords="727,603,927,629"/>
+<area shape="rect" id="node14" href="$Tejido_8h.html" title=" " alt="" coords="951,603,1023,629"/>
+<area shape="rect" id="node15" href="$Main_8cpp.html" title=" " alt="" coords="893,677,975,704"/>
+<area shape="rect" id="node16" href="$Tejido_8cpp.html" title="Implementation of the Tejido (Tissue) class for cancer simulation." alt="" coords="999,677,1085,704"/>
+<area shape="rect" id="node20" href="$Muerte_8cpp.html" title="Implementation of cell death mechanisms for cancer simulation." alt="" coords="480,304,575,331"/>
+<area shape="rect" id="node22" href="$Grillado_8h.html" title=" " alt="" coords="962,304,1047,331"/>
+<area shape="rect" id="node24" href="$Microambiente_8h.html" title=" " alt="" coords="735,379,867,405"/>
+<area shape="rect" id="node26" href="$Parametros__globales_8cpp.html" title="Implementation of global parameter configuration system for cancer simulation." alt="" coords="752,304,937,331"/>
+<area shape="rect" id="node23" href="$Grillado_8cpp.html" title=" " alt="" coords="891,379,991,405"/>
+<area shape="rect" id="node25" href="$Microambiente_8cpp.html" title=" " alt="" coords="730,453,877,480"/>
+</map>

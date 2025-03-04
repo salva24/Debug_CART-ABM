@@ -1,0 +1,7 @@
+<map id="Celula::set_constantes_de_consumo_interno" name="Celula::set_constantes_de_consumo_interno">
+<area shape="rect" id="node1" title="Sets constants for internal consumption." alt="" coords="5,23,175,65"/>
+<area shape="rect" id="node2" href="$Vector_8cpp.html#a845438dcdc3f8dbcc6647c8e6115612b" title="Vector axpy operation (y = y + a*x)." alt="" coords="285,5,339,32"/>
+<area shape="rect" id="node3" href="$classMicroambiente.html#a325e49a7ed1782eb806750087c84062b" title="Gets a voxel by its linear index." alt="" coords="223,56,401,83"/>
+<area shape="rect" id="node4" href="$classMicroambiente.html#ad1994e8a49eca174b392c874b5f2c00b" title="Converts 3D Cartesian indices to a voxel index." alt="" coords="449,49,616,90"/>
+<area shape="rect" id="node5" href="$classGrillado__Cartesiano.html#ae10f6dd8d647ef1c05c7c60bb22b6dd8" title="Calculates the linear index from 3D Cartesian indices." alt="" coords="664,49,815,90"/>
+</map>

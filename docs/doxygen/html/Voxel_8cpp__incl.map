@@ -1,0 +1,8 @@
+<map id="Voxel.cpp" name="Voxel.cpp">
+<area shape="rect" id="node1" title="Implementation of the Voxel class for spatial discretization in cancer modeling." alt="" coords="51,5,135,32"/>
+<area shape="rect" id="node2" href="$Voxel_8h.html" title="Defines the Voxel class, which represents discrete spatial elements in the microenvironment." alt="" coords="59,80,128,107"/>
+<area shape="rect" id="node3" href="$Vector_8h.html" title="Vector mathematics definitions for 3D spatial calculations in cancer simulation." alt="" coords="99,155,173,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,85,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="110,229,173,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="197,229,259,256"/>
+</map>

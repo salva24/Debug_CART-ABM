@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['n_5fmax_350',['n_max',['../classRNG.html#a3abbc46085b8b868202f2e9c0140493a',1,'RNG']]],
+  ['naxpy_351',['naxpy',['../Vector_8h.html#a4a4acab9d425f31031f4cf751be049e6',1,'naxpy(std::vector&lt; double &gt; *y, double &amp;a, std::vector&lt; double &gt; &amp;x):&#160;Vector.cpp'],['../Vector_8cpp.html#ac2905e46d3ddd91db1cb82acfa1a8f7c',1,'naxpy(std::vector&lt; double &gt; *y, std::vector&lt; double &gt; &amp;a, std::vector&lt; double &gt; &amp;x):&#160;Vector.cpp'],['../Vector_8cpp.html#a4a4acab9d425f31031f4cf751be049e6',1,'naxpy(std::vector&lt; double &gt; *y, double &amp;a, std::vector&lt; double &gt; &amp;x):&#160;Vector.cpp'],['../Vector_8h.html#ac2905e46d3ddd91db1cb82acfa1a8f7c',1,'naxpy(std::vector&lt; double &gt; *y, std::vector&lt; double &gt; &amp;a, std::vector&lt; double &gt; &amp;x):&#160;Vector.cpp']]],
+  ['necrosis_352',['necrosis',['../Celula_8h.html#a7d1ec2a32ebb32a51f232ed3a8b0059e',1,'necrosis():&#160;Celula.h'],['../Ciclos__estandares_8h.html#a7d1ec2a32ebb32a51f232ed3a8b0059e',1,'necrosis():&#160;Ciclos_estandares.h'],['../Main_8cpp.html#a7d1ec2a32ebb32a51f232ed3a8b0059e',1,'necrosis():&#160;Main.cpp']]],
+  ['necrosis_5fparametros_353',['necrosis_parametros',['../Celula_8h.html#a4c81a9f0a2942ceddeeabed0d0e3745f',1,'necrosis_parametros():&#160;Main.cpp'],['../Ciclos__estandares_8h.html#a4c81a9f0a2942ceddeeabed0d0e3745f',1,'necrosis_parametros():&#160;Main.cpp'],['../Main_8cpp.html#a4c81a9f0a2942ceddeeabed0d0e3745f',1,'necrosis_parametros():&#160;Main.cpp']]],
+  ['necrotica_354',['necrotica',['../classConstantes.html#afd19bcce1f6e5de02812ae5c0ac00f09',1,'Constantes']]],
+  ['necrotica_5fhinchada_355',['necrotica_hinchada',['../classConstantes.html#ac0cc939f05e8050e9533ac339c4a3c70',1,'Constantes']]],
+  ['necrotica_5flisada_356',['necrotica_lisada',['../classConstantes.html#a8c807ba5f3fbcd4fe0ab3eb6bab67ea9',1,'Constantes']]],
+  ['nombre_357',['nombre',['../classMicroambiente__Parametros.html#aaabcc41fd3e21f9e9a842af584957259',1,'Microambiente_Parametros::nombre()'],['../classMicroambiente.html#ae197a05abd08423b0d461bc6af2d8307',1,'Microambiente::nombre()'],['../classFase.html#a8876007dc70491003f0448171c94bf9d',1,'Fase::nombre()'],['../classCiclo__Modelo.html#ac82437ecd3a01c3908953542d4d249f7',1,'Ciclo_Modelo::nombre()'],['../classCelula__Parametros.html#aac13a9807998c23fa2d2fab45092cec6',1,'Celula_Parametros::nombre()'],['../classCelula.html#a538641a28816ef1c8b8b62b560e35dcc',1,'Celula::nombre()']]],
+  ['norm_5fsquared_358',['norm_squared',['../Vector_8h.html#ad57b32b9f33ccd1721142de95589ac6e',1,'norm_squared(const Vector &amp;v):&#160;Vector.cpp'],['../Vector_8h.html#ae8885ef12d3fefe9bd88702c4ec9de94',1,'norm_squared(const std::vector&lt; double &gt; &amp;v):&#160;Vector.cpp'],['../Vector_8cpp.html#ad57b32b9f33ccd1721142de95589ac6e',1,'norm_squared(const Vector &amp;v):&#160;Vector.cpp'],['../Vector_8cpp.html#ae8885ef12d3fefe9bd88702c4ec9de94',1,'norm_squared(const std::vector&lt; double &gt; &amp;v):&#160;Vector.cpp']]],
+  ['norma_359',['norma',['../Vector_8cpp.html#a3f21031d4e9174bfc698dcff0f6aff69',1,'norma(const std::vector&lt; double &gt; &amp;v):&#160;Vector.cpp'],['../Vector_8cpp.html#ae0ea02058c13c53fa1787baf89ba4318',1,'norma(const Vector &amp;v):&#160;Vector.cpp'],['../Vector_8h.html#a3f21031d4e9174bfc698dcff0f6aff69',1,'norma(const std::vector&lt; double &gt; &amp;v):&#160;Vector.cpp'],['../Vector_8h.html#ae0ea02058c13c53fa1787baf89ba4318',1,'norma(const Vector &amp;v):&#160;Vector.cpp']]],
+  ['normaliza_360',['normaliza',['../classVector.html#ae601c2500829729a8e6d82bd43891492',1,'Vector']]],
+  ['normalizame_361',['normalizame',['../classVector.html#aa6dd5c1d4a7e61fafdab076e600313e9',1,'Vector']]],
+  ['normalrandom_362',['NormalRandom',['../classRNG.html#aa474eb6062d009cf93b464b5e574d820',1,'RNG']]],
+  ['normalrandom_5fcm_363',['NormalRandom_CM',['../classRNG.html#a4ef28dcf90c29762fe3aca08a4c50e15',1,'RNG']]],
+  ['nuclear_364',['nuclear',['../classVolumen.html#abef70cccc5433a1bd4f30f733650a529',1,'Volumen']]],
+  ['nuclear_5ffluido_365',['nuclear_fluido',['../classVolumen.html#ac3f03e272ee7238946fdb09cd3367eed',1,'Volumen']]],
+  ['nuclear_5fsolido_366',['nuclear_solido',['../classVolumen.html#a45b1090f7cf3b672354eaea8d218c3d7',1,'Volumen']]],
+  ['nucleo_5ftasa_5fde_5fcambio_367',['nucleo_tasa_de_cambio',['../classVolumen.html#a458f27036e6e7bf6a0c075a1432e9e26',1,'Volumen::nucleo_tasa_de_cambio()'],['../classMuerte__parametros.html#a7148b7112d316d2cb7596a9cb2a2d5e0',1,'Muerte_parametros::nucleo_tasa_de_cambio()']]],
+  ['num_5fde_5fcelulas_368',['num_de_celulas',['../classContenedor__de__Celulas.html#a7bae0d165d8d061bf3a519a1755994b0',1,'Contenedor_de_Celulas']]],
+  ['num_5fde_5fdivisiones_5fen_5feste_5fpaso_369',['num_de_divisiones_en_este_paso',['../classContenedor__de__Celulas.html#a40c98f735cffa2ab8e241c2d67591233',1,'Contenedor_de_Celulas']]],
+  ['num_5fde_5fmuertes_5fen_5feste_5fpaso_370',['num_de_muertes_en_este_paso',['../classContenedor__de__Celulas.html#a6070376f76a96cc74e25f506153cec13',1,'Contenedor_de_Celulas']]],
+  ['numero_5fde_5fdensidades_371',['numero_de_densidades',['../classMicroambiente.html#a4c012fdcb47db4efed0d77ef80c393e9',1,'Microambiente']]],
+  ['numero_5fde_5fvoxeles_372',['numero_de_voxeles',['../classMicroambiente.html#af256697875e8e3d1fab2b27a3f47bfb3',1,'Microambiente']]],
+  ['numero_5fid_373',['numero_id',['../classParametros__globales.html#a2bd3cd5286c34aedc94452e4a83eb95e',1,'Parametros_globales']]]
+];

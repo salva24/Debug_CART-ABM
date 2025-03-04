@@ -1,0 +1,5 @@
+<map id="Geometria::actualizar" name="Geometria::actualizar">
+<area shape="rect" id="node1" title="Updates all geometric properties based on volume." alt="" coords="5,46,168,73"/>
+<area shape="rect" id="node2" href="$classGeometria.html#a1432d0a1c0dec427806cd9b1f41303c6" title="Updates the cell radius based on total volume." alt="" coords="216,5,379,47"/>
+<area shape="rect" id="node3" href="$classGeometria.html#a488cad392bb52af0cb6783de2d4a43a4" title="Updates the nuclear radius based on nuclear volume." alt="" coords="216,71,379,112"/>
+</map>

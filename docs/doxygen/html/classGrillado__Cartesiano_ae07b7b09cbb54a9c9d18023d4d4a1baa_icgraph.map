@@ -1,0 +1,4 @@
+<map id="Grillado_Cartesiano::crear_vecindario_moore" name="Grillado_Cartesiano::crear_vecindario_moore">
+<area shape="rect" id="node1" title="Creates Moore neighborhood connections between voxels." alt="" coords="204,5,391,47"/>
+<area shape="rect" id="node2" href="$classGrillado__Cartesiano.html#a144ddc143ca79b952197efda52ec3bed" title="Resizes the grid with specified domain and node counts." alt="" coords="5,5,156,47"/>
+</map>

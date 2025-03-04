@@ -1,0 +1,4 @@
+<map id="Celula::actualizar_parametros_de_celula_y_muerte_con_o2_y_oncoproteina" name="Celula::actualizar_parametros_de_celula_y_muerte_con_o2_y_oncoproteina">
+<area shape="rect" id="node1" title="Updates cell and death parameters based on oxygen and oncoprotein." alt="" coords="247,5,497,61"/>
+<area shape="rect" id="node2" href="$classCelula.html#a91bc02fb6125fcd4325a6428c88ae07a" title="Advances phenotypic functions considering oxygen and oncoprotein." alt="" coords="5,5,199,61"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="Celula::inicializar_celula" name="Celula::inicializar_celula">
+<area shape="rect" id="node1" title="Initializes a cell with default properties." alt="" coords="5,221,140,262"/>
+<area shape="rect" id="node2" href="$classCiclo.html#af0ae75981992b0270de0a8a1895f1384" title="Updates transition rate between specified phases." alt="" coords="207,57,366,98"/>
+<area shape="rect" id="node5" href="$classCelula.html#a8f54e9ec1ff954a57f4de9078b23ad60" title="Updates the microenvironment voxel containing the cell." alt="" coords="188,122,385,163"/>
+<area shape="rect" id="node9" href="$classMuerte.html#afa81cebde47dc25ca0da53e29ba9bc4b" title="Adds a new death cycle to the cell." alt="" coords="205,187,368,229"/>
+<area shape="rect" id="node10" href="$classMicroambiente.html#aaddc4391e17f20e6590d5857e1fa7cbf" title="Finds the index of a density by its name." alt="" coords="191,253,382,294"/>
+<area shape="rect" id="node11" href="$classRNG.html#a4ef28dcf90c29762fe3aca08a4c50e15" title="Generate a normally distributed random number with custom parameters." alt="" coords="192,319,381,345"/>
+<area shape="rect" id="node12" href="$classCiclo.html#a96a050f92187735d00fd0d492b51e12c" title="Synchronizes this cycle instance with a cycle model." alt="" coords="207,370,366,411"/>
+<area shape="rect" id="node3" href="$classCiclo.html#a9717433bc9e8bccdd7921350d790865e" title="Gets reference to the current phase object." alt="" coords="457,5,594,32"/>
+<area shape="rect" id="node4" href="$classCiclo__Modelo.html#a085b917f0bbd62cdee29cacb8ddb78f5" title="Gets the inverse map index for a phase transition." alt="" coords="433,57,617,98"/>
+<area shape="rect" id="node6" href="$classGrillado__General.html#a016424dcb7736fd4535fe432c9167a3d" title="Checks if a position is valid within the grid domain." alt="" coords="448,122,603,163"/>
+<area shape="rect" id="node7" href="$classMicroambiente.html#a9b192c81b785bd8fc3df04f1a1236368" title="Finds the voxel index closest to a given position." alt="" coords="433,187,617,229"/>
+<area shape="rect" id="node8" href="$classGrillado__Cartesiano.html#ae7ce32f1f3ae0d18b705a4b2a9ee746a" title="Finds the nearest voxel to a given position." alt="" coords="665,180,839,236"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Linfocito::adherir_celula" name="Linfocito::adherir_celula">
+<area shape="rect" id="node1" title="Adheres to a target cell." alt="" coords="608,5,740,47"/>
+<area shape="rect" id="node2" href="$classLinfocito.html#aec549763506a66af8d27ffd40054556e" title="Attempts to adhere to a target cell." alt="" coords="423,5,560,47"/>
+<area shape="rect" id="node3" href="$classLinfocito.html#a989dcb907969577d34910a57f2c10a25" title="Checks neighboring cells for potential adhesion." alt="" coords="192,5,375,47"/>
+<area shape="rect" id="node4" href="$classLinfocito.html#a5a05f8c3693a17eb69b2c51bc140e877" title="Advances lymphocyte&#45;specific behaviors." alt="" coords="5,5,144,47"/>
+</map>

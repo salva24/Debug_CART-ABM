@@ -1,0 +1,6 @@
+<map id="Microambiente::solver_decaimiento_de_la_difusion__coeficientes_constantes_LOD_3D" name="Microambiente::solver_decaimiento_de_la_difusion__coeficientes_constantes_LOD_3D">
+<area shape="rect" id="node1" title="Solver for diffusion&#45;decay using LOD (Locally One&#45;Dimensional) method." alt="" coords="5,27,256,83"/>
+<area shape="rect" id="node2" href="$classMicroambiente.html#a7b84a6b22453d59eb68ebabf5b6facf6" title="Applies Dirichlet conditions to the domain." alt="" coords="304,5,493,47"/>
+<area shape="rect" id="node4" href="$Vector_8cpp.html#a845438dcdc3f8dbcc6647c8e6115612b" title="Vector axpy operation (y = y + a*x)." alt="" coords="371,71,426,98"/>
+<area shape="rect" id="node3" href="$classMicroambiente.html#a873c46b40e4d1204d53ed47785a48c65" title=" " alt="" coords="541,5,711,47"/>
+</map>

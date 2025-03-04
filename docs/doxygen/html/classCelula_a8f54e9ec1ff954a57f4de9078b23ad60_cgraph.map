@@ -1,0 +1,6 @@
+<map id="Celula::actualizar_voxel_del_microambiente" name="Celula::actualizar_voxel_del_microambiente">
+<area shape="rect" id="node1" title="Updates the microenvironment voxel containing the cell." alt="" coords="5,39,203,80"/>
+<area shape="rect" id="node2" href="$classGrillado__General.html#a016424dcb7736fd4535fe432c9167a3d" title="Checks if a position is valid within the grid domain." alt="" coords="265,5,420,47"/>
+<area shape="rect" id="node3" href="$classMicroambiente.html#a9b192c81b785bd8fc3df04f1a1236368" title="Finds the voxel index closest to a given position." alt="" coords="251,71,435,112"/>
+<area shape="rect" id="node4" href="$classGrillado__Cartesiano.html#ae7ce32f1f3ae0d18b705a4b2a9ee746a" title="Finds the nearest voxel to a given position." alt="" coords="483,63,656,119"/>
+</map>

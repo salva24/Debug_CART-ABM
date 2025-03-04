@@ -1,0 +1,4 @@
+<map id="Muerte::chequear_muerte" name="Muerte::chequear_muerte">
+<area shape="rect" id="node1" title="Determines if the cell should enter a death process." alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node2" href="$classRNG.html#a6bdc54ea1f91d783919858e5d670c8f1" title="Generate a uniform random number between 0 and n_max." alt="" coords="244,5,409,32"/>
+</map>

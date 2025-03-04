@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['id_983',['id',['../classCelula.html#a0984a8b3deeed4979ed6f6141edc3c0c',1,'Celula']]],
+  ['imm_5fmean_984',['imm_mean',['../classParametros__globales.html#a47f4fc981eb061c24afef0ecad6f1602',1,'Parametros_globales']]],
+  ['imm_5fsd_985',['imm_sd',['../classParametros__globales.html#a6d74f8e7c0497a38f8575212651bd500',1,'Parametros_globales']]],
+  ['indice_986',['indice',['../classCelula.html#aa434195a11d0cfb10a46a4813bdfcbed',1,'Celula::indice()'],['../classFase.html#a0088790831d27e4134eff9f687725ead',1,'Fase::indice()'],['../classVoxel.html#a997f7e27faf9b4c014821b7167576e16',1,'Voxel::indice()']]],
+  ['indice_5fde_5fla_5ffase_5factual_987',['indice_de_la_fase_actual',['../classCiclo.html#af2dcce8f54d7667d1b1dc07ca1999787',1,'Ciclo']]],
+  ['indice_5fde_5fx_5fmax_988',['indice_de_x_max',['../Grillado_8cpp.html#a2f8e5711047855c3cceea0c1a4c95300',1,'Grillado.cpp']]],
+  ['indice_5fde_5fx_5fmin_989',['indice_de_x_min',['../Grillado_8cpp.html#ad7ecb022597f022ce9f36a61e466f5fd',1,'Grillado.cpp']]],
+  ['indice_5fde_5fy_5fmax_990',['indice_de_y_max',['../Grillado_8cpp.html#ad02846230770dc44ce18538ccd2fb017',1,'Grillado.cpp']]],
+  ['indice_5fde_5fy_5fmin_991',['indice_de_y_min',['../Grillado_8cpp.html#aa625b5580e7a381dcf4f9d4dc0fde779',1,'Grillado.cpp']]],
+  ['indice_5fde_5fz_5fmax_992',['indice_de_z_max',['../Grillado_8cpp.html#a47d02b4b6b824fe658e4eb3e05f10f6d',1,'Grillado.cpp']]],
+  ['indice_5fde_5fz_5fmin_993',['indice_de_z_min',['../Grillado_8cpp.html#aa7b6682fbaeb178fbc23da30a12b1ee7',1,'Grillado.cpp']]],
+  ['indice_5fdel_5fciclo_5fde_5fmuerte_5factual_994',['indice_del_ciclo_de_muerte_actual',['../classMuerte.html#a7534a1e27f2212134d32c6fb9fa21e5e',1,'Muerte']]],
+  ['indice_5ffase_5ffinal_995',['indice_fase_final',['../classFase__Link.html#a2a6fa28b8a5856cb3c56512eb92448bc',1,'Fase_Link']]],
+  ['indice_5ffase_5finicial_996',['indice_fase_inicial',['../classFase__Link.html#a2d486f6839ed650b475b17c90566dcf6',1,'Fase_Link']]],
+  ['indices_5fde_5fvoxeles_5fconectados_997',['indices_de_voxeles_conectados',['../classGrillado__General.html#a284a299e3512250f262ae5eb47e5b8a7',1,'Grillado_General']]],
+  ['indices_5fde_5fvoxeles_5fconectados_5ftipo_5fmoore_998',['indices_de_voxeles_conectados_tipo_moore',['../classGrillado__Cartesiano.html#a32bb9ea655c890d3db3d7fa07b38769d',1,'Grillado_Cartesiano']]],
+  ['interactuar_5fcon_5fmb_999',['interactuar_con_mb',['../classParametros__globales.html#a78b13142bb7b8bb5c3d961ad5afb2312',1,'Parametros_globales']]]
+];

@@ -1,0 +1,11 @@
+<map id="norm_squared" name="norm_squared">
+<area shape="rect" id="node1" title="Squared norm of a std::vector&lt;double&gt;." alt="" coords="819,111,933,138"/>
+<area shape="rect" id="node2" href="$classTejido.html#ac44e32dcfb0b820e4a2792262e3baad1" title="Calculates geometric properties of the tumor." alt="" coords="608,5,771,47"/>
+<area shape="rect" id="node4" href="$classTejido.html#a4689bd60483dd423987d778ad0502a46" title="Introduces lymphocytes around the tumor periphery." alt="" coords="624,71,755,112"/>
+<area shape="rect" id="node5" href="$classTejido.html#adeb5044a116b919f8e05ddc249f76256" title="Introduces lymphocytes randomly in the domain." alt="" coords="609,136,770,177"/>
+<area shape="rect" id="node6" href="$Vector_8cpp.html#ae0ea02058c13c53fa1787baf89ba4318" title="Norm (magnitude) of a Vector." alt="" coords="657,202,721,229"/>
+<area shape="rect" id="node3" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="464,78,519,105"/>
+<area shape="rect" id="node7" href="$classLinfocito.html#aec549763506a66af8d27ffd40054556e" title="Attempts to adhere to a target cell." alt="" coords="423,195,560,236"/>
+<area shape="rect" id="node8" href="$classLinfocito.html#a989dcb907969577d34910a57f2c10a25" title="Checks neighboring cells for potential adhesion." alt="" coords="192,195,375,236"/>
+<area shape="rect" id="node9" href="$classLinfocito.html#a5a05f8c3693a17eb69b2c51bc140e877" title="Advances lymphocyte&#45;specific behaviors." alt="" coords="5,195,144,236"/>
+</map>

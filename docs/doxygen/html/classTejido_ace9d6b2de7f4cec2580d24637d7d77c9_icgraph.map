@@ -1,0 +1,5 @@
+<map id="Tejido::crear_esfera_de_celulas" name="Tejido::crear_esfera_de_celulas">
+<area shape="rect" id="node1" title="Creates a spherical arrangement of cells." alt="" coords="287,5,436,47"/>
+<area shape="rect" id="node2" href="$classTejido.html#a8d94c109b9af0f05998d46397fa328fd" title="Initializes the tissue structure with cells and microenvironment." alt="" coords="108,5,239,47"/>
+<area shape="rect" id="node3" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,13,60,39"/>
+</map>

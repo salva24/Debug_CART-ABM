@@ -1,0 +1,5 @@
+<map id="crear_ciclo_necrosis" name="crear_ciclo_necrosis">
+<area shape="rect" id="node1" title="Creates and initializes the necrosis death cycle model." alt="" coords="325,13,479,39"/>
+<area shape="rect" id="node2" href="$Ciclos__estandares_8cpp.html#ae51aab55c24547fb07b86fbc1af24ad4" title="Creates and initializes all standard death cycles." alt="" coords="108,5,277,47"/>
+<area shape="rect" id="node3" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,13,60,39"/>
+</map>

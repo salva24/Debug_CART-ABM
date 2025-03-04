@@ -1,0 +1,17 @@
+<map id="Muerte.h" name="Muerte.h">
+<area shape="rect" id="node1" title="Cell death modeling system for the cancer simulation." alt="" coords="280,5,360,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="26,155,89,181"/>
+<area shape="rect" id="node3" href="$Ciclo__Modelo_8h.html" title="Cell Cycle Model abstract class for cancer simulation." alt="" coords="348,80,469,107"/>
+<area shape="rect" id="node12" href="$Muerte__Parametros_8h.html" title="Cell death parameters for cancer simulation." alt="" coords="182,229,344,256"/>
+<area shape="rect" id="node14" href="$Random_8h.html" title="Defines the RNG class for stochastic processes in cancer simulations." alt="" coords="647,155,735,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="479,304,538,331"/>
+<area shape="rect" id="node5" title=" " alt="" coords="596,229,676,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="234,155,358,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="383,155,434,181"/>
+<area shape="rect" id="node8" href="$Fase_8h.html" title="Cell phase definitions for cancer cell cycle modeling." alt="" coords="458,155,521,181"/>
+<area shape="rect" id="node13" href="$Fase__Link_8h.html" title="Phase transition definitions for cancer cell cycle modeling." alt="" coords="113,155,210,181"/>
+<area shape="rect" id="node9" href="$Geometria_8h.html" title="Header file defining the cell geometry class for cancer simulations." alt="" coords="368,229,470,256"/>
+<area shape="rect" id="node10" href="$Volumen_8h.html" title="Cell volume class that models volumetric properties of cancer cells." alt="" coords="232,304,323,331"/>
+<area shape="rect" id="node11" title=" " alt="" coords="244,379,312,405"/>
+<area shape="rect" id="node15" title=" " alt="" coords="700,229,772,256"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Grillado_Cartesiano::redimensionar" name="Grillado_Cartesiano::redimensionar">
+<area shape="rect" id="node1" title="Resizes the grid with specified number of nodes." alt="" coords="800,44,951,85"/>
+<area shape="rect" id="node2" href="$classContenedor__de__Celulas.html#a3da1a358deeb366510f0132f77f78f73" title="Initializes the spatial domain of the cell container." alt="" coords="295,5,469,47"/>
+<area shape="rect" id="node5" href="$classMicroambiente.html#a1e31f0634ddd877043a8ba49d81374d5" title="Default constructor." alt="" coords="525,51,752,78"/>
+<area shape="rect" id="node6" href="$classMicroambiente.html#a23bc0ca66401f1f388123173cc9c6f3d" title="Resizes the spatial domain of the microenvironment." alt="" coords="527,103,750,144"/>
+<area shape="rect" id="node3" href="$classTejido.html#a8d94c109b9af0f05998d46397fa328fd" title="Initializes the tissue structure with cells and microenvironment." alt="" coords="108,49,239,91"/>
+<area shape="rect" id="node4" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,57,60,83"/>
+<area shape="rect" id="node7" href="$classMicroambiente.html#a4cc7a07f586279fd1edd6b4334b2bf15" title="Initializes the microenvironment with default settings." alt="" coords="287,81,477,123"/>
+</map>

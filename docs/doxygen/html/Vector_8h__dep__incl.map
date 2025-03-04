@@ -1,0 +1,19 @@
+<map id="Vector.h" name="Vector.h">
+<area shape="rect" id="node1" title="Vector mathematics definitions for 3D spatial calculations in cancer simulation." alt="" coords="161,5,236,32"/>
+<area shape="rect" id="node2" href="$Celula_8h.html" title=" " alt="" coords="135,304,209,331"/>
+<area shape="rect" id="node9" href="$Motilidad_8h.html" title="Cell motility model for cancer cell migration and invasion." alt="" coords="98,80,193,107"/>
+<area shape="rect" id="node11" href="$Vector_8cpp.html" title="Archivo de implementación de la clase Vector." alt="" coords="311,80,401,107"/>
+<area shape="rect" id="node12" href="$Voxel_8h.html" title="Defines the Voxel class, which represents discrete spatial elements in the microenvironment." alt="" coords="217,80,287,107"/>
+<area shape="rect" id="node3" href="$Celula_8cpp.html" title="Implementation of the Cell (Celula) class and Lymphocyte (Linfocito) class for cancer simulation." alt="" coords="56,379,147,405"/>
+<area shape="rect" id="node4" href="$Contenedor__de__Celulas_8h.html" title=" " alt="" coords="171,379,357,405"/>
+<area shape="rect" id="node5" href="$Contenedor__de__celulas_8cpp.html" title=" " alt="" coords="164,453,364,480"/>
+<area shape="rect" id="node6" href="$Tejido_8h.html" title=" " alt="" coords="419,453,491,480"/>
+<area shape="rect" id="node7" href="$Main_8cpp.html" title=" " alt="" coords="361,528,442,555"/>
+<area shape="rect" id="node8" href="$Tejido_8cpp.html" title="Implementation of the Tejido (Tissue) class for cancer simulation." alt="" coords="466,528,553,555"/>
+<area shape="rect" id="node10" href="$Motilidad_8cpp.html" title="Implementation of cancer cell motility model." alt="" coords="23,155,134,181"/>
+<area shape="rect" id="node13" href="$Grillado_8h.html" title=" " alt="" coords="319,155,404,181"/>
+<area shape="rect" id="node17" href="$Voxel_8cpp.html" title="Implementation of the Voxel class for spatial discretization in cancer modeling." alt="" coords="210,155,294,181"/>
+<area shape="rect" id="node14" href="$Grillado_8cpp.html" title=" " alt="" coords="449,229,549,256"/>
+<area shape="rect" id="node15" href="$Microambiente_8h.html" title=" " alt="" coords="293,229,425,256"/>
+<area shape="rect" id="node16" href="$Microambiente_8cpp.html" title=" " alt="" coords="285,304,432,331"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="Ciclo_Modelo::tasa_de_transicion" name="Ciclo_Modelo::tasa_de_transicion">
+<area shape="rect" id="node1" title="Gets reference to the transition rate between phases." alt="" coords="584,219,729,260"/>
+<area shape="rect" id="node2" href="$classCelula.html#a63946b902512956016a7fc95571345ce" title="Updates cell and death parameters based on oxygen concentration." alt="" coords="363,45,536,101"/>
+<area shape="rect" id="node5" href="$Ciclos__estandares_8cpp.html#a5e1941e7fc9a9c416a3532fccb5f3c3c" title="Creates and initializes the apoptosis death cycle model." alt="" coords="368,125,531,151"/>
+<area shape="rect" id="node8" href="$Ciclos__estandares_8cpp.html#a2e592bd27f6a2cf9cbe16e7925efdeff" title="Creates and initializes the Ki67&#45;based cell cycle model." alt="" coords="386,226,513,253"/>
+<area shape="rect" id="node10" href="$Ciclos__estandares_8cpp.html#a342e6ce4db7e333b356c2cdb24a107b7" title="Creates and initializes the necrosis death cycle model." alt="" coords="373,175,526,202"/>
+<area shape="rect" id="node11" href="$Ciclos__estandares_8cpp.html#a1f3f908df65c1ea43facf57df8327b8d" title="Creates and initializes the basic life cycle model." alt="" coords="386,277,513,303"/>
+<area shape="rect" id="node12" href="$classCelula.html#a130da453acaea187e2b0495cef78b6aa" title="Initializes a cell with healthy properties." alt="" coords="382,328,517,369"/>
+<area shape="rect" id="node13" href="$classCiclo__Modelo.html#a99823c87568628ffd77baa8cf4f0c7af" title="Displays the cell cycle model structure." alt="" coords="365,393,533,435"/>
+<area shape="rect" id="node3" href="$classCelula.html#a15102ed3890bde998a41934f500faaa8" title="Advances the cell&#39;s phenotypic functions over time." alt="" coords="115,5,308,47"/>
+<area shape="rect" id="node4" href="$classCelula.html#a660dd8fa34ce510b1b93fcb10113903c" title="Advances the cell&#39;s phenotypic functions considering oxygen." alt="" coords="115,71,308,112"/>
+<area shape="rect" id="node6" href="$Ciclos__estandares_8cpp.html#ae51aab55c24547fb07b86fbc1af24ad4" title="Creates and initializes all standard death cycles." alt="" coords="127,161,296,203"/>
+<area shape="rect" id="node7" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,202,60,229"/>
+<area shape="rect" id="node9" href="$Ciclos__estandares_8cpp.html#a8e0bf0a231f4e723dfe4749a88d7f9c9" title="Creates and initializes all standard cell cycles." alt="" coords="140,227,283,268"/>
+<area shape="rect" id="node14" href="$classCelula.html#a2d879f88eb1bc7cd87eac3f10e4b6b8c" title="Outputs detailed cell information." alt="" coords="108,393,315,435"/>
+</map>

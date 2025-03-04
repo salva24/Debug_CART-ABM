@@ -1,0 +1,43 @@
+# \file Makefile
+# \brief Makefile for Cancer Cell Agent Simulation
+# \author Luciana Luque <lu.m.luque@gmail.com>
+# \version 1.1
+# \date 2020.06.09 (Updated: Current Date)
+#
+# This Makefile builds the Cancer Cell Agent Simulation from source.
+# All build artifacts are placed in the build/ directory to keep the source tree clean.
+
+# Compiler and flags
+CXX = g++
+CXXFLAGS = -O3
+LDFLAGS = -O3 -Wall -std=c++11
+
+# Build directory for all output files
+BUILD_DIR = build
+
+# Object files in build directory
+OBJS = $(addprefix $(BUILD_DIR)/,Celula.o Ciclo.o Ciclo_Modelo.o Ciclos_estandares.o Contenedor_de_celulas.o Fase.o Fase_Link.o Fenotipo.o Geometria.o Grillado.o Main.o Mecanica.o Microambiente_Parametros.o Microambiente.o Motilidad.o Muerte_Parametros.o Muerte.o Parametros.o Parametros_globales.o Random.o Secrecion.o Tejido.o Vector.o Volumen.o Voxel.o)
+
+# Create build directory if it doesn't exist
+# This ensures the directory exists before compilation starts
+$(shell mkdir -p $(BUILD_DIR))
+
+# Main target - the executable is placed in the build directory
+ciclo: $(OBJS)
+	$(CXX) -o $(BUILD_DIR)/$@ $^ $(LDFLAGS)
+	@echo "Build complete. Executable is at $(BUILD_DIR)/ciclo"
+
+# Generic rule for object files
+# Compiles each .cpp file into a corresponding .o file in the build directory
+$(BUILD_DIR)/%.o: %.cpp
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -c $< -o $@
+
+# Clean target removes the entire build directory
+clean:
+	rm -rf $(BUILD_DIR)
+	@echo "Build directory removed."
+
+# Phony targets - these are not actual files
+.PHONY: clean
+
+

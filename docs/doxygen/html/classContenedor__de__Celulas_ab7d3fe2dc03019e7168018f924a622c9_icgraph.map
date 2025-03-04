@@ -1,0 +1,6 @@
+<map id="Contenedor_de_Celulas::sacar_celula_de_voxel" name="Contenedor_de_Celulas::sacar_celula_de_voxel">
+<area shape="rect" id="node1" title="Removes a cell from a voxel." alt="" coords="331,53,507,94"/>
+<area shape="rect" id="node2" href="$classContenedor__de__Celulas.html#ad59151ce04d6be97557704ca374c0220" title="Updates all cells for a simulation step." alt="" coords="108,5,283,61"/>
+<area shape="rect" id="node4" href="$classContenedor__de__Celulas.html#a88c190501657e5d4e303b558f2d797d2" title="Updates voxel assignments for all cells." alt="" coords="108,85,283,141"/>
+<area shape="rect" id="node3" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,60,60,87"/>
+</map>

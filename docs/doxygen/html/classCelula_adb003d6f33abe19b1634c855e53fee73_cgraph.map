@@ -1,0 +1,8 @@
+<map id="Celula::simular_secrecion_y_consumo" name="Celula::simular_secrecion_y_consumo">
+<area shape="rect" id="node1" title="Simulates secretion and consumption of microenvironment substrates." alt="" coords="5,23,195,65"/>
+<area shape="rect" id="node2" href="$classCelula.html#ac2e977f860427c05dddcda6c82d2118b" title="Sets constants for internal consumption." alt="" coords="243,23,412,65"/>
+<area shape="rect" id="node3" href="$Vector_8cpp.html#a845438dcdc3f8dbcc6647c8e6115612b" title="Vector axpy operation (y = y + a*x)." alt="" coords="522,5,577,32"/>
+<area shape="rect" id="node4" href="$classMicroambiente.html#a325e49a7ed1782eb806750087c84062b" title="Gets a voxel by its linear index." alt="" coords="460,56,639,83"/>
+<area shape="rect" id="node5" href="$classMicroambiente.html#ad1994e8a49eca174b392c874b5f2c00b" title="Converts 3D Cartesian indices to a voxel index." alt="" coords="687,49,853,90"/>
+<area shape="rect" id="node6" href="$classGrillado__Cartesiano.html#ae10f6dd8d647ef1c05c7c60bb22b6dd8" title="Calculates the linear index from 3D Cartesian indices." alt="" coords="901,49,1052,90"/>
+</map>

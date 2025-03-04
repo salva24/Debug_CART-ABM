@@ -1,0 +1,6 @@
+<map id="Ciclo::avanzar_en_el_ciclo" name="Ciclo::avanzar_en_el_ciclo">
+<area shape="rect" id="node1" title="Advances the cell through its cycle for a time step." alt="" coords="247,71,403,112"/>
+<area shape="rect" id="node2" href="$classCelula.html#a15102ed3890bde998a41934f500faaa8" title="Advances the cell&#39;s phenotypic functions over time." alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node3" href="$classCelula.html#a660dd8fa34ce510b1b93fcb10113903c" title="Advances the cell&#39;s phenotypic functions considering oxygen." alt="" coords="5,71,199,112"/>
+<area shape="rect" id="node4" href="$classCelula.html#a91bc02fb6125fcd4325a6428c88ae07a" title="Advances phenotypic functions considering oxygen and oncoprotein." alt="" coords="5,137,199,193"/>
+</map>

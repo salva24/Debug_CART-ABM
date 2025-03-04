@@ -1,0 +1,4 @@
+<map id="Celula" name="Celula">
+<area shape="rect" id="node1" title="Base class for cell agents in the simulation." alt="" coords="5,5,260,684"/>
+<area shape="rect" id="node2" href="$classLinfocito.html" title="Specialized cell class representing a lymphocyte (immune cell)" alt="" coords="23,732,243,1176"/>
+</map>

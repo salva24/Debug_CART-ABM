@@ -1,0 +1,5 @@
+<map id="Microambiente::inicializar_microambiente" name="Microambiente::inicializar_microambiente">
+<area shape="rect" id="node1" title="Initializes the microenvironment with default settings." alt="" coords="287,5,477,47"/>
+<area shape="rect" id="node2" href="$classTejido.html#a8d94c109b9af0f05998d46397fa328fd" title="Initializes the tissue structure with cells and microenvironment." alt="" coords="108,5,239,47"/>
+<area shape="rect" id="node3" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,13,60,39"/>
+</map>

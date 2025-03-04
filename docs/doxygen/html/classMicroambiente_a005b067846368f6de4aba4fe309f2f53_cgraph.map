@@ -1,0 +1,5 @@
+<map id="Microambiente::centro_del_voxel" name="Microambiente::centro_del_voxel">
+<area shape="rect" id="node1" title="Gets the center position of a voxel." alt="" coords="5,5,175,47"/>
+<area shape="rect" id="node2" href="$classGrillado__Cartesiano.html#a502bfa11c256e1eeb53e542b8817d959" title="Gets the center coordinates of a voxel." alt="" coords="223,5,373,47"/>
+<area shape="rect" id="node3" href="$classGrillado__Cartesiano.html#ae10f6dd8d647ef1c05c7c60bb22b6dd8" title="Calculates the linear index from 3D Cartesian indices." alt="" coords="421,5,572,47"/>
+</map>

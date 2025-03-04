@@ -1,0 +1,5 @@
+<map id="Celula::actualizar_parametros_de_celula_y_muerte_con_o2" name="Celula::actualizar_parametros_de_celula_y_muerte_con_o2">
+<area shape="rect" id="node1" title="Updates cell and death parameters based on oxygen concentration." alt="" coords="247,31,420,87"/>
+<area shape="rect" id="node2" href="$classCelula.html#a15102ed3890bde998a41934f500faaa8" title="Advances the cell&#39;s phenotypic functions over time." alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node3" href="$classCelula.html#a660dd8fa34ce510b1b93fcb10113903c" title="Advances the cell&#39;s phenotypic functions considering oxygen." alt="" coords="5,71,199,112"/>
+</map>

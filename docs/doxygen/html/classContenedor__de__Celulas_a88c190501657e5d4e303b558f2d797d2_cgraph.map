@@ -1,0 +1,7 @@
+<map id="Contenedor_de_Celulas::actualizar_voxeles_de_celulas" name="Contenedor_de_Celulas::actualizar_voxeles_de_celulas">
+<area shape="rect" id="node1" title="Updates voxel assignments for all cells." alt="" coords="5,101,180,157"/>
+<area shape="rect" id="node2" href="$classContenedor__de__Celulas.html#a541e5c77b10b04cc49498b201830b14e" title="Adds a cell to a specific voxel." alt="" coords="228,5,411,47"/>
+<area shape="rect" id="node3" href="$classGrillado__General.html#a016424dcb7736fd4535fe432c9167a3d" title="Checks if a position is valid within the grid domain." alt="" coords="242,71,397,112"/>
+<area shape="rect" id="node4" href="$classGrillado__Cartesiano.html#ae7ce32f1f3ae0d18b705a4b2a9ee746a" title="Finds the nearest voxel to a given position." alt="" coords="233,137,406,193"/>
+<area shape="rect" id="node5" href="$classContenedor__de__Celulas.html#ab7d3fe2dc03019e7168018f924a622c9" title="Removes a cell from a voxel." alt="" coords="231,217,407,259"/>
+</map>

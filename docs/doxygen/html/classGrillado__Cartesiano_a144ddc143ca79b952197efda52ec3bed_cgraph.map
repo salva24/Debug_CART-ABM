@@ -1,0 +1,5 @@
+<map id="Grillado_Cartesiano::redimensionar" name="Grillado_Cartesiano::redimensionar">
+<area shape="rect" id="node1" title="Resizes the grid with specified domain and node counts." alt="" coords="5,39,156,80"/>
+<area shape="rect" id="node2" href="$classGrillado__General.html#a6204f05e1fdce2e95a3c63dcaf49d180" title="Connects two voxels in the grid." alt="" coords="204,5,399,47"/>
+<area shape="rect" id="node3" href="$classGrillado__Cartesiano.html#ae07b7b09cbb54a9c9d18023d4d4a1baa" title="Creates Moore neighborhood connections between voxels." alt="" coords="208,71,395,112"/>
+</map>

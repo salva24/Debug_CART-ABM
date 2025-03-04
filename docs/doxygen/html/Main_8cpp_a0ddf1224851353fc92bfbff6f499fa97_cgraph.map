@@ -1,0 +1,52 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,982,60,1009"/>
+<area shape="rect" id="node2" href="$classContenedor__de__Celulas.html#ad59151ce04d6be97557704ca374c0220" title="Updates all cells for a simulation step." alt="" coords="110,162,285,218"/>
+<area shape="rect" id="node9" href="$classContenedor__de__Celulas.html#a88c190501657e5d4e303b558f2d797d2" title="Updates voxel assignments for all cells." alt="" coords="373,149,547,205"/>
+<area shape="rect" id="node10" href="$classMicroambiente.html#a49eb0b3abef17d47034cb7ba018b3259" title="Calculates gradient vectors for all substrates at all voxels in the domain." alt="" coords="108,967,287,1023"/>
+<area shape="rect" id="node12" href="$Ciclos__estandares_8cpp.html#a8e0bf0a231f4e723dfe4749a88d7f9c9" title="Creates and initializes all standard cell cycles." alt="" coords="126,1048,269,1089"/>
+<area shape="rect" id="node21" href="$Ciclos__estandares_8cpp.html#ae51aab55c24547fb07b86fbc1af24ad4" title="Creates and initializes all standard death cycles." alt="" coords="113,1113,282,1155"/>
+<area shape="rect" id="node28" href="$Main_8cpp.html#a9e0bda3872cdb0c0e76e25966fb6baa0" title="Creates directory if it doesn&#39;t exist." alt="" coords="125,1179,269,1220"/>
+<area shape="rect" id="node29" href="$classTejido.html#ac44e32dcfb0b820e4a2792262e3baad1" title="Calculates geometric properties of the tumor." alt="" coords="116,901,279,943"/>
+<area shape="rect" id="node31" href="$classTejido.html#a8d94c109b9af0f05998d46397fa328fd" title="Initializes the tissue structure with cells and microenvironment." alt="" coords="132,633,263,675"/>
+<area shape="rect" id="node46" href="$classTejido.html#adeb5044a116b919f8e05ddc249f76256" title="Introduces lymphocytes randomly in the domain." alt="" coords="117,836,278,877"/>
+<area shape="rect" id="node48" href="$classParametros__globales.html#ab29fbae99e681d3315381eff5ec59436" title="Set parameters from configuration files." alt="" coords="118,1244,277,1285"/>
+<area shape="rect" id="node49" href="$classMicroambiente.html#a36e8a443722698e34ffe67516e459f13" title="Simulates diffusion and decay of substrates." alt="" coords="109,1309,286,1351"/>
+<area shape="rect" id="node3" href="$classContenedor__de__Celulas.html#aa3693e6d73759e311bcbe3ba429921fc" title="Calculates mechanical forces between two cells." alt="" coords="365,83,555,124"/>
+<area shape="rect" id="node4" href="$classContenedor__de__Celulas.html#a38d909c340600d4a1a3e524ef06175e3" title="Registers a cell in the container." alt="" coords="373,255,547,296"/>
+<area shape="rect" id="node8" href="$classContenedor__de__Celulas.html#ab7d3fe2dc03019e7168018f924a622c9" title="Removes a cell from a voxel." alt="" coords="647,5,823,47"/>
+<area shape="rect" id="node5" href="$classContenedor__de__Celulas.html#a541e5c77b10b04cc49498b201830b14e" title="Adds a cell to a specific voxel." alt="" coords="643,123,826,164"/>
+<area shape="rect" id="node6" href="$classGrillado__General.html#a016424dcb7736fd4535fe432c9167a3d" title="Checks if a position is valid within the grid domain." alt="" coords="884,261,1039,303"/>
+<area shape="rect" id="node7" href="$classGrillado__Cartesiano.html#ae7ce32f1f3ae0d18b705a4b2a9ee746a" title="Finds the nearest voxel to a given position." alt="" coords="648,189,821,245"/>
+<area shape="rect" id="node11" href="$classMicroambiente.html#a4c012fdcb47db4efed0d77ef80c393e9" title="Gets the number of tracked densities/substrates." alt="" coords="645,829,824,871"/>
+<area shape="rect" id="node13" href="$Ciclos__estandares_8cpp.html#a2e592bd27f6a2cf9cbe16e7925efdeff" title="Creates and initializes the Ki67&#45;based cell cycle model." alt="" coords="397,1037,523,1063"/>
+<area shape="rect" id="node19" href="$Ciclos__estandares_8cpp.html#a1f3f908df65c1ea43facf57df8327b8d" title="Creates and initializes the basic life cycle model." alt="" coords="397,1087,523,1114"/>
+<area shape="rect" id="node14" href="$classCiclo__Modelo.html#a1f2cbb483c62bbdb28b187e954e09fd9" title="Adds a new phase to the cell cycle model." alt="" coords="633,1143,836,1170"/>
+<area shape="rect" id="node15" href="$classCiclo__Modelo.html#aa3f238b992e07df86a228a952d248d39" title="Creates a link between two phases." alt="" coords="635,1194,834,1221"/>
+<area shape="rect" id="node16" href="$classCiclo__Modelo.html#a34d2b1e4ac87c001ecf07846369950ea" title="Gets the phase link between two phases." alt="" coords="647,1026,823,1053"/>
+<area shape="rect" id="node17" href="$Ciclos__estandares_8cpp.html#afcd662a61f8dff8e7e11a607c85deb59" title="Implementation of entry function for Ki67 positive phase." alt="" coords="656,895,813,936"/>
+<area shape="rect" id="node18" href="$classCiclo__Modelo.html#a0fa1362fecca974e43fc56fe8998c289" title="Gets reference to the transition rate between phases." alt="" coords="662,1077,807,1119"/>
+<area shape="rect" id="node20" href="$Ciclos__estandares_8cpp.html#ae32ba7940d1b77b355e5b47ace1a8211" title="Implementation of entry function for basic life cycle phase." alt="" coords="653,960,816,1001"/>
+<area shape="rect" id="node22" href="$Ciclos__estandares_8cpp.html#a5e1941e7fc9a9c416a3532fccb5f3c3c" title="Creates and initializes the apoptosis death cycle model." alt="" coords="379,1142,541,1169"/>
+<area shape="rect" id="node24" href="$Ciclos__estandares_8cpp.html#a342e6ce4db7e333b356c2cdb24a107b7" title="Creates and initializes the necrosis death cycle model." alt="" coords="383,1194,537,1221"/>
+<area shape="rect" id="node23" href="$Ciclos__estandares_8cpp.html#adabada6621a0f192874cffb651886042" title="Implementation of entry function for apoptosis phase." alt="" coords="656,1245,813,1287"/>
+<area shape="rect" id="node25" href="$Ciclos__estandares_8cpp.html#a1b335a3b7831c4c31d3a6152bac63b51" title="Implementation of entry function for lysis phase." alt="" coords="649,1311,820,1352"/>
+<area shape="rect" id="node26" href="$Ciclos__estandares_8cpp.html#aa6830ac62e76d8399480e5c67d071a49" title="Determines if a necrotic cell should transition to the lysed phase." alt="" coords="637,1376,832,1417"/>
+<area shape="rect" id="node27" href="$Ciclos__estandares_8cpp.html#a6bb6cf2f5a115324b08df57054efac23" title="Implementation of entry function for necrosis phase." alt="" coords="637,1441,832,1483"/>
+<area shape="rect" id="node30" href="$Vector_8cpp.html#ae8885ef12d3fefe9bd88702c4ec9de94" title="Squared norm of a std::vector&lt;double&gt;." alt="" coords="403,931,517,958"/>
+<area shape="rect" id="node32" href="$Celula_8cpp.html#a8af318ae8be33a5e66283bc69013d62e" title="Creates a new cell and registers it in the simulation." alt="" coords="409,582,511,609"/>
+<area shape="rect" id="node33" href="$classTejido.html#ace9d6b2de7f4cec2580d24637d7d77c9" title="Creates a spherical arrangement of cells." alt="" coords="385,633,535,675"/>
+<area shape="rect" id="node34" href="$classContenedor__de__Celulas.html#a3da1a358deeb366510f0132f77f78f73" title="Initializes the spatial domain of the cell container." alt="" coords="373,699,547,740"/>
+<area shape="rect" id="node36" href="$classCelula.html#aa416f150ebc5c9bb5144dfefbd6bfb24" title="Initializes a cell with default properties." alt="" coords="393,465,527,507"/>
+<area shape="rect" id="node41" href="$classRNG.html#a4ef28dcf90c29762fe3aca08a4c50e15" title="Generate a normally distributed random number with custom parameters." alt="" coords="640,647,829,674"/>
+<area shape="rect" id="node43" href="$classMicroambiente.html#a4cc7a07f586279fd1edd6b4334b2bf15" title="Initializes the microenvironment with default settings." alt="" coords="365,764,555,805"/>
+<area shape="rect" id="node45" href="$classCelula.html#a048f5404c15cd7ec12ce06b8153beb7c" title="Sets the cell&#39;s position using coordinates." alt="" coords="384,830,536,857"/>
+<area shape="rect" id="node35" href="$classGrillado__Cartesiano.html#ab902709a9c871e94c320daa2d26bba1a" title="Resizes the grid with specified number of nodes." alt="" coords="659,699,810,740"/>
+<area shape="rect" id="node37" href="$classCiclo.html#af0ae75981992b0270de0a8a1895f1384" title="Updates transition rate between specified phases." alt="" coords="655,320,814,361"/>
+<area shape="rect" id="node38" href="$classCelula.html#a8f54e9ec1ff954a57f4de9078b23ad60" title="Updates the microenvironment voxel containing the cell." alt="" coords="636,581,833,623"/>
+<area shape="rect" id="node39" href="$classMuerte.html#afa81cebde47dc25ca0da53e29ba9bc4b" title="Adds a new death cycle to the cell." alt="" coords="653,385,816,427"/>
+<area shape="rect" id="node40" href="$classMicroambiente.html#aaddc4391e17f20e6590d5857e1fa7cbf" title="Finds the index of a density by its name." alt="" coords="639,451,830,492"/>
+<area shape="rect" id="node42" href="$classCiclo.html#a96a050f92187735d00fd0d492b51e12c" title="Synchronizes this cycle instance with a cycle model." alt="" coords="655,516,814,557"/>
+<area shape="rect" id="node44" href="$classMicroambiente.html#a5b58f8287e2e37f8380b004d63399297" title="Adds a new density/substrate with default properties." alt="" coords="645,764,824,805"/>
+<area shape="rect" id="node47" href="$classRNG.html#a6bdc54ea1f91d783919858e5d670c8f1" title="Generate a uniform random number between 0 and n_max." alt="" coords="377,881,543,907"/>
+<area shape="rect" id="node50" href="$classMicroambiente.html#aee7840197152d4432a2e992b715ec519" title="Solver for diffusion&#45;decay using LOD (Locally One&#45;Dimensional) method." alt="" coords="335,1302,585,1358"/>
+</map>

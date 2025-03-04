@@ -1,0 +1,5 @@
+<map id="Microambiente::actualizar_nodo_de_dirichlet" name="Microambiente::actualizar_nodo_de_dirichlet">
+<area shape="rect" id="node1" title="Updates a Dirichlet node with new values." alt="" coords="5,5,197,47"/>
+<area shape="rect" id="node2" href="$classMicroambiente.html#ad1994e8a49eca174b392c874b5f2c00b" title="Converts 3D Cartesian indices to a voxel index." alt="" coords="245,5,412,47"/>
+<area shape="rect" id="node3" href="$classGrillado__Cartesiano.html#ae10f6dd8d647ef1c05c7c60bb22b6dd8" title="Calculates the linear index from 3D Cartesian indices." alt="" coords="460,5,611,47"/>
+</map>

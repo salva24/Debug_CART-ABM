@@ -1,0 +1,5 @@
+<map id="Grillado_General::conectar_voxeles" name="Grillado_General::conectar_voxeles">
+<area shape="rect" id="node1" title="Connects two voxels in the grid." alt="" coords="212,39,407,80"/>
+<area shape="rect" id="node2" href="$classGrillado__Cartesiano.html#a35b09f7d0b3fdc52edaf713b6a866582" title="Constructor with grid dimensions." alt="" coords="5,5,164,47"/>
+<area shape="rect" id="node3" href="$classGrillado__Cartesiano.html#a144ddc143ca79b952197efda52ec3bed" title="Resizes the grid with specified domain and node counts." alt="" coords="9,71,160,112"/>
+</map>

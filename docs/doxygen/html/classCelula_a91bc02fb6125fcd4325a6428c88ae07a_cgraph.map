@@ -1,0 +1,29 @@
+<map id="Celula::avanzar_funciones_del_fenotipo_con_O2_y_oncoproteina" name="Celula::avanzar_funciones_del_fenotipo_con_O2_y_oncoproteina">
+<area shape="rect" id="node1" title="Advances phenotypic functions considering oxygen and oncoprotein." alt="" coords="5,505,199,561"/>
+<area shape="rect" id="node2" href="$classCelula.html#ac4db968a0db8295de48388c20d1aaa31" title="Updates cell and death parameters based on oxygen and oncoprotein." alt="" coords="247,228,497,284"/>
+<area shape="rect" id="node4" href="$classCiclo.html#a9717433bc9e8bccdd7921350d790865e" title="Gets reference to the current phase object." alt="" coords="850,22,987,49"/>
+<area shape="rect" id="node6" href="$classMicroambiente.html#aaddc4391e17f20e6590d5857e1fa7cbf" title="Finds the index of a density by its name." alt="" coords="558,40,749,82"/>
+<area shape="rect" id="node9" href="$classCelula.html#a41cf0ecb123bd56ca7f665ce02649b5e" title="Gets the closest density vector from the microenvironment." alt="" coords="545,302,761,343"/>
+<area shape="rect" id="node12" href="$classCiclo.html#af941adf174c7a8db27b1ec65c399e38a" title="Checks if volume should be updated in current phase." alt="" coords="277,366,467,393"/>
+<area shape="rect" id="node14" href="$classCelula.html#ae4061c85d5bbc9cc47aa9b62425054c6" title="Updates the cell volume based on growth/shrinkage rates." alt="" coords="305,418,439,459"/>
+<area shape="rect" id="node18" href="$classCiclo.html#a87e1bfa788c36035aa2652ea84054643" title="Advances the cell through its cycle for a time step." alt="" coords="294,483,450,524"/>
+<area shape="rect" id="node21" href="$classMuerte.html#aa7be7c079d87960763baaf956dcb55b3" title="Determines if the cell should enter a death process." alt="" coords="558,550,749,577"/>
+<area shape="rect" id="node22" href="$classMuerte.html#a0f95d024373da0008481fb2c2ba5e693" title="Gets the currently active death cycle model." alt="" coords="295,600,449,626"/>
+<area shape="rect" id="node23" href="$classCelula.html#adc456f68f9dc6a7f537d8a7925ac2685" title="Sets whether the cell is mobile (overridden in derived classes)" alt="" coords="307,650,437,677"/>
+<area shape="rect" id="node24" href="$classSecrecion.html#a3ccd90cf999f6fc76039a82d09de0a0a" title="Scales all consumption rates by a factor." alt="" coords="263,702,481,743"/>
+<area shape="rect" id="node25" href="$classMuerte.html#aa6d9d814790aeb3bab1583119b278630" title="Gets the parameters for the current death cycle." alt="" coords="297,767,447,808"/>
+<area shape="rect" id="node26" href="$classSecrecion.html#ae54f425f2fd5afc88fc76b2c0af97a24" title="Sets all secretion rates to zero." alt="" coords="281,832,463,874"/>
+<area shape="rect" id="node27" href="$classCiclo.html#a96a050f92187735d00fd0d492b51e12c" title="Synchronizes this cycle instance with a cycle model." alt="" coords="293,898,451,939"/>
+<area shape="rect" id="node3" href="$classCiclo.html#af0ae75981992b0270de0a8a1895f1384" title="Updates transition rate between specified phases." alt="" coords="574,106,733,147"/>
+<area shape="rect" id="node7" href="$classCiclo__Modelo.html#a2873bfe8ef42820e688eb82065d273ca" title="Finds the index of a phase by its code." alt="" coords="564,171,743,212"/>
+<area shape="rect" id="node8" href="$classMuerte.html#adad5e0efbb8cf0ac9c91611c1c49fd82" title="Finds death cycle index by code." alt="" coords="561,236,745,278"/>
+<area shape="rect" id="node5" href="$classCiclo__Modelo.html#a085b917f0bbd62cdee29cacb8ddb78f5" title="Gets the inverse map index for a phase transition." alt="" coords="827,106,1011,147"/>
+<area shape="rect" id="node10" href="$classMicroambiente.html#a263a323db95f242e5c6d9d0268f432a4" title="Returns the density vector of the voxel closest to the given position." alt="" coords="809,302,1028,343"/>
+<area shape="rect" id="node11" href="$classGrillado__Cartesiano.html#ae7ce32f1f3ae0d18b705a4b2a9ee746a" title="Finds the nearest voxel to a given position." alt="" coords="1076,294,1249,350"/>
+<area shape="rect" id="node13" href="$classCiclo__Modelo.html#a3e41b9ddc095afd1c643d7a6f57b8ca5" title="Checks if volume should be updated in the given phase." alt="" coords="549,367,758,408"/>
+<area shape="rect" id="node15" href="$classGeometria.html#a844f13dca25cb0285396db0b6154c23e" title="Updates all geometric properties based on volume." alt="" coords="572,433,735,460"/>
+<area shape="rect" id="node16" href="$classGeometria.html#a1432d0a1c0dec427806cd9b1f41303c6" title="Updates the cell radius based on total volume." alt="" coords="837,380,1000,422"/>
+<area shape="rect" id="node17" href="$classGeometria.html#a488cad392bb52af0cb6783de2d4a43a4" title="Updates the nuclear radius based on nuclear volume." alt="" coords="837,446,1000,487"/>
+<area shape="rect" id="node19" href="$classCiclo__Modelo.html#a5fc49e208d50e734a2cac2b70fbf2593" title="Advances the cell in its current cell cycle phase." alt="" coords="569,484,738,526"/>
+<area shape="rect" id="node20" href="$classRNG.html#a6bdc54ea1f91d783919858e5d670c8f1" title="Generate a uniform random number between 0 and n_max." alt="" coords="836,537,1001,564"/>
+</map>

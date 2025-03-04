@@ -1,0 +1,10 @@
+<map id="Ciclo_Modelo::fase_link" name="Ciclo_Modelo::fase_link">
+<area shape="rect" id="node1" title="Gets the phase link between two phases." alt="" coords="536,81,712,108"/>
+<area shape="rect" id="node2" href="$Ciclos__estandares_8cpp.html#a5e1941e7fc9a9c416a3532fccb5f3c3c" title="Creates and initializes the apoptosis death cycle model." alt="" coords="325,5,488,32"/>
+<area shape="rect" id="node5" href="$Ciclos__estandares_8cpp.html#a2e592bd27f6a2cf9cbe16e7925efdeff" title="Creates and initializes the Ki67&#45;based cell cycle model." alt="" coords="343,107,470,133"/>
+<area shape="rect" id="node7" href="$Ciclos__estandares_8cpp.html#a342e6ce4db7e333b356c2cdb24a107b7" title="Creates and initializes the necrosis death cycle model." alt="" coords="330,56,483,83"/>
+<area shape="rect" id="node8" href="$Ciclos__estandares_8cpp.html#a1f3f908df65c1ea43facf57df8327b8d" title="Creates and initializes the basic life cycle model." alt="" coords="343,157,470,184"/>
+<area shape="rect" id="node3" href="$Ciclos__estandares_8cpp.html#ae51aab55c24547fb07b86fbc1af24ad4" title="Creates and initializes all standard death cycles." alt="" coords="108,42,277,83"/>
+<area shape="rect" id="node4" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,83,60,109"/>
+<area shape="rect" id="node6" href="$Ciclos__estandares_8cpp.html#a8e0bf0a231f4e723dfe4749a88d7f9c9" title="Creates and initializes all standard cell cycles." alt="" coords="121,107,264,149"/>
+</map>

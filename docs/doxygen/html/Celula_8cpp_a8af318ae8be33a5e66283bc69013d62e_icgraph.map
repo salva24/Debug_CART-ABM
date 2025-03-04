@@ -1,0 +1,6 @@
+<map id="crear_celula" name="crear_celula">
+<area shape="rect" id="node1" title="Creates a new cell and registers it in the simulation." alt="" coords="287,35,388,61"/>
+<area shape="rect" id="node2" href="$classCelula.html#aac5caecc503dd2b8f773c20e8ed57c7e" title="Creates a daughter cell through division." alt="" coords="117,5,229,32"/>
+<area shape="rect" id="node3" href="$classTejido.html#a8d94c109b9af0f05998d46397fa328fd" title="Initializes the tissue structure with cells and microenvironment." alt="" coords="108,57,239,98"/>
+<area shape="rect" id="node4" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,64,60,91"/>
+</map>

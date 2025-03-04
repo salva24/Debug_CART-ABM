@@ -1,0 +1,4 @@
+<map id="Tejido::geometria_del_tumor" name="Tejido::geometria_del_tumor">
+<area shape="rect" id="node1" title="Calculates geometric properties of the tumor." alt="" coords="5,5,168,47"/>
+<area shape="rect" id="node2" href="$Vector_8cpp.html#ae8885ef12d3fefe9bd88702c4ec9de94" title="Squared norm of a std::vector&lt;double&gt;." alt="" coords="216,13,331,39"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="RNG::NormalRandom_CM" name="RNG::NormalRandom_CM">
+<area shape="rect" id="node1" title="Generate a normally distributed random number with custom parameters." alt="" coords="469,93,659,120"/>
+<area shape="rect" id="node2" href="$classCelula.html#aac5caecc503dd2b8f773c20e8ed57c7e" title="Creates a daughter cell through division." alt="" coords="298,5,410,32"/>
+<area shape="rect" id="node3" href="$classCelula.html#aa416f150ebc5c9bb5144dfefbd6bfb24" title="Initializes a cell with default properties." alt="" coords="287,57,421,98"/>
+<area shape="rect" id="node4" href="$classTejido.html#a8d94c109b9af0f05998d46397fa328fd" title="Initializes the tissue structure with cells and microenvironment." alt="" coords="108,86,239,127"/>
+<area shape="rect" id="node6" href="$classTejido.html#a4689bd60483dd423987d778ad0502a46" title="Introduces lymphocytes around the tumor periphery." alt="" coords="289,174,419,215"/>
+<area shape="rect" id="node5" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,93,60,120"/>
+</map>

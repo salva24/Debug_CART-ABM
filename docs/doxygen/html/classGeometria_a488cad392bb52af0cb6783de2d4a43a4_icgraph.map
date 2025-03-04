@@ -1,0 +1,9 @@
+<map id="Geometria::actualizar_radio_nuclear" name="Geometria::actualizar_radio_nuclear">
+<area shape="rect" id="node1" title="Updates the nuclear radius based on nuclear volume." alt="" coords="640,100,803,141"/>
+<area shape="rect" id="node2" href="$classGeometria.html#a844f13dca25cb0285396db0b6154c23e" title="Updates all geometric properties based on volume." alt="" coords="429,107,592,134"/>
+<area shape="rect" id="node3" href="$classCelula.html#ae4061c85d5bbc9cc47aa9b62425054c6" title="Updates the cell volume based on growth/shrinkage rates." alt="" coords="247,71,381,112"/>
+<area shape="rect" id="node7" href="$classCelula.html#aac5caecc503dd2b8f773c20e8ed57c7e" title="Creates a daughter cell through division." alt="" coords="258,137,370,163"/>
+<area shape="rect" id="node4" href="$classCelula.html#a15102ed3890bde998a41934f500faaa8" title="Advances the cell&#39;s phenotypic functions over time." alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node5" href="$classCelula.html#a660dd8fa34ce510b1b93fcb10113903c" title="Advances the cell&#39;s phenotypic functions considering oxygen." alt="" coords="5,71,199,112"/>
+<area shape="rect" id="node6" href="$classCelula.html#a91bc02fb6125fcd4325a6428c88ae07a" title="Advances phenotypic functions considering oxygen and oncoprotein." alt="" coords="5,137,199,193"/>
+</map>

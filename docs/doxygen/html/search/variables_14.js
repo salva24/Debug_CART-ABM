@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['v_1137',['v',['../Celula_8h.html#a05aad6679afe0191667d0de1a0f2a824',1,'v():&#160;Main.cpp'],['../Main_8cpp.html#a05aad6679afe0191667d0de1a0f2a824',1,'v():&#160;Main.cpp'],['../Microambiente_8h.html#a05aad6679afe0191667d0de1a0f2a824',1,'v():&#160;Main.cpp'],['../Motilidad_8h.html#a05aad6679afe0191667d0de1a0f2a824',1,'v():&#160;Main.cpp']]],
+  ['vector_5factivacion_5fdirichlet_1138',['vector_activacion_dirichlet',['../classMicroambiente__Parametros.html#a9b8942d43e957ae6d1c5077cd28ce54b',1,'Microambiente_Parametros::vector_activacion_dirichlet()'],['../classMicroambiente.html#a514b0685c144ab9b6f2b91511d5dfa3d',1,'Microambiente::vector_activacion_dirichlet()'],['../classParametros__globales.html#a642db137222d1be2f92f0440aa894ba8',1,'Parametros_globales::vector_activacion_dirichlet()']]],
+  ['vector_5fcondicion_5fde_5fdirichlet_1139',['vector_condicion_de_dirichlet',['../classParametros__globales.html#a52dfa796af0b8d4ebe60f4c9db240588',1,'Parametros_globales::vector_condicion_de_dirichlet()'],['../classMicroambiente__Parametros.html#a495a331d38e50c83ef724653db68024a',1,'Microambiente_Parametros::vector_condicion_de_dirichlet()']]],
+  ['vector_5fcondiciones_5finiciales_1140',['vector_condiciones_iniciales',['../classParametros__globales.html#af5f52aeb9b1599155ee8369a98b02188',1,'Parametros_globales::vector_condiciones_iniciales()'],['../classMicroambiente__Parametros.html#aa26d2158e68d49e83f9dde1478c4e957',1,'Microambiente_Parametros::vector_condiciones_iniciales()']]],
+  ['vector_5fde_5fmotilidad_1141',['vector_de_motilidad',['../classMotilidad.html#aa5f6b5024150a13c5d75b07c3bdef5fe',1,'Motilidad']]],
+  ['vector_5fgradiente_5fcalculado_1142',['vector_gradiente_calculado',['../classMicroambiente.html#a021af44b5f34db030f37d82e1991c363',1,'Microambiente']]],
+  ['vector_5fvalores_5fde_5fdirichlet_1143',['vector_valores_de_dirichlet',['../classMicroambiente.html#a2629888cec7744db990f79520f3e3601',1,'Microambiente']]],
+  ['vectores_5fgradiente_1144',['vectores_gradiente',['../classMicroambiente.html#a86fd32bc9457505801ea9d5fa298239a',1,'Microambiente']]],
+  ['velocidad_1145',['velocidad',['../classCelula.html#a84d8f12de6c4ed0d3a933587212af714',1,'Celula']]],
+  ['velocidad_5fanterior_1146',['velocidad_anterior',['../classCelula.html#af11ed44bc6593664fafb9590fa9fc984',1,'Celula']]],
+  ['velocidad_5fde_5fmigracion_1147',['velocidad_de_migracion',['../classMotilidad.html#a6b40b461cfb0b0d61e85df9164cc0530',1,'Motilidad']]],
+  ['vida_1148',['vida',['../Ciclos__estandares_8h.html#adff3eae9bd387a1cd1b937e3535ec756',1,'vida():&#160;Ciclos_estandares.h'],['../Celula_8h.html#adff3eae9bd387a1cd1b937e3535ec756',1,'vida():&#160;Celula.h'],['../Main_8cpp.html#adff3eae9bd387a1cd1b937e3535ec756',1,'vida():&#160;Main.cpp']]],
+  ['viva_1149',['viva',['../classConstantes.html#a61a5603ca29d45bdf1b8169975ccb633',1,'Constantes']]],
+  ['volumen_1150',['volumen',['../classVoxel.html#a08356acecfdc9bfe9bff69c73d5ee787',1,'Voxel::volumen()'],['../classFenotipo.html#ae8cf5b1083ff915b834ab04c8aca8e4b',1,'Fenotipo::volumen()']]],
+  ['volumen_5fde_5fruptura_1151',['volumen_de_ruptura',['../classVolumen.html#a6cd41767f0b7cbc38a13fee5aa102997',1,'Volumen']]],
+  ['volumen_5fde_5fruptura_5frelativo_1152',['volumen_de_ruptura_relativo',['../classVolumen.html#a886ee157cbe67fb899077c14655fc4fc',1,'Volumen::volumen_de_ruptura_relativo()'],['../classMuerte__parametros.html#a22662e441b624e60943860e200c6325e',1,'Muerte_parametros::volumen_de_ruptura_relativo()']]],
+  ['volumen_5fdel_5ftumor_1153',['volumen_del_tumor',['../classTejido.html#ae9c3f66849c0baba28def679c9860071',1,'Tejido']]],
+  ['volumen_5fdel_5ftumor2_1154',['volumen_del_tumor2',['../classTejido.html#a51c9346cf69023d95ebd4952976e4f5f',1,'Tejido']]],
+  ['voxel_1155',['voxel',['../classCelula.html#a2bdbd3d2d781fe7b343a90eb48beee69',1,'Celula']]],
+  ['voxel_5fdel_5fmicroambiente_1156',['voxel_del_microambiente',['../classCelula.html#a11928c45a2545b24bba7691fbec03047',1,'Celula']]],
+  ['voxeles_1157',['voxeles',['../classGrillado__General.html#a8e5ee4c89ed26011deb6b38d93804cdd',1,'Grillado_General']]],
+  ['voxeles_5fdel_5fvaso_5fsanguineo_1158',['voxeles_del_vaso_sanguineo',['../classMicroambiente.html#a9e7ca5aa1371501d318b924c83881398',1,'Microambiente']]]
+];

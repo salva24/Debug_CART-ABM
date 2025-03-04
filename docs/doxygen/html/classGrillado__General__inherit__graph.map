@@ -1,0 +1,4 @@
+<map id="Grillado_General" name="Grillado_General">
+<area shape="rect" id="node1" title="Base class for grid systems used in cancer microenvironment modeling." alt="" coords="13,5,202,229"/>
+<area shape="rect" id="node2" href="$classGrillado__Cartesiano.html" title="Implements a Cartesian grid for cancer microenvironment modeling." alt="" coords="5,277,209,721"/>
+</map>

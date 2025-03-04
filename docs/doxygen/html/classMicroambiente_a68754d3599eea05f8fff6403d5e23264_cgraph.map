@@ -1,0 +1,5 @@
+<map id="Microambiente::voxel_mas_cercano" name="Microambiente::voxel_mas_cercano">
+<area shape="rect" id="node1" title="Gets the voxel object closest to a given position." alt="" coords="5,13,168,54"/>
+<area shape="rect" id="node2" href="$classGrillado__Cartesiano.html#aac7b340353c83cc257be7a43bd58f02b" title="Gets a reference to the voxel nearest to a position." alt="" coords="216,13,375,54"/>
+<area shape="rect" id="node3" href="$classGrillado__Cartesiano.html#ae7ce32f1f3ae0d18b705a4b2a9ee746a" title="Finds the nearest voxel to a given position." alt="" coords="423,5,596,61"/>
+</map>

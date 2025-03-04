@@ -1,0 +1,4 @@
+<map id="Microambiente::indice_de_voxel" name="Microambiente::indice_de_voxel">
+<area shape="rect" id="node1" title="Converts 3D Cartesian indices to a voxel index." alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node2" href="$classGrillado__Cartesiano.html#ae10f6dd8d647ef1c05c7c60bb22b6dd8" title="Calculates the linear index from 3D Cartesian indices." alt="" coords="220,5,371,47"/>
+</map>

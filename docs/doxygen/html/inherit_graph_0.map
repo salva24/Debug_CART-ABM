@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classCelula.html" title="Base class for cell agents in the simulation." alt="" coords="5,5,68,32"/>
+<area shape="rect" id="node2" href="$classLinfocito.html" title="Specialized cell class representing a lymphocyte (immune cell)" alt="" coords="116,5,195,32"/>
+</map>

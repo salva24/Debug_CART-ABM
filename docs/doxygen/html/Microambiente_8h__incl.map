@@ -1,0 +1,23 @@
+<map id="Microambiente.h" name="Microambiente.h">
+<area shape="rect" id="node1" title=" " alt="" coords="144,5,276,32"/>
+<area shape="rect" id="node2" href="$Grillado_8h.html" title=" " alt="" coords="127,80,213,107"/>
+<area shape="rect" id="node10" href="$Parametros__globales_8h.html" title="Global configuration parameters for the cell&#45;based cancer simulation model." alt="" coords="207,155,378,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="7,379,87,405"/>
+<area shape="rect" id="node4" href="$Macros_8h.html" title="Utility macros for the cancer simulation system." alt="" coords="145,229,227,256"/>
+<area shape="rect" id="node8" href="$Voxel_8h.html" title="Defines the Voxel class, which represents discrete spatial elements in the microenvironment." alt="" coords="49,155,118,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="224,304,287,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="85,304,148,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="497,453,555,480"/>
+<area shape="rect" id="node9" href="$Vector_8h.html" title="Vector mathematics definitions for 3D spatial calculations in cancer simulation." alt="" coords="46,229,121,256"/>
+<area shape="rect" id="node11" href="$Ciclo__Modelo_8h.html" title="Cell Cycle Model abstract class for cancer simulation." alt="" coords="477,229,599,256"/>
+<area shape="rect" id="node12" title=" " alt="" coords="784,304,908,331"/>
+<area shape="rect" id="node13" title=" " alt="" coords="933,304,983,331"/>
+<area shape="rect" id="node14" href="$Fase_8h.html" title="Cell phase definitions for cancer cell cycle modeling." alt="" coords="576,304,639,331"/>
+<area shape="rect" id="node19" href="$Fase__Link_8h.html" title="Phase transition definitions for cancer cell cycle modeling." alt="" coords="663,304,760,331"/>
+<area shape="rect" id="node20" href="$Random_8h.html" title="Defines the RNG class for stochastic processes in cancer simulations." alt="" coords="413,304,501,331"/>
+<area shape="rect" id="node15" href="$Geometria_8h.html" title="Header file defining the cell geometry class for cancer simulations." alt="" coords="615,379,717,405"/>
+<area shape="rect" id="node18" href="$Muerte__Parametros_8h.html" title="Cell death parameters for cancer simulation." alt="" coords="741,379,903,405"/>
+<area shape="rect" id="node16" href="$Volumen_8h.html" title="Cell volume class that models volumetric properties of cancer cells." alt="" coords="758,453,849,480"/>
+<area shape="rect" id="node17" title=" " alt="" coords="769,528,837,555"/>
+<area shape="rect" id="node21" title=" " alt="" coords="417,379,489,405"/>
+</map>

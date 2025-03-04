@@ -1,0 +1,11 @@
+<map id="axpy" name="axpy">
+<area shape="rect" id="node1" title="Vector axpy operation (y = y + a*x)." alt="" coords="644,130,699,157"/>
+<area shape="rect" id="node2" href="$classLinfocito.html#ae8b5626514ecd32458df38eb8dcc32f1" title="Updates the lymphocyte&#39;s motility vector." alt="" coords="389,5,552,47"/>
+<area shape="rect" id="node3" href="$classCelula.html#ad1616e035a3400d89d2f600a82022a33" title="Alternative implementation for boundary potentials." alt="" coords="347,71,594,98"/>
+<area shape="rect" id="node4" href="$classLinfocito.html#a5a05f8c3693a17eb69b2c51bc140e877" title="Advances lymphocyte&#45;specific behaviors." alt="" coords="401,123,540,164"/>
+<area shape="rect" id="node5" href="$classCelula.html#ac2e977f860427c05dddcda6c82d2118b" title="Sets constants for internal consumption." alt="" coords="386,188,555,229"/>
+<area shape="rect" id="node7" href="$classMicroambiente.html#aee7840197152d4432a2e992b715ec519" title="Solver for diffusion&#45;decay using LOD (Locally One&#45;Dimensional) method." alt="" coords="345,254,596,310"/>
+<area shape="rect" id="node6" href="$classCelula.html#adb003d6f33abe19b1634c855e53fee73" title="Simulates secretion and consumption of microenvironment substrates." alt="" coords="108,188,297,229"/>
+<area shape="rect" id="node8" href="$classMicroambiente.html#a36e8a443722698e34ffe67516e459f13" title="Simulates diffusion and decay of substrates." alt="" coords="114,261,291,303"/>
+<area shape="rect" id="node9" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,269,60,295"/>
+</map>

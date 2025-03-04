@@ -1,0 +1,6 @@
+<map id="Microambiente::vector_de_gradientes" name="Microambiente::vector_de_gradientes">
+<area shape="rect" id="node1" title="Returns the gradient vector at the specified 3D voxel coordinates." alt="" coords="628,5,797,47"/>
+<area shape="rect" id="node2" href="$classCelula.html#aebc7f9f67d84f98fc37f1df378fd340e" title="Gets the gradient of a specific substrate." alt="" coords="412,5,580,47"/>
+<area shape="rect" id="node3" href="$classLinfocito.html#a44495f429d4b8f6ead4075cb6274b4a3" title="Processes lymphocyte motility behavior." alt="" coords="216,5,364,47"/>
+<area shape="rect" id="node4" href="$classLinfocito.html#ae8b5626514ecd32458df38eb8dcc32f1" title="Updates the lymphocyte&#39;s motility vector." alt="" coords="5,5,168,47"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Microambiente::redimensionar_densidades" name="Microambiente::redimensionar_densidades">
+<area shape="rect" id="node1" title="Resizes the number of tracked densities/substrates." alt="" coords="5,5,228,47"/>
+<area shape="rect" id="node2" href="$classMicroambiente.html#a4c012fdcb47db4efed0d77ef80c393e9" title="Gets the number of tracked densities/substrates." alt="" coords="276,5,455,47"/>
+</map>

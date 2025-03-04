@@ -1,0 +1,8 @@
+<map id="Muerte::agregar_ciclo_de_muerte" name="Muerte::agregar_ciclo_de_muerte">
+<area shape="rect" id="node1" title="Adds a new death cycle to the cell." alt="" coords="477,71,640,112"/>
+<area shape="rect" id="node2" href="$classCelula.html#aa416f150ebc5c9bb5144dfefbd6bfb24" title="Initializes a cell with default properties." alt="" coords="291,5,425,47"/>
+<area shape="rect" id="node5" href="$classCelula.html#a130da453acaea187e2b0495cef78b6aa" title="Initializes a cell with healthy properties." alt="" coords="291,71,425,112"/>
+<area shape="rect" id="node6" href="$classLinfocito.html#a9a173d167f1d74a16a17036e6589ff27" title="Constructor for Lymphocyte." alt="" coords="287,137,429,163"/>
+<area shape="rect" id="node3" href="$classTejido.html#a8d94c109b9af0f05998d46397fa328fd" title="Initializes the tissue structure with cells and microenvironment." alt="" coords="108,5,239,47"/>
+<area shape="rect" id="node4" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,13,60,39"/>
+</map>

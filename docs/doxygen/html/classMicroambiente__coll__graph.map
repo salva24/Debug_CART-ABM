@@ -1,0 +1,5 @@
+<map id="Microambiente" name="Microambiente">
+<area shape="rect" id="node1" title="Models the biochemical environment where cells exist." alt="" coords="5,785,232,1405"/>
+<area shape="rect" id="node2" href="$classGrillado__Cartesiano.html" title="Implements a Cartesian grid for cancer microenvironment modeling." alt="" coords="17,279,221,723"/>
+<area shape="rect" id="node3" href="$classGrillado__General.html" title="Base class for grid systems used in cancer microenvironment modeling." alt="" coords="24,5,213,229"/>
+</map>

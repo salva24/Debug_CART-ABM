@@ -1,0 +1,15 @@
+<map id="Microambiente::encontrar_indice_de_densidad" name="Microambiente::encontrar_indice_de_densidad">
+<area shape="rect" id="node1" title="Finds the index of a density by its name." alt="" coords="648,238,839,279"/>
+<area shape="rect" id="node2" href="$classCelula.html#a63946b902512956016a7fc95571345ce" title="Updates cell and death parameters based on oxygen concentration." alt="" coords="388,5,561,61"/>
+<area shape="rect" id="node4" href="$classCelula.html#a660dd8fa34ce510b1b93fcb10113903c" title="Advances the cell&#39;s phenotypic functions considering oxygen." alt="" coords="108,78,301,119"/>
+<area shape="rect" id="node5" href="$classCelula.html#ac4db968a0db8295de48388c20d1aaa31" title="Updates cell and death parameters based on oxygen and oncoprotein." alt="" coords="349,136,600,192"/>
+<area shape="rect" id="node6" href="$classCelula.html#a91bc02fb6125fcd4325a6428c88ae07a" title="Advances phenotypic functions considering oxygen and oncoprotein." alt="" coords="108,165,301,221"/>
+<area shape="rect" id="node7" href="$classCelula.html#aa416f150ebc5c9bb5144dfefbd6bfb24" title="Initializes a cell with default properties." alt="" coords="407,267,542,309"/>
+<area shape="rect" id="node10" href="$classCelula.html#a130da453acaea187e2b0495cef78b6aa" title="Initializes a cell with healthy properties." alt="" coords="407,333,542,374"/>
+<area shape="rect" id="node11" href="$classLinfocito.html#a9a173d167f1d74a16a17036e6589ff27" title="Constructor for Lymphocyte." alt="" coords="403,399,546,425"/>
+<area shape="rect" id="node12" href="$classLinfocito.html#a44495f429d4b8f6ead4075cb6274b4a3" title="Processes lymphocyte motility behavior." alt="" coords="401,450,549,491"/>
+<area shape="rect" id="node3" href="$classCelula.html#a15102ed3890bde998a41934f500faaa8" title="Advances the cell&#39;s phenotypic functions over time." alt="" coords="108,13,301,54"/>
+<area shape="rect" id="node8" href="$classTejido.html#a8d94c109b9af0f05998d46397fa328fd" title="Initializes the tissue structure with cells and microenvironment." alt="" coords="139,267,270,309"/>
+<area shape="rect" id="node9" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,275,60,301"/>
+<area shape="rect" id="node13" href="$classLinfocito.html#ae8b5626514ecd32458df38eb8dcc32f1" title="Updates the lymphocyte&#39;s motility vector." alt="" coords="123,450,286,491"/>
+</map>

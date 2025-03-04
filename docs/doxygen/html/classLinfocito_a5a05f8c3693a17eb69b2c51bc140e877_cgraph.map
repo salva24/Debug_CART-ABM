@@ -1,0 +1,23 @@
+<map id="Linfocito::avanzar_linfocito" name="Linfocito::avanzar_linfocito">
+<area shape="rect" id="node1" title="Advances lymphocyte&#45;specific behaviors." alt="" coords="5,154,144,195"/>
+<area shape="rect" id="node2" href="$Vector_8cpp.html#a845438dcdc3f8dbcc6647c8e6115612b" title="Vector axpy operation (y = y + a*x)." alt="" coords="256,19,311,45"/>
+<area shape="rect" id="node3" href="$classLinfocito.html#a989dcb907969577d34910a57f2c10a25" title="Checks neighboring cells for potential adhesion." alt="" coords="192,70,375,111"/>
+<area shape="rect" id="node8" href="$classRNG.html#a6bdc54ea1f91d783919858e5d670c8f1" title="Generate a uniform random number between 0 and n_max." alt="" coords="686,125,851,152"/>
+<area shape="rect" id="node9" href="$classLinfocito.html#a1d3bbcbd7b73181b1392facbe7df02c3" title="Triggers apoptosis in an attached cell." alt="" coords="195,238,372,279"/>
+<area shape="rect" id="node20" href="$classLinfocito.html#a6821d77d56fcbb4eb9a20b8d9580c83e" title="Attempts to trigger apoptosis in an attached cell." alt="" coords="451,121,583,162"/>
+<area shape="rect" id="node21" href="$classLinfocito.html#a78866c123b678a4dccffc1b2e88e54eb" title="Releases an attached cell." alt="" coords="199,304,368,331"/>
+<area shape="rect" id="node4" href="$classLinfocito.html#aec549763506a66af8d27ffd40054556e" title="Attempts to adhere to a target cell." alt="" coords="449,55,586,97"/>
+<area shape="rect" id="node5" href="$classLinfocito.html#a2c52f014ba447b56d87753f2ce77c583" title="Adheres to a target cell." alt="" coords="703,57,835,98"/>
+<area shape="rect" id="node6" href="$Vector_8cpp.html#ae0ea02058c13c53fa1787baf89ba4318" title="Norm (magnitude) of a Vector." alt="" coords="737,5,801,32"/>
+<area shape="rect" id="node7" href="$Vector_8cpp.html#ae8885ef12d3fefe9bd88702c4ec9de94" title="Squared norm of a std::vector&lt;double&gt;." alt="" coords="925,5,1040,32"/>
+<area shape="rect" id="node10" href="$classCelula.html#a13749f1841d862b3c6923cfaa6587964" title="Starts the cell death process." alt="" coords="423,373,612,400"/>
+<area shape="rect" id="node19" href="$classMuerte.html#adad5e0efbb8cf0ac9c91611c1c49fd82" title="Finds death cycle index by code." alt="" coords="425,238,609,279"/>
+<area shape="rect" id="node11" href="$classMuerte.html#a0f95d024373da0008481fb2c2ba5e693" title="Gets the currently active death cycle model." alt="" coords="692,373,845,400"/>
+<area shape="rect" id="node12" href="$classMuerte.html#adb28860f424af6671c3b94e3dd5dec91" title="Initiates a specific death process." alt="" coords="671,424,866,451"/>
+<area shape="rect" id="node13" href="$classCelula.html#adc456f68f9dc6a7f537d8a7925ac2685" title="Sets whether the cell is mobile (overridden in derived classes)" alt="" coords="703,475,834,501"/>
+<area shape="rect" id="node14" href="$classCiclo.html#a9717433bc9e8bccdd7921350d790865e" title="Gets reference to the current phase object." alt="" coords="700,525,837,552"/>
+<area shape="rect" id="node15" href="$classSecrecion.html#a3ccd90cf999f6fc76039a82d09de0a0a" title="Scales all consumption rates by a factor." alt="" coords="660,577,877,618"/>
+<area shape="rect" id="node16" href="$classMuerte.html#aa6d9d814790aeb3bab1583119b278630" title="Gets the parameters for the current death cycle." alt="" coords="693,177,844,218"/>
+<area shape="rect" id="node17" href="$classSecrecion.html#ae54f425f2fd5afc88fc76b2c0af97a24" title="Sets all secretion rates to zero." alt="" coords="677,242,860,283"/>
+<area shape="rect" id="node18" href="$classCiclo.html#a96a050f92187735d00fd0d492b51e12c" title="Synchronizes this cycle instance with a cycle model." alt="" coords="689,307,848,349"/>
+</map>

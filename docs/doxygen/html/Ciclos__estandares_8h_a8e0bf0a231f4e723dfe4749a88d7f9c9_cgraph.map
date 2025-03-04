@@ -1,0 +1,11 @@
+<map id="crear_ciclo_celular_estandar" name="crear_ciclo_celular_estandar">
+<area shape="rect" id="node1" title="Creates and initializes standard cell cycles (Ki67, vida)" alt="" coords="5,140,148,181"/>
+<area shape="rect" id="node2" href="$Ciclos__estandares_8cpp.html#a2e592bd27f6a2cf9cbe16e7925efdeff" title="Creates and initializes the Ki67&#45;based cell cycle model." alt="" coords="196,173,323,199"/>
+<area shape="rect" id="node8" href="$Ciclos__estandares_8cpp.html#a1f3f908df65c1ea43facf57df8327b8d" title="Creates and initializes the basic life cycle model." alt="" coords="196,122,323,149"/>
+<area shape="rect" id="node3" href="$classCiclo__Modelo.html#a1f2cbb483c62bbdb28b187e954e09fd9" title="Adds a new phase to the cell cycle model." alt="" coords="371,71,573,98"/>
+<area shape="rect" id="node4" href="$classCiclo__Modelo.html#aa3f238b992e07df86a228a952d248d39" title="Creates a link between two phases." alt="" coords="373,122,571,149"/>
+<area shape="rect" id="node5" href="$classCiclo__Modelo.html#a34d2b1e4ac87c001ecf07846369950ea" title="Gets the phase link between two phases." alt="" coords="384,173,560,199"/>
+<area shape="rect" id="node6" href="$Ciclos__estandares_8cpp.html#afcd662a61f8dff8e7e11a607c85deb59" title="Implementation of entry function for Ki67 positive phase." alt="" coords="393,289,551,331"/>
+<area shape="rect" id="node7" href="$classCiclo__Modelo.html#a0fa1362fecca974e43fc56fe8998c289" title="Gets reference to the transition rate between phases." alt="" coords="399,224,545,265"/>
+<area shape="rect" id="node9" href="$Ciclos__estandares_8cpp.html#ae32ba7940d1b77b355e5b47ace1a8211" title="Implementation of entry function for basic life cycle phase." alt="" coords="391,5,553,47"/>
+</map>

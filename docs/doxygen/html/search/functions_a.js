@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['naxpy_793',['naxpy',['../Vector_8cpp.html#a4a4acab9d425f31031f4cf751be049e6',1,'naxpy(std::vector&lt; double &gt; *y, double &amp;a, std::vector&lt; double &gt; &amp;x):&#160;Vector.cpp'],['../Vector_8cpp.html#ac2905e46d3ddd91db1cb82acfa1a8f7c',1,'naxpy(std::vector&lt; double &gt; *y, std::vector&lt; double &gt; &amp;a, std::vector&lt; double &gt; &amp;x):&#160;Vector.cpp'],['../Vector_8h.html#a4a4acab9d425f31031f4cf751be049e6',1,'naxpy(std::vector&lt; double &gt; *y, double &amp;a, std::vector&lt; double &gt; &amp;x):&#160;Vector.cpp'],['../Vector_8h.html#ac2905e46d3ddd91db1cb82acfa1a8f7c',1,'naxpy(std::vector&lt; double &gt; *y, std::vector&lt; double &gt; &amp;a, std::vector&lt; double &gt; &amp;x):&#160;Vector.cpp']]],
+  ['norm_5fsquared_794',['norm_squared',['../Vector_8h.html#ad57b32b9f33ccd1721142de95589ac6e',1,'norm_squared(const Vector &amp;v):&#160;Vector.cpp'],['../Vector_8h.html#ae8885ef12d3fefe9bd88702c4ec9de94',1,'norm_squared(const std::vector&lt; double &gt; &amp;v):&#160;Vector.cpp'],['../Vector_8cpp.html#ae8885ef12d3fefe9bd88702c4ec9de94',1,'norm_squared(const std::vector&lt; double &gt; &amp;v):&#160;Vector.cpp'],['../Vector_8cpp.html#ad57b32b9f33ccd1721142de95589ac6e',1,'norm_squared(const Vector &amp;v):&#160;Vector.cpp']]],
+  ['norma_795',['norma',['../Vector_8h.html#ae0ea02058c13c53fa1787baf89ba4318',1,'norma(const Vector &amp;v):&#160;Vector.cpp'],['../Vector_8h.html#a3f21031d4e9174bfc698dcff0f6aff69',1,'norma(const std::vector&lt; double &gt; &amp;v):&#160;Vector.cpp'],['../Vector_8cpp.html#a3f21031d4e9174bfc698dcff0f6aff69',1,'norma(const std::vector&lt; double &gt; &amp;v):&#160;Vector.cpp'],['../Vector_8cpp.html#ae0ea02058c13c53fa1787baf89ba4318',1,'norma(const Vector &amp;v):&#160;Vector.cpp']]],
+  ['normaliza_796',['normaliza',['../classVector.html#ae601c2500829729a8e6d82bd43891492',1,'Vector']]],
+  ['normalizame_797',['normalizame',['../classVector.html#aa6dd5c1d4a7e61fafdab076e600313e9',1,'Vector']]],
+  ['normalrandom_798',['NormalRandom',['../classRNG.html#aa474eb6062d009cf93b464b5e574d820',1,'RNG']]],
+  ['normalrandom_5fcm_799',['NormalRandom_CM',['../classRNG.html#a4ef28dcf90c29762fe3aca08a4c50e15',1,'RNG']]],
+  ['numero_5fde_5fdensidades_800',['numero_de_densidades',['../classMicroambiente.html#a4c012fdcb47db4efed0d77ef80c393e9',1,'Microambiente']]],
+  ['numero_5fde_5fvoxeles_801',['numero_de_voxeles',['../classMicroambiente.html#af256697875e8e3d1fab2b27a3f47bfb3',1,'Microambiente']]]
+];

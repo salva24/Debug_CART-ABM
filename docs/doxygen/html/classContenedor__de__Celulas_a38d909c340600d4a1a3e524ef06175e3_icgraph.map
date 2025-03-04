@@ -1,0 +1,8 @@
+<map id="Contenedor_de_Celulas::registrar_celula" name="Contenedor_de_Celulas::registrar_celula">
+<area shape="rect" id="node1" title="Registers a cell in the container." alt="" coords="331,119,505,161"/>
+<area shape="rect" id="node2" href="$classContenedor__de__Celulas.html#ad59151ce04d6be97557704ca374c0220" title="Updates all cells for a simulation step." alt="" coords="108,5,283,61"/>
+<area shape="rect" id="node4" href="$classTejido.html#a8d94c109b9af0f05998d46397fa328fd" title="Initializes the tissue structure with cells and microenvironment." alt="" coords="130,86,261,127"/>
+<area shape="rect" id="node5" href="$classTejido.html#a4689bd60483dd423987d778ad0502a46" title="Introduces lymphocytes around the tumor periphery." alt="" coords="130,151,261,193"/>
+<area shape="rect" id="node6" href="$classTejido.html#adeb5044a116b919f8e05ddc249f76256" title="Introduces lymphocytes randomly in the domain." alt="" coords="115,217,276,258"/>
+<area shape="rect" id="node3" href="$Main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the cell&#45;based cancer simulation." alt="" coords="5,93,60,120"/>
+</map>

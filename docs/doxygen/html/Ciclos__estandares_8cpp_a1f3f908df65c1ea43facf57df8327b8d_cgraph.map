@@ -1,0 +1,8 @@
+<map id="crear_ciclo_vida" name="crear_ciclo_vida">
+<area shape="rect" id="node1" title="Creates and initializes the basic life cycle model." alt="" coords="5,107,132,133"/>
+<area shape="rect" id="node2" href="$classCiclo__Modelo.html#a1f2cbb483c62bbdb28b187e954e09fd9" title="Adds a new phase to the cell cycle model." alt="" coords="180,5,383,32"/>
+<area shape="rect" id="node3" href="$classCiclo__Modelo.html#aa3f238b992e07df86a228a952d248d39" title="Creates a link between two phases." alt="" coords="182,56,381,83"/>
+<area shape="rect" id="node4" href="$classCiclo__Modelo.html#a34d2b1e4ac87c001ecf07846369950ea" title="Gets the phase link between two phases." alt="" coords="193,107,369,133"/>
+<area shape="rect" id="node5" href="$Ciclos__estandares_8cpp.html#ae32ba7940d1b77b355e5b47ace1a8211" title="Implementation of entry function for basic life cycle phase." alt="" coords="200,158,363,199"/>
+<area shape="rect" id="node6" href="$classCiclo__Modelo.html#a0fa1362fecca974e43fc56fe8998c289" title="Gets reference to the transition rate between phases." alt="" coords="209,223,354,265"/>
+</map>

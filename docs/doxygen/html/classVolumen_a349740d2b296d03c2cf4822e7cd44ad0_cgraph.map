@@ -1,0 +1,4 @@
+<map id="Volumen::dividir" name="Volumen::dividir">
+<area shape="rect" id="node1" title="Divides all volume components in half." alt="" coords="5,5,133,32"/>
+<area shape="rect" id="node2" href="$classVolumen.html#aba4864e39a829c6be9f9703ddb08e0f0" title="Multiplies all volume components by a factor." alt="" coords="181,5,339,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Celula::gradiente_mas_cercano" name="Celula::gradiente_mas_cercano">
+<area shape="rect" id="node1" title="Gets the gradient of a specific substrate." alt="" coords="412,5,580,47"/>
+<area shape="rect" id="node2" href="$classLinfocito.html#a44495f429d4b8f6ead4075cb6274b4a3" title="Processes lymphocyte motility behavior." alt="" coords="216,5,364,47"/>
+<area shape="rect" id="node3" href="$classLinfocito.html#ae8b5626514ecd32458df38eb8dcc32f1" title="Updates the lymphocyte&#39;s motility vector." alt="" coords="5,5,168,47"/>
+</map>
