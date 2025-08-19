@@ -230,8 +230,7 @@ int main(int argc, char *argv[]){
 ////////////////////////////////////////////////////////////////////////
     tejido.geometria_del_tumor();
     std::ofstream outfile(results_dir + "/DatosFinales.dat", ios::app);
-    outfile << "#tiempo, volumen, volumen2, radio , celulas tumorales, celulas muertas, todas las celulas \n";
-    outfile << std::setprecision(12) << pg->tiempo_total << " " << tejido.volumen_del_tumor << " " << tejido.volumen_del_tumor2 << " " << tejido.radio_del_tumor << " " << tejido.celulas_tumorales << " " << tejido.celulas_muertas << " " << todas_las_celulas.size() << "\n";
+    outfile << "#tiempo, volumen, volumen2, radio , celulas tumorales, dead_cancer_cells, todas las celulas, cart_alive \n";
     outfile.flush();
 
 
@@ -286,15 +285,23 @@ int main(int argc, char *argv[]){
                 
                 // Count dead cancer cells
                 int cancer_muerto = 0;
+                // Count alive CAR-T cells
+                int alive_cart = 0;
                 for( unsigned int i=0; i < todas_las_celulas.size(); i++ ){
                     if(todas_las_celulas[i]->tipo == 0 && todas_las_celulas[i]->fenotipo.muerte.muerta){
                         cancer_muerto = cancer_muerto + 1;
                     }
+                    
+                    if(todas_las_celulas[i]->tipo == 2 && // Linfocites
+                    !todas_las_celulas[i]->fenotipo.muerte.muerta) { // Alive
+                        alive_cart++;
+                    }
+
                 }
 
 
                 // Write summary data to output file
-                outfile << std::setprecision(12) << pg->tiempo_total << " " << tejido.volumen_del_tumor << " " << tejido.volumen_del_tumor2 << " " << tejido.radio_del_tumor << " " << tejido.celulas_tumorales << " " << tejido.celulas_muertas << " " << cancer_muerto << " " << todas_las_celulas.size() << "\n";
+                outfile << std::setprecision(12) << pg->tiempo_total << " " << tejido.volumen_del_tumor << " " << tejido.volumen_del_tumor2 << " " << tejido.radio_del_tumor << " " << tejido.celulas_tumorales << " " << cancer_muerto << " " << todas_las_celulas.size() << " " << alive_cart << "\n";
                 outfile.flush();
                 m = pg->tiempo_total;
                 
@@ -342,7 +349,7 @@ int main(int argc, char *argv[]){
                 }
                 
                 // The VTK file generation code is commented out but would write visualization files
-                /*-----------------VTKs----------------
+               
                      std::ofstream outfile3 (results_dir + "/PM1_" + std::to_string( (int) pg->tiempo_total ) + ".xml" );
                     outfile3 << "<VTKFile type='UnstructuredGrid' version='0.1' byte_order='LittleEndian'> \n";
                     outfile3 << "\t<UnstructuredGrid>\n";
@@ -432,7 +439,6 @@ int main(int argc, char *argv[]){
 
   
   
-*/                
                 
 /////////////////////////////////////////////////////////////////////////                
                 

@@ -277,7 +277,7 @@ void crear_ciclo_vida( void )
     //vida.tasa_de_transicion(0,0) = 1 /(0.24*60.0);
 
 
-    vida.tasa_de_transicion(0,0) = 0.02717 / 60.0;
+    // vida.tasa_de_transicion(0,0) = 0.02717 / 60.0;
     
 	vida.fases[0].funcion_de_entrada = fase_viva_funcion_de_entrada;
 

@@ -85,7 +85,16 @@ Celula::Celula(){
  */
 void Celula::actualizar_volumen( Fenotipo& fenotipo, double dt)
 {
-
+		// if(fenotipo.ciclo.pCiclo_Modelo->nombre != "Vida"){
+// 	bool debug= fenotipo.ciclo.actualizar_volumen() ;
+// 	auto st="No";
+// 	if(debug){
+// 		st="Si";
+// 	}
+// std::cout << "#" << fenotipo.ciclo.pCiclo_Modelo->nombre << " " << fenotipo.volumen.citoplasma_tasa_de_cambio<< st<< tipo<< "#" << std::endl;
+		
+	// }
+	
 	fenotipo.volumen.fluido += dt* fenotipo.volumen.fluido_tasa_de_cambio *
 	(fenotipo.volumen.target_fraccion_fluido * fenotipo.volumen.total - fenotipo.volumen.fluido);
 
@@ -181,6 +190,7 @@ void Celula::actualizar_parametros_de_celula_y_muerte_con_o2(Fenotipo& fenotipo,
 		}
 	}
 	double pO2 = (vector_de_densidades_mas_cercano())[indice_del_oxigeno];
+	// pO2 = 30.;//Debug
 
 	double multiplicador = 1.0;
 	if(pO2 < parametros.o2_saturacion_para_la_proliferacion){
@@ -251,7 +261,8 @@ void Celula::actualizar_parametros_de_celula_y_muerte_con_o2_y_oncoproteina(Feno
 		}
 	}
 	double pO2 = (vector_de_densidades_mas_cercano())[indice_del_oxigeno];
-
+	// pO2 = 30.;//Debug
+	
 	double multiplicador = 1.0;
 	if(pO2 < parametros.o2_saturacion_para_la_proliferacion){
 		multiplicador = (pO2 - parametros.o2_limite_de_proliferacion) /
@@ -278,6 +289,18 @@ void Celula::actualizar_parametros_de_celula_y_muerte_con_o2_y_oncoproteina(Feno
 
 
       fenotipo.ciclo.actualizar_mis_tasas_de_transicion(indice_fase_inicial, indice_fase_final) *= fenotipo.secrecion.oncoproteina;
+	//Debug
+	//output info only for cancer cells
+	if (tipo==0){
+		int half_day = pg->tiempo_total / (60*12);
+		std::ofstream file("out/simulation_data"+std::to_string(half_day)+".csv", std::ios::app);
+		if (file.is_open()) {
+		file  << pO2 << "," 
+			<< fenotipo.secrecion.oncoproteina  << "," << fenotipo.ciclo.tasa_aleatoria <<"," << fenotipo.ciclo.actualizar_mis_tasas_de_transicion(indice_fase_inicial, indice_fase_final) << "," << multiplicador * parametros.tasa_necrosis_max << "\n";
+		}
+	}
+	//End Debug
+      
 
 }
 
@@ -296,52 +319,53 @@ void Celula::actualizar_parametros_de_celula_y_muerte_con_o2_y_oncoproteina(Feno
  * @param hora_global Current simulation time
  * @param dt_ciclo Time step for cycle advancement
  */
-void Celula::avanzar_funciones_del_fenotipo(double hora_global, double dt_ciclo){
+// void Celula::avanzar_funciones_del_fenotipo(double hora_global, double dt_ciclo){
 
 
-		actualizar_parametros_de_celula_y_muerte_con_o2(fenotipo, dt_ciclo);
+// 		actualizar_parametros_de_celula_y_muerte_con_o2(fenotipo, dt_ciclo);
 
-		if(fenotipo.muerte.chequear_muerte(dt_ciclo) == true){
-			fenotipo.ciclo.sync_con_ciclo_modelo(fenotipo.muerte.ciclo_actual());
+// 		if(fenotipo.muerte.chequear_muerte(dt_ciclo) == true){
+// 			fenotipo.ciclo.sync_con_ciclo_modelo(fenotipo.muerte.ciclo_actual());
 
-			fenotipo.secrecion.set_todas_las_secreciones_a_cero();
-			fenotipo.secrecion.multiplicar_los_consumos_por_un_factor(0.10);
+// 			fenotipo.secrecion.set_todas_las_secreciones_a_cero();
+// 			fenotipo.secrecion.multiplicar_los_consumos_por_un_factor(0.10);
 
-			if(fenotipo.ciclo.fase_actual().funcion_de_entrada){
+// 			if(fenotipo.ciclo.fase_actual().funcion_de_entrada){
 
-				fenotipo.ciclo.fase_actual().funcion_de_entrada(fenotipo.volumen, fenotipo.muerte.parametros_actuales());
+// 				fenotipo.ciclo.fase_actual().funcion_de_entrada(fenotipo.volumen, fenotipo.muerte.parametros_actuales());
 
-			}
+// 			}
 
-		}
+// 		}
 
-		fenotipo.ciclo.avanzar_en_el_ciclo( fenotipo.volumen, tiempo_desde_el_ultimo_ciclo, fenotipo.ciclo.tasas_de_transicion, fenotipo.muerte.parametros_actuales() );
-
-		if(fenotipo.ciclo.actualizar_volumen()){
-
-			actualizar_volumen(fenotipo, tiempo_desde_el_ultimo_ciclo);
-			fenotipo.volumen.cambio_el_volumen=true;
-		}
-
-		if(fenotipo.ciclo.flagged_para_dividirse){
-
-            if(fenotipo.muerte.muerta){
-                    std::cout<< "Se divide celula muerta id: " << id << "\n";
-                    std::cin.get();
-            }
-
-			celulas_listas_para_dividirse.push_back(this);
-			fenotipo.ciclo.flagged_para_dividirse=false;
-		}
-
-		if(fenotipo.ciclo.flagged_para_remover){
-			celulas_listas_para_remover.push_back(this);
-			fenotipo.ciclo.flagged_para_remover=false;
-		}
+// 		fenotipo.ciclo.avanzar_en_el_ciclo( fenotipo.volumen, tiempo_desde_el_ultimo_ciclo, fenotipo.ciclo.tasas_de_transicion, fenotipo.muerte.parametros_actuales() );
 
 
-	return;
-}
+// 		if(fenotipo.ciclo.actualizar_volumen()){
+
+// 			actualizar_volumen(fenotipo, tiempo_desde_el_ultimo_ciclo);
+// 			fenotipo.volumen.cambio_el_volumen=true;
+// 		}
+
+// 		if(fenotipo.ciclo.flagged_para_dividirse){
+
+//             if(fenotipo.muerte.muerta){
+//                     std::cout<< "Se divide celula muerta id: " << id << "\n";
+//                     std::cin.get();
+//             }
+
+// 			celulas_listas_para_dividirse.push_back(this);
+// 			fenotipo.ciclo.flagged_para_dividirse=false;
+// 		}
+
+// 		if(fenotipo.ciclo.flagged_para_remover){
+// 			celulas_listas_para_remover.push_back(this);
+// 			fenotipo.ciclo.flagged_para_remover=false;
+// 		}
+
+
+// 	return;
+// }
 
 /**
  * @brief Advances cell phenotype functions with explicit oxygen dependency
@@ -357,63 +381,63 @@ void Celula::avanzar_funciones_del_fenotipo(double hora_global, double dt_ciclo)
  * @param hora_global Current simulation time
  * @param dt_ciclo Time step for cycle advancement
  */
-void Celula::avanzar_funciones_del_fenotipo_con_O2(double hora_global, double dt_ciclo){
+// void Celula::avanzar_funciones_del_fenotipo_con_O2(double hora_global, double dt_ciclo){
 
-        static int indice_del_oxigeno = microambiente->encontrar_indice_de_densidad("oxigeno");
-        double pO2 = (vector_de_densidades_mas_cercano())[indice_del_oxigeno];
-		actualizar_parametros_de_celula_y_muerte_con_o2(fenotipo, dt_ciclo);
-		if(fenotipo.muerte.chequear_muerte(dt_ciclo) == true){
-			fenotipo.ciclo.sync_con_ciclo_modelo(fenotipo.muerte.ciclo_actual());
-			fenotipo.secrecion.set_todas_las_secreciones_a_cero();
-			fenotipo.secrecion.multiplicar_los_consumos_por_un_factor(0.10);
+//         static int indice_del_oxigeno = microambiente->encontrar_indice_de_densidad("oxigeno");
+//         double pO2 = (vector_de_densidades_mas_cercano())[indice_del_oxigeno];
+// 		actualizar_parametros_de_celula_y_muerte_con_o2(fenotipo, dt_ciclo);
+// 		if(fenotipo.muerte.chequear_muerte(dt_ciclo) == true){
+// 			fenotipo.ciclo.sync_con_ciclo_modelo(fenotipo.muerte.ciclo_actual());
+// 			fenotipo.secrecion.set_todas_las_secreciones_a_cero();
+// 			fenotipo.secrecion.multiplicar_los_consumos_por_un_factor(0.10);
 
-			if(fenotipo.ciclo.fase_actual().funcion_de_entrada){
+// 			if(fenotipo.ciclo.fase_actual().funcion_de_entrada){
 
-				fenotipo.ciclo.fase_actual().funcion_de_entrada(fenotipo.volumen, fenotipo.muerte.parametros_actuales());
+// 				fenotipo.ciclo.fase_actual().funcion_de_entrada(fenotipo.volumen, fenotipo.muerte.parametros_actuales());
 
-			}
+// 			}
 
-		}
-        if(!fenotipo.muerte.muerta && pO2 > parametros.o2_limite_de_proliferacion){
+// 		}
+//         if(!fenotipo.muerte.muerta && pO2 > parametros.o2_limite_de_proliferacion){
 
-            fenotipo.ciclo.avanzar_en_el_ciclo( fenotipo.volumen, tiempo_desde_el_ultimo_ciclo, fenotipo.ciclo.tasas_de_transicion, fenotipo.muerte.parametros_actuales() );
+//             fenotipo.ciclo.avanzar_en_el_ciclo( fenotipo.volumen, tiempo_desde_el_ultimo_ciclo, fenotipo.ciclo.tasas_de_transicion, fenotipo.muerte.parametros_actuales() );
 
-            if(fenotipo.ciclo.actualizar_volumen()){
+//             if(fenotipo.ciclo.actualizar_volumen()){
 
-                actualizar_volumen(fenotipo, tiempo_desde_el_ultimo_ciclo);
-                fenotipo.volumen.cambio_el_volumen=true;
-            }
+//                 actualizar_volumen(fenotipo, tiempo_desde_el_ultimo_ciclo);
+//                 fenotipo.volumen.cambio_el_volumen=true;
+//             }
 
-            if(fenotipo.ciclo.flagged_para_dividirse){
+//             if(fenotipo.ciclo.flagged_para_dividirse){
 
-                celulas_listas_para_dividirse.push_back(this);
-                fenotipo.ciclo.flagged_para_dividirse=false;
+//                 celulas_listas_para_dividirse.push_back(this);
+//                 fenotipo.ciclo.flagged_para_dividirse=false;
 
-            }
+//             }
 
-            if(fenotipo.ciclo.flagged_para_remover){
-                celulas_listas_para_remover.push_back(this);
-                fenotipo.ciclo.flagged_para_remover=false;
-            }
+//             if(fenotipo.ciclo.flagged_para_remover){
+//                 celulas_listas_para_remover.push_back(this);
+//                 fenotipo.ciclo.flagged_para_remover=false;
+//             }
 
-        }else if(fenotipo.muerte.muerta){
+//         }else if(fenotipo.muerte.muerta){
 
-            fenotipo.ciclo.avanzar_en_el_ciclo( fenotipo.volumen, tiempo_desde_el_ultimo_ciclo, fenotipo.ciclo.tasas_de_transicion, fenotipo.muerte.parametros_actuales() );
+//             fenotipo.ciclo.avanzar_en_el_ciclo( fenotipo.volumen, tiempo_desde_el_ultimo_ciclo, fenotipo.ciclo.tasas_de_transicion, fenotipo.muerte.parametros_actuales() );
 
-            if(fenotipo.ciclo.actualizar_volumen()){
+//             if(fenotipo.ciclo.actualizar_volumen()){
 
-                actualizar_volumen(fenotipo, tiempo_desde_el_ultimo_ciclo);
-                fenotipo.volumen.cambio_el_volumen=true;
-            }
+//                 actualizar_volumen(fenotipo, tiempo_desde_el_ultimo_ciclo);
+//                 fenotipo.volumen.cambio_el_volumen=true;
+//             }
 
-            if(fenotipo.ciclo.flagged_para_remover){
-                celulas_listas_para_remover.push_back(this);
-                fenotipo.ciclo.flagged_para_remover=false;
-            }
+//             if(fenotipo.ciclo.flagged_para_remover){
+//                 celulas_listas_para_remover.push_back(this);
+//                 fenotipo.ciclo.flagged_para_remover=false;
+//             }
 
-        }
-	return;
-}
+//         }
+// 	return;
+// }
 
 /**
  * @brief Advances cell phenotype functions considering oxygen and oncoprotein
@@ -434,6 +458,17 @@ void Celula::avanzar_funciones_del_fenotipo_con_O2(double hora_global, double dt
  */
 void Celula::avanzar_funciones_del_fenotipo_con_O2_y_oncoproteina(double hora_global, double dt_ciclo){
 
+
+		// if(fenotipo.ciclo.pCiclo_Modelo->nombre != "Vida"){
+		// bool debug= fenotipo.ciclo.actualizar_volumen() ;
+		// auto st="No";
+		// if(debug){
+		// 	st="Si";
+		// }
+		// std::cout << "#" << fenotipo.ciclo.pCiclo_Modelo->nombre << " " << fenotipo.volumen.citoplasma_tasa_de_cambio<< st<< tipo<< "#" << std::endl;
+			
+		// }
+
         if(tipo!=2 && adherida==true){
             return;
         }
@@ -441,7 +476,28 @@ void Celula::avanzar_funciones_del_fenotipo_con_O2_y_oncoproteina(double hora_gl
 
         static int indice_del_oxigeno = microambiente->encontrar_indice_de_densidad("oxigeno");
         double pO2 = (vector_de_densidades_mas_cercano())[indice_del_oxigeno];
-
+		// pO2 = 30.;//Debug
+		
+		// Print detallado para encontrar IDs altos
+		// static int contador_print = 0;
+		// contador_print++;
+		// if (contador_print % 1000 == 0) {  // Print cada 1000 llamadas para no saturar
+		// 	std::cout << "CELULA ID: " << id << " tipo: " << tipo << " pO2: " << pO2 << " adherida: " << adherida << std::endl;
+		// }
+		
+		// // Print específico para IDs altos
+		// if (id > 3963) {
+		// 	std::cout << "*** ID ALTO ENCONTRADO: " << id << " tipo: " << tipo << " pO2: " << pO2 << " adherida: " << adherida << std::endl;
+		// }
+		
+		// // Print específico para células de tipo 0 con IDs altos (divisiones)
+		// if (tipo == 0 && id > 3963) {
+		// 	std::cout << "*** CELULA TIPO 0 CON ID ALTO (DIVISION): " << id << " tipo: " << tipo << " pO2: " << pO2 << " madre: " << madre << std::endl;
+		// }
+		
+		// if (tipo == 0) {
+		// 	std::cout << "Nivel de oxígeno (pO2) celula id " << id << ": " << pO2 << std::endl;
+		// }
         actualizar_parametros_de_celula_y_muerte_con_o2_y_oncoproteina(fenotipo, dt_ciclo);
 
 		if(fenotipo.muerte.chequear_muerte(dt_ciclo) == true){
@@ -473,6 +529,7 @@ void Celula::avanzar_funciones_del_fenotipo_con_O2_y_oncoproteina(double hora_gl
 
             fenotipo.ciclo.avanzar_en_el_ciclo( fenotipo.volumen, tiempo_desde_el_ultimo_ciclo, fenotipo.ciclo.tasas_de_transicion, fenotipo.muerte.parametros_actuales() );
 
+
             if(fenotipo.ciclo.actualizar_volumen()){
 
                 actualizar_volumen(fenotipo, tiempo_desde_el_ultimo_ciclo);
@@ -492,6 +549,16 @@ void Celula::avanzar_funciones_del_fenotipo_con_O2_y_oncoproteina(double hora_gl
 
         }else if(fenotipo.muerte.muerta == true){
 
+			// // if(fenotipo.ciclo.pCiclo_Modelo->nombre != "Vida"){
+			// bool debug= fenotipo.ciclo.actualizar_volumen() ;
+			// auto st="No";
+			// if(debug){
+			// 	st="Si";
+			// }
+			// std::cout << "#" << fenotipo.ciclo.pCiclo_Modelo->nombre << " " << fenotipo.volumen.citoplasma_tasa_de_cambio<< st<< tipo<< "#" << std::endl;
+				
+			// // }
+
             fenotipo.ciclo.avanzar_en_el_ciclo( fenotipo.volumen, tiempo_desde_el_ultimo_ciclo, fenotipo.ciclo.tasas_de_transicion, fenotipo.muerte.parametros_actuales() );
 
             if(fenotipo.ciclo.actualizar_volumen()){
@@ -506,6 +573,20 @@ void Celula::avanzar_funciones_del_fenotipo_con_O2_y_oncoproteina(double hora_gl
             }
 
         }
+
+	// Estadísticas de IDs cada cierto tiempo
+	static int contador_estadisticas = 0;
+	static int max_id_visto = 0;
+	contador_estadisticas++;
+	
+	if (id > max_id_visto) {
+		max_id_visto = id;
+	}
+	
+	//Debug
+	// if (contador_estadisticas % 5000 == 0) {
+	// 	std::cout << "=== ESTADISTICAS IDs === Max ID visto: " << max_id_visto << " (llamadas: " << contador_estadisticas << ")" << std::endl;
+	// }
 
 	return;
 }
@@ -607,6 +688,9 @@ Celula* Celula::dividir(){
 	hija->hora_de_la_ultima_mecanica = hora_de_la_ultima_mecanica;
 	hija->parametros = parametros;
 
+	// Debug: Print cuando se crea una célula por división
+	// std::cout << "*** DIVISION CELULAR: Madre ID " << id << " (tipo " << tipo << ") -> Hija ID " << hija->id << " (tipo " << hija->tipo << ")" << std::endl;
+
 
 	double angulo_temporal = 6.28318530717959*rng->RandomNumber();
 	double phi_temporal = 3.1415926535897932384626433832795*rng->RandomNumber();
@@ -649,7 +733,7 @@ Celula* Celula::dividir(){
     hija->adherida = false;
     
     if(tipo==0){
-        hija->fenotipo.ciclo.tasa_aleatoria= 1/(rng->NormalRandom_CM(38.6, 3.7)*60);
+        hija->fenotipo.ciclo.tasa_aleatoria=1/(rng->NormalRandom_CM(38.6, 3.7)*60);
         hija->fenotipo.ciclo.actualizar_mis_tasas_de_transicion(0,0) = fenotipo.ciclo.tasa_aleatoria;
     }    
 
@@ -1311,6 +1395,7 @@ void Celula::simular_secrecion_y_consumo( double dt ){
  */
 void Celula::inicializar_celula(){
 	fenotipo.ciclo.sync_con_ciclo_modelo(vida);
+	// fenotipo.ciclo.sync_con_ciclo_modelo(Ki67);
 	static int oxigeno_ID = microambiente->encontrar_indice_de_densidad( "oxigeno" ); // 0
 	fenotipo.secrecion.tasas_de_secrecion[oxigeno_ID] = pg->tasas_de_secrecion;
 	fenotipo.secrecion.tasas_de_consumo[oxigeno_ID] = pg->tasas_de_consumo;
@@ -1325,6 +1410,7 @@ void Celula::inicializar_celula(){
 
 
     fenotipo.secrecion.oncoproteina = rng->NormalRandom_CM(pg->imm_mean, pg->imm_sd);
+	// fenotipo.secrecion.oncoproteina =1.;//Debug
     if( fenotipo.secrecion.oncoproteina < 0.0 ){
     fenotipo.secrecion.oncoproteina = 0.0; }
 

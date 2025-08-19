@@ -1,0 +1,7 @@
+*.xyz
+*.csv
+*.xml
+*.dat
+./out/
+./results/
+build/
