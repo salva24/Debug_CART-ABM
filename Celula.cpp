@@ -1365,12 +1365,21 @@ void Celula::simular_secrecion_y_consumo( double dt ){
 	}
 
 
+	// //Debug  immunostimulatory facor secretion
+	// std::ofstream file("out/immuno_factor.csv", std::ios::app);
+	// if (file.is_open()) {
+	// file  << pg->tiempo_total << "," 
+	// 	<< (*microambiente)(voxel_del_microambiente)[1]  << ","<< temp_celula_fuente_sumidero_solver1[1] <<","<< temp_celula_fuente_sumidero_solver2[1]<< "," << temp_celula_fuente_sumidero_exportacion_solver2[1]<< "\n";
+	// }
+
 
 	(*microambiente)(voxel_del_microambiente) += temp_celula_fuente_sumidero_solver1;
 	(*microambiente)(voxel_del_microambiente) /= temp_celula_fuente_sumidero_solver2;
 
 	(*microambiente)(voxel_del_microambiente) += temp_celula_fuente_sumidero_exportacion_solver2;
 
+
+	
 
 
 	return;
@@ -1569,6 +1578,7 @@ Linfocito::Linfocito():Celula(){
 	motilidad.velocidad_de_migracion = 5.0;
 	motilidad.bias_de_la_migracion = 0.5;
 
+
 	fenotipo.mecanica.fuerza_de_adhesion_cc = 0.0;
 	fenotipo.mecanica.fuerza_de_adhesion_co = 0.0;
 	fenotipo.mecanica.fuerza_de_adhesion_mb = 0.0;
@@ -1627,8 +1637,10 @@ void Linfocito::actualizar_vector_de_motilidad( double dt, std::vector<Celula*> 
 		motilidad.vector_de_motilidad.z = 0.0;
 		return;
 	}
+	// std::cout <<pg->tiempo_total <<"velocity: " << velocidad.x <<","<< velocidad.y <<","<< velocidad.z <<",norma "<< std::sqrt(velocidad.x*velocidad.x+velocidad.y*velocidad.y+velocidad.z*velocidad.z) << std::endl;//Debug
 
-	if( rng->RandomNumber() < dt / motilidad.tiempo_de_persistencia || motilidad.tiempo_de_persistencia < dt )
+	// if( true )//Debug
+	if( rng->RandomNumber() < dt / motilidad.tiempo_de_persistencia || motilidad.tiempo_de_persistencia < dt )//Debug needs tu be uncommented
 	{
 	//std::cout << "Actualizo vector motilidarks \n";
 	//std::cin.get();
@@ -1657,6 +1669,8 @@ void Linfocito::actualizar_vector_de_motilidad( double dt, std::vector<Celula*> 
 		v->normalizame( &(motilidad.vector_de_motilidad) );
 		motilidad.vector_de_motilidad = motilidad.vector_de_motilidad * motilidad.velocidad_de_migracion;
 		velocidad = velocidad + motilidad.vector_de_motilidad;
+// std::cout <<pg->tiempo_total <<"velocity: after motility" << velocidad.x <<","<< velocidad.y <<","<< velocidad.z <<",norma "<< std::sqrt(velocidad.x*velocidad.x+velocidad.y*velocidad.y+velocidad.z*velocidad.z) << std::endl;//Debug
+		
 	}
 	return;
 
@@ -1744,14 +1758,29 @@ void Linfocito::avanzar_linfocito( double dt, std::vector<Celula*> celulas_en_mi
 		return;
 	}
 
+	// std::cout << adherida<< motilidad.es_movisl << std::endl;//Debug
+
+	//Debug CAR-T positions
+	std::ofstream file("out/posiciones_cart.csv", std::ios::app);
+	if (file.is_open()) {
+	file  << pg->tiempo_total << "," 
+		<< posicion.x << "," << posicion.y << "," << posicion.z << ", norma " << std::sqrt(posicion.x*posicion.x+posicion.y*posicion.y+posicion.z*posicion.z) << "\n";
+	}
+
 
 	if( celulas_en_mi_voxel.size() > 1 )
 	{
 		for(long unsigned int i=0; i < celulas_en_mi_voxel.size(); i++ ){
             if(celulas_en_mi_voxel[i] != this && celulas_en_mi_voxel[i]->tipo != 2){
+
             Vector desplazamiento = celulas_en_mi_voxel[i]->posicion - posicion;
-            axpy( &(velocidad) , constante_elastica , desplazamiento );
-            }
+            
+         	//  std::cout <<pg->tiempo_total <<"Movement towards tumor cell: " << desplazamiento.x*constante_elastica << std::endl;//Debug
+			
+			
+			axpy( &(velocidad) , constante_elastica , desplazamiento );
+			//  std::cout <<pg->tiempo_total <<"Movement towards tumor cell: " << velocidad.x <<","<< velocidad.y <<","<< velocidad.z <<",norma "<< std::sqrt(velocidad.x*velocidad.x+velocidad.y*velocidad.y+velocidad.z*velocidad.z) << std::endl;//Debug
+			}
 		}
 
 
@@ -1760,6 +1789,7 @@ void Linfocito::avanzar_linfocito( double dt, std::vector<Celula*> celulas_en_mi
 
 		if( adherida && intento_de_apoptosis( celula_adherida, dt ) )
 		{
+			// std::cout << "Linfocito " << id << " desencadena apoptosis en celula " << celula_adherida->id << std::endl;//Debug
 			desencadenar_apoptosis( celula_adherida );
 
 			soltarme = true;
@@ -1790,7 +1820,7 @@ void Linfocito::avanzar_linfocito( double dt, std::vector<Celula*> celulas_en_mi
 
 	if( adherida==false){
 
-
+	// Debug uncomment
 	bool check = chequear_vecinos_para_adherirse( celulas_en_mi_voxel , dt );
 
 		if (check == true){
@@ -1959,7 +1989,7 @@ bool Linfocito::chequear_vecinos_para_adherirse( std::vector<Celula*> celulas_en
 			if( intentar_adherirse( celulas_en_mi_voxel[i] , dt ) )
 			{
 
-                 return true;
+				return true;
 			}
 		}
 		i= i+1;
@@ -2023,6 +2053,7 @@ bool Linfocito::intentar_adherirse( Celula* celula_objetivo , double dt )
 
 
 	}
+
 
 	return false;
 }

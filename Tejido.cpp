@@ -67,12 +67,35 @@ void Tejido::inicializar_tejido(){
 	cdc.inicializar(pg->rango_en_X[0],pg->rango_en_X[1],pg->rango_en_Y[0],pg->rango_en_Y[1],
 	pg->rango_en_Z[0],pg->rango_en_Z[1], pg->c_dx, pg->c_dy, pg->c_dz);
 
+
+	// //Debug spawn a ccell
+	// cdc.celula = crear_celula();
+	// cdc.celula->inicializar_celula();
+    // cdc.celula->fenotipo.secrecion.oncoproteina = rng->NormalRandom_CM( pg->imm_mean, pg->imm_sd );
+	// celulas_para_registrar_en_voxeles.clear();
+	// cdc.celula->set_posicion( {0.,0.,0.} );
+	// cdc.registrar_celula(cdc.celula);
+	// celulas_para_registrar_en_voxeles.clear();    
+
+	//Debug span a car-T
+	Celula* pLinfocito = new Linfocito;
+	todas_las_celulas.push_back(pLinfocito);
+	celulas_para_registrar_en_voxeles.push_back(pLinfocito);
+	pLinfocito->indice=todas_las_celulas.size()-1;
+	pLinfocito->set_posicion(350.,0.,0.);
+	cdc.registrar_celula(pLinfocito);
+	celulas_para_registrar_en_voxeles.clear();
+
+
+
+	//debug needs to be uncommented
+
     //Célula Cancerosa
 	cdc.celula = crear_celula();
 	cdc.celula->inicializar_celula();
     cdc.celula->fenotipo.secrecion.oncoproteina = rng->NormalRandom_CM( pg->imm_mean, pg->imm_sd );
-	cdc.registrar_celula(cdc.celula);
 	celulas_para_registrar_en_voxeles.clear();
+
 
 	//Planos de células sanas
 	std::vector<Vector> posiciones = crear_esfera_de_celulas(150);
@@ -85,7 +108,6 @@ void Tejido::inicializar_tejido(){
             cdc.registrar_celula(cdc.celula);
             celulas_para_registrar_en_voxeles.clear();            
         }else{
-
             pCelula = crear_celula();
             pCelula->inicializar_celula();
             pCelula->set_posicion( posiciones[i] );
@@ -94,6 +116,7 @@ void Tejido::inicializar_tejido(){
             }
 
     }
+	//End debug needs to be uncommented
 
 
 	return;
