@@ -347,6 +347,11 @@ class Linfocito: public Celula{
         double diferencia_de_oncoproteina;
         double diferencia_de_adhesion;
 
+	//Debug
+	public:
+		static long double acumulator_probabilities;
+		static long double GetAccumulatedProbabilities() { return acumulator_probabilities; }
+
 		/**
 		 * @brief Constructor for Lymphocyte
 		 */

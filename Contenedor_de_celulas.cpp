@@ -197,6 +197,7 @@ void Contenedor_de_Celulas::agregar_potenciales_cdc(Celula* celula, Celula* otra
     }else{
 	double repulsion_efectiva = sqrt( celula->fenotipo.mecanica.fuerza_de_repulsion_co * otra_celula->fenotipo.mecanica.fuerza_de_repulsion_co );
 	temp_r *= repulsion_efectiva;
+
     }
 
 
@@ -224,6 +225,8 @@ void Contenedor_de_Celulas::agregar_potenciales_cdc(Celula* celula, Celula* otra
 		}else{
 		double adhesion_efectiva = sqrt( celula->fenotipo.mecanica.fuerza_de_adhesion_co * otra_celula->fenotipo.mecanica.fuerza_de_adhesion_co );
 		temp_a *= adhesion_efectiva;
+		// std::cout << "adhesion_efectiva force: " << adhesion_efectiva<< std::endl;//Debug
+
 		}
 
 		temp_r -= temp_a;
@@ -241,6 +244,7 @@ void Contenedor_de_Celulas::agregar_potenciales_cdc(Celula* celula, Celula* otra
     celula->velocidad.x += temp_r * celula->desplazamiento.x;
 	celula->velocidad.y += temp_r * celula->desplazamiento.y;
 	celula->velocidad.z += temp_r * celula->desplazamiento.z;
+	// std::cout << "Neighbor force: " << temp_r<< std::endl;//Debug
     
     //Le agrego el potencial a la otra célula también
     otra_celula->velocidad.x -= temp_r * celula->desplazamiento.x;
@@ -317,7 +321,7 @@ void Contenedor_de_Celulas::actualizar_todas_las_celulas(double tiempo_total, do
             //todas_las_celulas[a]->agregar_potenciales_mb_2();
             if(todas_las_celulas[a]->tipo == 2){
 
-                todas_las_celulas[a]->actualizar_vector_de_motilidad(dt_mecanico, celulas_en_voxel[todas_las_celulas[a]->voxel]);
+                todas_las_celulas[a]->actualizar_vector_de_motilidad(dt_mecanico, celulas_en_voxel[todas_las_celulas[a]->voxel]);//Debug uncomment
                 todas_las_celulas[a]->avanzar_linfocito(dt_mecanico, celulas_en_voxel[todas_las_celulas[a]->voxel]);
             }
         }

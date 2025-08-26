@@ -68,6 +68,9 @@ Celula::Celula(){
 	return;
 }
 
+long double Linfocito::acumulator_probabilities(0.0L);  //Debug
+
+
 /**
  * @brief Updates the cell volume according to phenotype parameters
  * @details Manages fluid and solid volume components for the cell, including nuclear and 
@@ -285,20 +288,17 @@ void Celula::actualizar_parametros_de_celula_y_muerte_con_o2_y_oncoproteina(Feno
 	}
 	fenotipo.muerte.tasas[indice_necrosis] = multiplicador * parametros.tasa_necrosis_max;
 
-
-
-
       fenotipo.ciclo.actualizar_mis_tasas_de_transicion(indice_fase_inicial, indice_fase_final) *= fenotipo.secrecion.oncoproteina;
 	//Debug
 	//output info only for cancer cells
-	if (tipo==0){
-		int half_day = pg->tiempo_total / (60*12);
-		std::ofstream file("out/simulation_data"+std::to_string(half_day)+".csv", std::ios::app);
-		if (file.is_open()) {
-		file  << pO2 << "," 
-			<< fenotipo.secrecion.oncoproteina  << "," << fenotipo.ciclo.tasa_aleatoria <<"," << fenotipo.ciclo.actualizar_mis_tasas_de_transicion(indice_fase_inicial, indice_fase_final) << "," << multiplicador * parametros.tasa_necrosis_max << "\n";
-		}
-	}
+	// if (tipo==0){
+	// 	int half_day = pg->tiempo_total / (60*12);
+	// 	std::ofstream file("out/simulation_data"+std::to_string(half_day)+".csv", std::ios::app);
+	// 	if (file.is_open()) {
+	// 	file  << pO2 << "," 
+	// 		<< fenotipo.secrecion.oncoproteina  << "," << fenotipo.ciclo.tasa_aleatoria <<"," << fenotipo.ciclo.actualizar_mis_tasas_de_transicion(indice_fase_inicial, indice_fase_final) << "," << multiplicador * parametros.tasa_necrosis_max << "\n";
+	// 	}
+	// }
 	//End Debug
       
 
@@ -443,7 +443,7 @@ void Celula::actualizar_parametros_de_celula_y_muerte_con_o2_y_oncoproteina(Feno
  * @brief Advances cell phenotype functions considering oxygen and oncoprotein
  * @details Most sophisticated version of phenotype advancement that takes into account:
  * - Oxygen availability
- * - Oncoprotein expression
+ * - a expression
  * - Cell attachment status
  * - Cell type specific behaviors (especially for lymphocytes)
  * 
@@ -548,7 +548,6 @@ void Celula::avanzar_funciones_del_fenotipo_con_O2_y_oncoproteina(double hora_gl
             }
 
         }else if(fenotipo.muerte.muerta == true){
-
 			// // if(fenotipo.ciclo.pCiclo_Modelo->nombre != "Vida"){
 			// bool debug= fenotipo.ciclo.actualizar_volumen() ;
 			// auto st="No";
@@ -777,92 +776,94 @@ void Celula::morir(int indice){
  * - Tumor structure and packing density
  * - Mechanical stress in the tumor microenvironment
  */
-void Celula::agregar_potenciales(Celula* otra_celula){
+// void Celula::agregar_potenciales(Celula* otra_celula){
 
-	if( this->id == otra_celula->id ){
-		return;
-	}
-
-
-	desplazamiento.x = posicion.x - otra_celula->posicion.x;
-	desplazamiento.y = posicion.y - otra_celula->posicion.y;
-	desplazamiento.z = posicion.z - otra_celula->posicion.z;
-
-    //Agrego esto por las Condiciones Periódicas de Contorno (funciona también sin CPC)
-    desplazamiento.x = desplazamiento.x - (2*pg->rango_en_X[1])*round(desplazamiento.x/(2*pg->rango_en_X[1]));
-	desplazamiento.y = desplazamiento.y - (2*pg->rango_en_Y[1])*round(desplazamiento.y/(2*pg->rango_en_Y[1]));
-	desplazamiento.z = desplazamiento.z - (2*pg->rango_en_Z[1])*round(desplazamiento.z/(2*pg->rango_en_Z[1]));
+// 	if( this->id == otra_celula->id ){
+// 		return;
+// 	}
 
 
+// 	desplazamiento.x = posicion.x - otra_celula->posicion.x;
+// 	desplazamiento.y = posicion.y - otra_celula->posicion.y;
+// 	desplazamiento.z = posicion.z - otra_celula->posicion.z;
+
+//     //Agrego esto por las Condiciones Periódicas de Contorno (funciona también sin CPC)
+//     desplazamiento.x = desplazamiento.x - (2*pg->rango_en_X[1])*round(desplazamiento.x/(2*pg->rango_en_X[1]));
+// 	desplazamiento.y = desplazamiento.y - (2*pg->rango_en_Y[1])*round(desplazamiento.y/(2*pg->rango_en_Y[1]));
+// 	desplazamiento.z = desplazamiento.z - (2*pg->rango_en_Z[1])*round(desplazamiento.z/(2*pg->rango_en_Z[1]));
 
 
-	double distancia = desplazamiento.x * desplazamiento.x +
-	desplazamiento.y * desplazamiento.y + desplazamiento.z * desplazamiento.z;
 
 
-	distancia = std::max(sqrt(distancia), 0.00001);
-
-	double R = fenotipo.geometria.radio + otra_celula->fenotipo.geometria.radio;
-
-	double temp_r;
-	if( distancia > R )
-	{
-		temp_r=0;
-	}
-	else
-	{
-		temp_r = -distancia; // -d
-		temp_r /= R; // -d/R
-		temp_r += 1.0; // 1-d/R
-		temp_r *= temp_r; // (1-d/R)^2
-
-	}
-
-	if(this->tipo == otra_celula->tipo){
-	double repulsion_efectiva = sqrt( fenotipo.mecanica.fuerza_de_repulsion_cc * otra_celula->fenotipo.mecanica.fuerza_de_repulsion_cc );
-	temp_r *= repulsion_efectiva;
-    }else{
-	double repulsion_efectiva = sqrt( fenotipo.mecanica.fuerza_de_repulsion_co * otra_celula->fenotipo.mecanica.fuerza_de_repulsion_co );
-	temp_r *= repulsion_efectiva;
-    }
+// 	double distancia = desplazamiento.x * desplazamiento.x +
+// 	desplazamiento.y * desplazamiento.y + desplazamiento.z * desplazamiento.z;
 
 
-	double distancia_de_interaccion_max = fenotipo.mecanica.distancia_de_adhesion_maxima_relativa * fenotipo.geometria.radio +
-		otra_celula->fenotipo.mecanica.distancia_de_adhesion_maxima_relativa * otra_celula->fenotipo.geometria.radio;
+// 	distancia = std::max(sqrt(distancia), 0.00001);
 
-	if(distancia < distancia_de_interaccion_max )
-	{
-		double temp_a = -distancia; // -d
-		temp_a /= distancia_de_interaccion_max; // -d/S
-		temp_a += 1.0; // 1 - d/S
-		temp_a *= temp_a; // (1-d/S)^2
+// 	double R = fenotipo.geometria.radio + otra_celula->fenotipo.geometria.radio;
 
-		if(this->tipo == otra_celula->tipo){
-		double adhesion_efectiva = sqrt( fenotipo.mecanica.fuerza_de_adhesion_cc * otra_celula->fenotipo.mecanica.fuerza_de_adhesion_cc );
-		temp_a *= adhesion_efectiva;
-		}else{
-		double adhesion_efectiva = sqrt( fenotipo.mecanica.fuerza_de_adhesion_co * otra_celula->fenotipo.mecanica.fuerza_de_adhesion_co );
-		temp_a *= adhesion_efectiva;
-		}
+// 	double temp_r;
+// 	if( distancia > R )
+// 	{
+// 		temp_r=0;
+// 	}
+// 	else
+// 	{
+// 		temp_r = -distancia; // -d
+// 		temp_r /= R; // -d/R
+// 		temp_r += 1.0; // 1-d/R
+// 		temp_r *= temp_r; // (1-d/R)^2
 
-		temp_r -= temp_a;
-	}
-	if( fabs(temp_r) < 1e-16 )
-	{ return; }
-	temp_r /= distancia;
+// 	}
+
+// 	if(this->tipo == otra_celula->tipo){
+// 	double repulsion_efectiva = sqrt( fenotipo.mecanica.fuerza_de_repulsion_cc * otra_celula->fenotipo.mecanica.fuerza_de_repulsion_cc );
+// 	temp_r *= repulsion_efectiva;
+//     }else{
+// 	double repulsion_efectiva = sqrt( fenotipo.mecanica.fuerza_de_repulsion_co * otra_celula->fenotipo.mecanica.fuerza_de_repulsion_co );
+// 	temp_r *= repulsion_efectiva;
+//     }
+
+
+// 	double distancia_de_interaccion_max = fenotipo.mecanica.distancia_de_adhesion_maxima_relativa * fenotipo.geometria.radio +
+// 		otra_celula->fenotipo.mecanica.distancia_de_adhesion_maxima_relativa * otra_celula->fenotipo.geometria.radio;
+
+// 	if(distancia < distancia_de_interaccion_max )
+// 	{
+// 		double temp_a = -distancia; // -d
+// 		temp_a /= distancia_de_interaccion_max; // -d/S
+// 		temp_a += 1.0; // 1 - d/S
+// 		temp_a *= temp_a; // (1-d/S)^2
+
+// 		if(this->tipo == otra_celula->tipo){
+// 		double adhesion_efectiva = sqrt( fenotipo.mecanica.fuerza_de_adhesion_cc * otra_celula->fenotipo.mecanica.fuerza_de_adhesion_cc );
+// 		temp_a *= adhesion_efectiva;
+// 		}else{
+// 		double adhesion_efectiva = sqrt( fenotipo.mecanica.fuerza_de_adhesion_co * otra_celula->fenotipo.mecanica.fuerza_de_adhesion_co );
+// 		temp_a *= adhesion_efectiva;
+// 		}
+
+// 		temp_r -= temp_a;
+// 	}
+// 	if( fabs(temp_r) < 1e-16 )
+// 	{ return; }
+// 	temp_r /= distancia;
 	
-    //axpy(&velocidad, temp_r, desplazamiento);
-    velocidad.x += temp_r * desplazamiento.x;
-	velocidad.y += temp_r * desplazamiento.y;
-	velocidad.z += temp_r * desplazamiento.z;
-    
-    //Le agrego el potencial a la otra célula también
-    otra_celula->velocidad.x -= temp_r * desplazamiento.x;
-	otra_celula->velocidad.y -= temp_r * desplazamiento.y;
-	otra_celula->velocidad.z -= temp_r * desplazamiento.z; 
+//     //axpy(&velocidad, temp_r, desplazamiento);
+//     velocidad.x += temp_r * desplazamiento.x;
+// 	velocidad.y += temp_r * desplazamiento.y;
+// 	velocidad.z += temp_r * desplazamiento.z;
 
-	return;
-}
+
+    
+//     //Le agrego el potencial a la otra célula también
+//     otra_celula->velocidad.x -= temp_r * desplazamiento.x;
+// 	otra_celula->velocidad.y -= temp_r * desplazamiento.y;
+// 	otra_celula->velocidad.z -= temp_r * desplazamiento.z; 
+
+// 	return;
+// }
 
 /**
  * @brief Calculates and applies bottom boundary mechanical interactions
@@ -945,131 +946,131 @@ void Celula::agregar_potenciales_mb(){
  * boundaries when the cell is within interaction distance, collecting all relevant
  * displacement vectors and applying forces to each.
  */
-void Celula::agregar_potenciales_mb_2(){
+// void Celula::agregar_potenciales_mb_2(){
 
-    if( pg->condiciones_de_periodicidad_x==true && pg->condiciones_de_periodicidad_y==true && pg->condiciones_de_periodicidad_z==true ){
-		return;
-	}
-    std::cout << "Entre a calcular membrana \n";
-	double distancia_de_interaccion_max = fenotipo.mecanica.distancia_de_adhesion_maxima_relativa * fenotipo.geometria.radio;
+    // if( pg->condiciones_de_periodicidad_x==true && pg->condiciones_de_periodicidad_y==true && pg->condiciones_de_periodicidad_z==true ){
+	// 	return;
+	// }
+    // std::cout << "Entre a calcular membrana \n";
+	// double distancia_de_interaccion_max = fenotipo.mecanica.distancia_de_adhesion_maxima_relativa * fenotipo.geometria.radio;
 
-	double distancia;
-	std::vector<double> distancias;
-	std::vector<Vector> desplazamientos;
+	// double distancia;
+	// std::vector<double> distancias;
+	// std::vector<Vector> desplazamientos;
 
-	//Comparación con x_0
-	desplazamiento.x = posicion.x - pg->rango_en_X[0];
-	desplazamiento.y = 0;
-	desplazamiento.z = 0;
+	// //Comparación con x_0
+	// desplazamiento.x = posicion.x - pg->rango_en_X[0];
+	// desplazamiento.y = 0;
+	// desplazamiento.z = 0;
 
-	distancia = desplazamiento.x * desplazamiento.x;
-	distancia = std::max(sqrt(distancia), 0.00001);
+	// distancia = desplazamiento.x * desplazamiento.x;
+	// distancia = std::max(sqrt(distancia), 0.00001);
 
-	if(distancia < distancia_de_interaccion_max && !pg->condiciones_de_periodicidad_x){
-	distancias.push_back(distancia);
-	desplazamientos.push_back(desplazamiento);
+	// if(distancia < distancia_de_interaccion_max && !pg->condiciones_de_periodicidad_x){
+	// distancias.push_back(distancia);
+	// desplazamientos.push_back(desplazamiento);
 
-	}
+	// }
 
-    //Comparación con y_0
-	desplazamiento.x = 0;
-	desplazamiento.y = posicion.y - pg->rango_en_Y[0];
-	desplazamiento.z = 0;
+    // //Comparación con y_0
+	// desplazamiento.x = 0;
+	// desplazamiento.y = posicion.y - pg->rango_en_Y[0];
+	// desplazamiento.z = 0;
 
-	distancia = desplazamiento.y * desplazamiento.y;
-	distancia = std::max(sqrt(distancia), 0.00001);
+	// distancia = desplazamiento.y * desplazamiento.y;
+	// distancia = std::max(sqrt(distancia), 0.00001);
 
-	if(distancia < distancia_de_interaccion_max && !pg->condiciones_de_periodicidad_y){
-	distancias.push_back(distancia);
-	desplazamientos.push_back(desplazamiento);
+	// if(distancia < distancia_de_interaccion_max && !pg->condiciones_de_periodicidad_y){
+	// distancias.push_back(distancia);
+	// desplazamientos.push_back(desplazamiento);
 
-	}
+	// }
 
-    //Comparación con z_0
-	desplazamiento.x = 0;
-	desplazamiento.y = 0;
-	desplazamiento.z = posicion.z - pg->rango_en_Z[0];
+    // //Comparación con z_0
+	// desplazamiento.x = 0;
+	// desplazamiento.y = 0;
+	// desplazamiento.z = posicion.z - pg->rango_en_Z[0];
 
-	distancia = desplazamiento.z * desplazamiento.z;
-	distancia = std::max(sqrt(distancia), 0.00001);
+	// distancia = desplazamiento.z * desplazamiento.z;
+	// distancia = std::max(sqrt(distancia), 0.00001);
 
-	if(distancia < distancia_de_interaccion_max && !pg->condiciones_de_periodicidad_z){
-	distancias.push_back(distancia);
-	desplazamientos.push_back(desplazamiento);
+	// if(distancia < distancia_de_interaccion_max && !pg->condiciones_de_periodicidad_z){
+	// distancias.push_back(distancia);
+	// desplazamientos.push_back(desplazamiento);
 
-	}
+	// }
 
-    //Comparación con x_Max
-	desplazamiento.x = pg->rango_en_X[1]- posicion.x;
-	desplazamiento.y = 0;
-	desplazamiento.z = 0;
+    // //Comparación con x_Max
+	// desplazamiento.x = pg->rango_en_X[1]- posicion.x;
+	// desplazamiento.y = 0;
+	// desplazamiento.z = 0;
 
-	distancia = desplazamiento.x * desplazamiento.x;
-	distancia = std::max(sqrt(distancia), 0.00001);
+	// distancia = desplazamiento.x * desplazamiento.x;
+	// distancia = std::max(sqrt(distancia), 0.00001);
 
-	if(distancia < distancia_de_interaccion_max && !pg->condiciones_de_periodicidad_x){
-	distancias.push_back(distancia);
-	desplazamientos.push_back(desplazamiento);
+	// if(distancia < distancia_de_interaccion_max && !pg->condiciones_de_periodicidad_x){
+	// distancias.push_back(distancia);
+	// desplazamientos.push_back(desplazamiento);
 
-	}
+	// }
 
-    //Comparación con y_Max
-	desplazamiento.x = 0;
-	desplazamiento.y = pg->rango_en_Y[1]- posicion.y;
-	desplazamiento.z = 0;
+    // //Comparación con y_Max
+	// desplazamiento.x = 0;
+	// desplazamiento.y = pg->rango_en_Y[1]- posicion.y;
+	// desplazamiento.z = 0;
 
-	distancia = desplazamiento.y * desplazamiento.y;
-	distancia = std::max(sqrt(distancia), 0.00001);
+	// distancia = desplazamiento.y * desplazamiento.y;
+	// distancia = std::max(sqrt(distancia), 0.00001);
 
-	if(distancia < distancia_de_interaccion_max && !pg->condiciones_de_periodicidad_y){
-	distancias.push_back(distancia);
-	desplazamientos.push_back(desplazamiento);
+	// if(distancia < distancia_de_interaccion_max && !pg->condiciones_de_periodicidad_y){
+	// distancias.push_back(distancia);
+	// desplazamientos.push_back(desplazamiento);
 
-	}
+	// }
 
-    //Comparación con z_Max
-	desplazamiento.x = 0;
-	desplazamiento.y = 0;
-	desplazamiento.z = pg->rango_en_Z[1]- posicion.z;
+    // //Comparación con z_Max
+	// desplazamiento.x = 0;
+	// desplazamiento.y = 0;
+	// desplazamiento.z = pg->rango_en_Z[1]- posicion.z;
 
-	distancia = desplazamiento.z * desplazamiento.z;
-	distancia = std::max(sqrt(distancia), 0.00001);
+	// distancia = desplazamiento.z * desplazamiento.z;
+	// distancia = std::max(sqrt(distancia), 0.00001);
 
-	if(distancia < distancia_de_interaccion_max && !pg->condiciones_de_periodicidad_z){
-	distancias.push_back(distancia);
-	desplazamientos.push_back(desplazamiento);
+	// if(distancia < distancia_de_interaccion_max && !pg->condiciones_de_periodicidad_z){
+	// distancias.push_back(distancia);
+	// desplazamientos.push_back(desplazamiento);
 
-	}
+	// }
 
-	if(distancias.size()>0){
-        for(unsigned int i=0; i < distancias.size(); i++){
+	// if(distancias.size()>0){
+    //     for(unsigned int i=0; i < distancias.size(); i++){
 
-            double temp_a=0;
-            // Adhesion a la membrana basal
-            temp_a= (1- distancias[i]/distancia_de_interaccion_max);
-            temp_a*=temp_a;
-            temp_a*=-fenotipo.mecanica.fuerza_de_adhesion_mb;
+    //         double temp_a=0;
+    //         // Adhesion a la membrana basal
+    //         temp_a= (1- distancias[i]/distancia_de_interaccion_max);
+    //         temp_a*=temp_a;
+    //         temp_a*=-fenotipo.mecanica.fuerza_de_adhesion_mb;
 
-            // Repulsion de la membrana basal
-            double temp_r = 0;
-            if(distancias[i] < fenotipo.geometria.radio){
-                temp_r = (1- distancias[i]/fenotipo.geometria.radio);
-                temp_r *= temp_r;
-                temp_r *= fenotipo.mecanica.fuerza_de_repulsion_mb;
-            }
-            temp_r += temp_a;
-            if( fabs( temp_r ) > 1e-16 )
-            { axpy(&velocidad, temp_r, desplazamientos[i]); }
-
-
-        }
-
-	}
-
-	return;
+    //         // Repulsion de la membrana basal
+    //         double temp_r = 0;
+    //         if(distancias[i] < fenotipo.geometria.radio){
+    //             temp_r = (1- distancias[i]/fenotipo.geometria.radio);
+    //             temp_r *= temp_r;
+    //             temp_r *= fenotipo.mecanica.fuerza_de_repulsion_mb;
+    //         }
+    //         temp_r += temp_a;
+    //         if( fabs( temp_r ) > 1e-16 )
+    //         { axpy(&velocidad, temp_r, desplazamientos[i]); }
 
 
-}
+    //     }
+
+	// }
+
+	// return;
+
+
+// }
 
 
 /**
@@ -1101,6 +1102,29 @@ void Celula::actualizar_posicion( double dt ){
 	}
 
 
+	//DEBUG
+	// if(tipo==0){
+	// 	std::ofstream file("out/posiciones_tumor_cell.csv", std::ios::app);
+	// 	if (file.is_open()) {
+	// 	file  << pg->tiempo_total << "," 
+	// 		<< posicion.x << "," << posicion.y << "," << posicion.z << ", norm:" << std::sqrt(posicion.x*posicion.x + posicion.y*posicion.y + posicion.z*posicion.z) << "\n";
+	// 	}
+
+	// }else if(tipo==2){
+	// 	std::ofstream file("out/posiciones_carts.csv", std::ios::app);
+	// 	if (file.is_open()) {
+	// 	file  << pg->tiempo_total << "," 
+	// 		<< posicion.x << "," << posicion.y << "," << posicion.z << ", norm:" << std::sqrt(posicion.x*posicion.x + posicion.y*posicion.y + posicion.z*posicion.z) << "\n";
+	// 	}
+	// }
+
+	//END DEBuG
+
+
+
+
+
+	// std::cout<<velocidad.x<<", "<<velocidad.y<<", "<<velocidad.z<<std::endl;//Debug
     posicion.x += d1 * velocidad.x;
 	posicion.y += d1 * velocidad.y;
 	posicion.z += d1 * velocidad.z;
@@ -1419,9 +1443,10 @@ void Celula::inicializar_celula(){
 
 
     fenotipo.secrecion.oncoproteina = rng->NormalRandom_CM(pg->imm_mean, pg->imm_sd);
-	// fenotipo.secrecion.oncoproteina =1.;//Debug
+	// fenotipo.secrecion.oncoproteina =1.0;//Debug
     if( fenotipo.secrecion.oncoproteina < 0.0 ){
     fenotipo.secrecion.oncoproteina = 0.0; }
+	// std::cout << "Oncoproteina: " << fenotipo.secrecion.oncoproteina << "\n";//Debug
 
 	parametros.o2_saturacion_para_la_proliferacion=pg->o2_saturacion_para_la_proliferacion;
 	parametros.o2_referencia=pg->o2_referencia;
@@ -1637,7 +1662,7 @@ void Linfocito::actualizar_vector_de_motilidad( double dt, std::vector<Celula*> 
 		motilidad.vector_de_motilidad.z = 0.0;
 		return;
 	}
-	// std::cout <<pg->tiempo_total <<"velocity: " << velocidad.x <<","<< velocidad.y <<","<< velocidad.z <<",norma "<< std::sqrt(velocidad.x*velocidad.x+velocidad.y*velocidad.y+velocidad.z*velocidad.z) << std::endl;//Debug
+	// std::cout <<pg->tiempo_total <<"velocity: " << velocidad.x <<","<< velocidad.y <<","<< velocidad.z <<",norma "<< std::sqrt(svelocidad.x*velocidad.x+velocidad.y*velocidad.y+velocidad.z*velocidad.z) << std::endl;//Debug
 
 	// if( true )//Debug
 	if( rng->RandomNumber() < dt / motilidad.tiempo_de_persistencia || motilidad.tiempo_de_persistencia < dt )//Debug needs tu be uncommented
@@ -1761,15 +1786,16 @@ void Linfocito::avanzar_linfocito( double dt, std::vector<Celula*> celulas_en_mi
 	// std::cout << adherida<< motilidad.es_movisl << std::endl;//Debug
 
 	//Debug CAR-T positions
-	std::ofstream file("out/posiciones_cart.csv", std::ios::app);
-	if (file.is_open()) {
-	file  << pg->tiempo_total << "," 
-		<< posicion.x << "," << posicion.y << "," << posicion.z << ", norma " << std::sqrt(posicion.x*posicion.x+posicion.y*posicion.y+posicion.z*posicion.z) << "\n";
-	}
+	// std::ofstream file("out/posiciones_cart.csv", std::ios::app);
+	// if (file.is_open()) {
+	// file  << pg->tiempo_total << "," 
+	// 	<< posicion.x << "," << posicion.y << "," << posicion.z << ", norma " << std::sqrt(posicion.x*posicion.x+posicion.y*posicion.y+posicion.z*posicion.z) << "\n";
+	// }
 
 
 	if( celulas_en_mi_voxel.size() > 1 )
 	{
+
 		for(long unsigned int i=0; i < celulas_en_mi_voxel.size(); i++ ){
             if(celulas_en_mi_voxel[i] != this && celulas_en_mi_voxel[i]->tipo != 2){
 
@@ -1786,7 +1812,6 @@ void Linfocito::avanzar_linfocito( double dt, std::vector<Celula*> celulas_en_mi
 
 
 		bool soltarme = false;
-
 		if( adherida && intento_de_apoptosis( celula_adherida, dt ) )
 		{
 			// std::cout << "Linfocito " << id << " desencadena apoptosis en celula " << celula_adherida->id << std::endl;//Debug
@@ -1797,7 +1822,7 @@ void Linfocito::avanzar_linfocito( double dt, std::vector<Celula*> celulas_en_mi
 		}
 
 
-
+		// std::cout << "Linfocito " << dt / ( tiempo_de_adhesion + 1e-15 ) << " intenta apoptosis en celula " << std::endl;// Debug
 
 		if( adherida && rng->RandomNumber() < dt / ( tiempo_de_adhesion + 1e-15 ) )
 		{ soltarme = true; }
@@ -1857,6 +1882,7 @@ bool Linfocito::intento_de_apoptosis( Celula* celula_adherida, double dt )
 	//static int indice_del_ciclo_apoptosis = celula_adherida->fenotipo.muerte.encontrar_indice_del_ciclo_de_muerte("apoptosis");
 	//static int kill_rate_index = pAttacker->custom_data.find_variable_index( "kill rate" );
 
+	// return false;//Debug
 
 
 	//static double oncoprotein_saturation = parameters.doubles("oncoprotein_saturation"); // 2.0;
@@ -1875,7 +1901,13 @@ bool Linfocito::intento_de_apoptosis( Celula* celula_adherida, double dt )
 	if( escala > 1.0 )
 	{ escala = 1.0; }
 
-
+	// 	//Debug
+	// double current_time = pg->tiempo_total; // Get the current time step in minutes
+	// std::ofstream file("out/cart_killing.csv", std::ios::app);
+	// if (file.is_open()) {
+	// file  << current_time << " probability "<< tasa_de_asesinato * escala * dt <<"\n";
+	// }
+	// //End Debug
 
 	if( rng->RandomNumber() < tasa_de_asesinato * escala * dt )
 	{
@@ -1901,7 +1933,7 @@ bool Linfocito::desencadenar_apoptosis( Celula* celula_adherida )
 {
 	static int indice_del_ciclo_apoptosis = celula_adherida->fenotipo.muerte.encontrar_indice_del_ciclo_de_muerte("Apoptosis");
 
-
+	// std::cout << "Desencadenar apoptosis en celula: " << celula_adherida->id << std::endl;//Debug
 
 	if( celula_adherida->fenotipo.muerte.muerta == true ){
 
@@ -2015,12 +2047,19 @@ bool Linfocito::chequear_vecinos_para_adherirse( std::vector<Celula*> celulas_en
  * @param dt Time step size
  * @return Boolean indicating whether attachment was successful
  */
-bool Linfocito::intentar_adherirse( Celula* celula_objetivo , double dt )
-{
+bool Linfocito::intentar_adherirse( Celula* celula_objetivo , double dt ){
 
+    // //Debug
+	// double current_time = pg->tiempo_total; // Get the current time step in minutes
+	// std::ofstream file("out/cart_adhesion.csv", std::ios::app);
+	// if (file.is_open()) {
+	// file  << current_time << " probability "<< kAdhesionRateCart * oncoprotein_scale_factor * distance_scale_factor * kDtMechanics <<"\n";
+	// }
+	// //End Debug
 
 	if( celula_objetivo->fenotipo.secrecion.oncoproteina > limite_de_oncoproteina && celula_objetivo->fenotipo.muerte.muerta == false && celula_objetivo->adherida == false )
 	{
+		// std::cout << "Linfocito " << id << " intenta adherirse a celula " << celula_objetivo->id << " con oncoproteina " << celula_objetivo->fenotipo.secrecion.oncoproteina << std::endl;//Debug
 		Vector desplazamiento = celula_objetivo->posicion - posicion;
 		double escala_de_distancia = norma(desplazamiento);
 
@@ -2041,12 +2080,31 @@ bool Linfocito::intentar_adherirse( Celula* celula_objetivo , double dt )
 		escala_de_distancia /= diferencia_de_adhesion;
 		if( escala_de_distancia > 1.0 )
 		{ escala_de_distancia = 1.0; }
+		// escala_de_distancia=1;//Debug
 
+		// //Debug
+		// double current_time = pg->tiempo_total; // Get the current time step in minutes
+		// std::ofstream file("out/cart_adhesion.csv", std::ios::app);
+		// if (file.is_open()) {
+		// file  << current_time << " probability "<< tasa_de_adhesion * escala * dt * escala_de_distancia <<"\n";
+		// }
+		// //End Debug
 
-		if( rng->RandomNumber() < tasa_de_adhesion * escala * dt * escala_de_distancia )
+		//Debug
+		#pragma omp critical
 		{
+		acumulator_probabilities += tasa_de_adhesion * escala * dt * escala_de_distancia;
+		}
+		return false;
+		//ENd Debug
+
+
+		if( rng->RandomNumber() < tasa_de_adhesion * escala * dt * escala_de_distancia )//Debug Uncomment
+		{
+			
 
             adherir_celula(celula_objetivo);
+        // std::cout << "Attaching at time: " << pg->tiempo_total << std::endl;//Debug
 
             return true;
 		}

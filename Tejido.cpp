@@ -71,29 +71,36 @@ void Tejido::inicializar_tejido(){
 	// //Debug spawn a ccell
 	// cdc.celula = crear_celula();
 	// cdc.celula->inicializar_celula();
-    // cdc.celula->fenotipo.secrecion.oncoproteina = rng->NormalRandom_CM( pg->imm_mean, pg->imm_sd );
 	// celulas_para_registrar_en_voxeles.clear();
-	// cdc.celula->set_posicion( {0.,0.,0.} );
+	// cdc.celula->set_posicion(-19.5336,-19.5336,-19.5336);
 	// cdc.registrar_celula(cdc.celula);
-	// celulas_para_registrar_en_voxeles.clear();    
+	// celulas_para_registrar_en_voxeles.clear();      
 
-	//Debug span a car-T
-	Celula* pLinfocito = new Linfocito;
-	todas_las_celulas.push_back(pLinfocito);
-	celulas_para_registrar_en_voxeles.push_back(pLinfocito);
-	pLinfocito->indice=todas_las_celulas.size()-1;
-	pLinfocito->set_posicion(350.,0.,0.);
-	cdc.registrar_celula(pLinfocito);
-	celulas_para_registrar_en_voxeles.clear();
+	// //Debug span a car-T
+	// Celula* pLinfocito = new Linfocito;
+	// todas_las_celulas.push_back(pLinfocito);
+	// celulas_para_registrar_en_voxeles.push_back(pLinfocito);
+	// pLinfocito->indice=todas_las_celulas.size()-1;
+	// pLinfocito->set_posicion(-10.443,-10.443,-10.443);
+	// cdc.registrar_celula(pLinfocito);
+	// celulas_para_registrar_en_voxeles.clear();
+	// //Debug span a car-T
+	// pLinfocito = new Linfocito;
+	// todas_las_celulas.push_back(pLinfocito);
+	// celulas_para_registrar_en_voxeles.push_back(pLinfocito);
+	// pLinfocito->indice=todas_las_celulas.size()-1;
+	// pLinfocito->set_posicion(10.0,0.,0.);
+	// cdc.registrar_celula(pLinfocito);
+	// celulas_para_registrar_en_voxeles.clear();
 
 
 
-	//debug needs to be uncommented
+// 	//debug needs to be uncommented
 
-    //Célula Cancerosa
+//     //Célula Cancerosa
 	cdc.celula = crear_celula();
 	cdc.celula->inicializar_celula();
-    cdc.celula->fenotipo.secrecion.oncoproteina = rng->NormalRandom_CM( pg->imm_mean, pg->imm_sd );
+    // cdc.celula->fenotipo.secrecion.oncoproteina = rng->NormalRandom_CM( pg->imm_mean, pg->imm_sd );
 	celulas_para_registrar_en_voxeles.clear();
 
 
@@ -116,7 +123,7 @@ void Tejido::inicializar_tejido(){
             }
 
     }
-	//End debug needs to be uncommented
+	// //End debug needs to be uncommented
 
 
 	return;
@@ -331,7 +338,9 @@ void Tejido::introducir_linfocitos_aleatorios(int cantidad){
     }   
 
 	radio_del_tumor_b = sqrt( radio_del_tumor_b );
-	double radio_interno = radio_del_tumor_b + 50.0;
+	double radio_interno = radio_del_tumor_b + 50.0;//Debug needs to be uncommented
+	// double radio_interno = 0;//Debug
+
 
     
 
@@ -346,7 +355,8 @@ void Tejido::introducir_linfocitos_aleatorios(int cantidad){
             pos_temp.y = rng->RandomNumber(pg->rango_en_Y[0],pg->rango_en_Y[1]);
             pos_temp.z = rng->RandomNumber(pg->rango_en_Z[0],pg->rango_en_Z[1]);
             radio_temp_2 = sqrt(pos_temp.x*pos_temp.x + pos_temp.y*pos_temp.y + pos_temp.z*pos_temp.z);
-        }while(radio_interno > radio_temp_2);
+        }while(radio_interno > radio_temp_2);//Debug needs to be uncommented
+        // }while(150 < radio_temp_2);//Debug d
         
         
         

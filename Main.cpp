@@ -179,7 +179,8 @@ int main(int argc, char *argv[]){
     // Initialize random number generator and time settings
 	rng = new RNG(1.0, pg->seed, pg->imm_mean, pg->imm_sd);
 	pg->tiempo_total=0.0;
-	pg->tiempo_final = 43200.01;
+	// pg->tiempo_final = 60*24*12+0.01;//Debug
+	pg->tiempo_final = 43200.01;//Debug Uncomment
     double tiempo_de_escritura = 720.0;
 
 
@@ -350,7 +351,7 @@ int main(int argc, char *argv[]){
                 
                 // The VTK file generation code is commented out but would write visualization files
                
-                     std::ofstream outfile3 (results_dir + "/PM1_" + std::to_string( (int) pg->tiempo_total ) + ".xml" );
+                     std::ofstream outfile3 (results_dir + "/PM1_" + std::to_string( (int) pg->tiempo_total ) + ".vtu" );
                     outfile3 << "<VTKFile type='UnstructuredGrid' version='0.1' byte_order='LittleEndian'> \n";
                     outfile3 << "\t<UnstructuredGrid>\n";
                     outfile3 << "\t\t<Piece NumberOfPoints='" << todas_las_celulas.size() << "' NumberOfCells='0'>\n";
@@ -397,7 +398,7 @@ int main(int argc, char *argv[]){
 
 
 
-                    std::ofstream outfile4(results_dir + "/HM1_" + std::to_string( (int) pg->tiempo_total ) + ".xml" );
+                    std::ofstream outfile4(results_dir + "/HM1_" + std::to_string( (int) pg->tiempo_total ) + ".vtu" );
                     outfile4 << "<VTKFile type='UnstructuredGrid' version='0.1' byte_order='LittleEndian'> \n";
                     outfile4 << "\t<UnstructuredGrid>\n";
                     outfile4 << "\t\t<Piece NumberOfPoints='" << tejido.microambiente.mgrilla.voxeles.size() << "' NumberOfCells='0'>\n";
@@ -450,6 +451,18 @@ int main(int argc, char *argv[]){
             tejido.cdc.actualizar_voxeles_de_celulas();
         }
 	}
+
+
+      //Debug
+  std::cout << "Final accumulated probability: " 
+          << std::setprecision(30) << Linfocito::acumulator_probabilities 
+          << std::endl;
+  // Write the final value to a file
+  std::ofstream file("out/final_accumulated_probability.txt");
+  if (file.is_open()) {
+    file << std::setprecision(30) << Linfocito::acumulator_probabilities;
+    file.close();
+  }
 
 	return 0;
 
