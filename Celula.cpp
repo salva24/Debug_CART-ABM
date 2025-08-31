@@ -2095,7 +2095,6 @@ bool Linfocito::intentar_adherirse( Celula* celula_objetivo , double dt ){
 		{
 		acumulator_probabilities += tasa_de_adhesion * escala * dt * escala_de_distancia;
 		}
-		return false;
 		//ENd Debug
 
 
