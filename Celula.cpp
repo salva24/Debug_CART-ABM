@@ -68,7 +68,7 @@ Celula::Celula(){
 	return;
 }
 
-long double Linfocito::acumulator_probabilities(0.0L);  //Debug
+// long double Linfocito::acumulator_probabilities(0.0L);  //Debug
 
 
 /**
@@ -2091,10 +2091,10 @@ bool Linfocito::intentar_adherirse( Celula* celula_objetivo , double dt ){
 		// //End Debug
 
 		//Debug
-		#pragma omp critical
-		{
-		acumulator_probabilities += tasa_de_adhesion * escala * dt * escala_de_distancia;
-		}
+		// #pragma omp critical
+		// {
+		// acumulator_probabilities += tasa_de_adhesion * escala * dt * escala_de_distancia;
+		// }
 		//ENd Debug
 
 

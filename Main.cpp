@@ -351,92 +351,92 @@ int main(int argc, char *argv[]){
                 
                 // The VTK file generation code is commented out but would write visualization files
                
-                     std::ofstream outfile3 (results_dir + "/PM1_" + std::to_string( (int) pg->tiempo_total ) + ".vtu" );
-                    outfile3 << "<VTKFile type='UnstructuredGrid' version='0.1' byte_order='LittleEndian'> \n";
-                    outfile3 << "\t<UnstructuredGrid>\n";
-                    outfile3 << "\t\t<Piece NumberOfPoints='" << todas_las_celulas.size() << "' NumberOfCells='0'>\n";
-                    outfile3 << "\t\t\t<Points>\n";
-                    outfile3 << "\t\t\t\t<DataArray name='Position' type='Float32' NumberOfComponents='3' format='ascii'>\n";
-                    for(long unsigned int j=0; j<todas_las_celulas.size(); j++){
-                        outfile3 << "\t\t\t\t" << todas_las_celulas[j]->posicion.x << " " << todas_las_celulas[j]->posicion.y << " " << todas_las_celulas[j]->posicion.z << "\n";
-                    }
-                    outfile3 << "\t\t\t\t</DataArray>\n";
-                    outfile3 << "\t\t\t</Points>\n";
-                    outfile3 << "\t\t\t<PointData  Vectors='vector'>\n";
-                    outfile3 << "\t\t\t\t<DataArray type='Float32' Name='Radio' format='ascii'>\n";
-                    for(long unsigned int j=0; j<todas_las_celulas.size(); j++){
-                        outfile3 << "\t\t\t\t" << todas_las_celulas[j]->fenotipo.geometria.radio << "\n";
-                    }
-                    outfile3 << "\t\t\t\t</DataArray>\n";
-                    outfile3 << "\t\t\t\t<DataArray type='Float32' Name='Oncoproteina' format='ascii'>\n";
-                    for(long unsigned int j=0; j<todas_las_celulas.size(); j++){
-                        outfile3 << "\t\t\t\t" << todas_las_celulas[j]->fenotipo.secrecion.oncoproteina << "\n";
-                    }
-                    outfile3 << "\t\t\t\t</DataArray>\n";
-                    outfile3 << "\t\t\t\t<DataArray type='Float32' Name='Tipo' format='ascii'>\n";
+                    //  std::ofstream outfile3 (results_dir + "/PM1_" + std::to_string( (int) pg->tiempo_total ) + ".vtu" );
+                    // outfile3 << "<VTKFile type='UnstructuredGrid' version='0.1' byte_order='LittleEndian'> \n";
+                    // outfile3 << "\t<UnstructuredGrid>\n";
+                    // outfile3 << "\t\t<Piece NumberOfPoints='" << todas_las_celulas.size() << "' NumberOfCells='0'>\n";
+                    // outfile3 << "\t\t\t<Points>\n";
+                    // outfile3 << "\t\t\t\t<DataArray name='Position' type='Float32' NumberOfComponents='3' format='ascii'>\n";
+                    // for(long unsigned int j=0; j<todas_las_celulas.size(); j++){
+                    //     outfile3 << "\t\t\t\t" << todas_las_celulas[j]->posicion.x << " " << todas_las_celulas[j]->posicion.y << " " << todas_las_celulas[j]->posicion.z << "\n";
+                    // }
+                    // outfile3 << "\t\t\t\t</DataArray>\n";
+                    // outfile3 << "\t\t\t</Points>\n";
+                    // outfile3 << "\t\t\t<PointData  Vectors='vector'>\n";
+                    // outfile3 << "\t\t\t\t<DataArray type='Float32' Name='Radio' format='ascii'>\n";
+                    // for(long unsigned int j=0; j<todas_las_celulas.size(); j++){
+                    //     outfile3 << "\t\t\t\t" << todas_las_celulas[j]->fenotipo.geometria.radio << "\n";
+                    // }
+                    // outfile3 << "\t\t\t\t</DataArray>\n";
+                    // outfile3 << "\t\t\t\t<DataArray type='Float32' Name='Oncoproteina' format='ascii'>\n";
+                    // for(long unsigned int j=0; j<todas_las_celulas.size(); j++){
+                    //     outfile3 << "\t\t\t\t" << todas_las_celulas[j]->fenotipo.secrecion.oncoproteina << "\n";
+                    // }
+                    // outfile3 << "\t\t\t\t</DataArray>\n";
+                    // outfile3 << "\t\t\t\t<DataArray type='Float32' Name='Tipo' format='ascii'>\n";
 
-                    for(long unsigned int j=0; j<todas_las_celulas.size(); j++){
-                    int tipo2 = todas_las_celulas[j]->tipo;
-                    if(todas_las_celulas[j]->fenotipo.muerte.muerta == true){
-                        tipo2=1;
-                    }
-                        outfile3 << "\t\t\t\t" << tipo2 << "\n";
-                    }
-                    outfile3 << "\t\t\t\t</DataArray>\n";
-                    outfile3 << "\t\t\t</PointData>\n";
-                    outfile3 << "\t\t\t<Cells>\n";
-                    outfile3 << "\t\t\t\t<DataArray type='Int32' Name='connectivity' format='ascii'>\n";
-                    outfile3 << "\t\t\t\t</DataArray>\n";
-                    outfile3 << "\t\t\t\t<DataArray type='Int32' Name='offsets' format='ascii'>\n";
-                    outfile3 << "\t\t\t\t</DataArray>\n";
-                    outfile3 << "\t\t\t\t<DataArray type='UInt8' Name='types' format='ascii'>\n";
-                    outfile3 << "\t\t\t\t</DataArray>\n";
-                    outfile3 << "\t\t\t</Cells>\n";
-                    outfile3 << "\t\t</Piece>\n";
-                    outfile3 << "\t</UnstructuredGrid>\n";
-                    outfile3 << "</VTKFile>";
+                    // for(long unsigned int j=0; j<todas_las_celulas.size(); j++){
+                    // int tipo2 = todas_las_celulas[j]->tipo;
+                    // if(todas_las_celulas[j]->fenotipo.muerte.muerta == true){
+                    //     tipo2=1;
+                    // }
+                    //     outfile3 << "\t\t\t\t" << tipo2 << "\n";
+                    // }
+                    // outfile3 << "\t\t\t\t</DataArray>\n";
+                    // outfile3 << "\t\t\t</PointData>\n";
+                    // outfile3 << "\t\t\t<Cells>\n";
+                    // outfile3 << "\t\t\t\t<DataArray type='Int32' Name='connectivity' format='ascii'>\n";
+                    // outfile3 << "\t\t\t\t</DataArray>\n";
+                    // outfile3 << "\t\t\t\t<DataArray type='Int32' Name='offsets' format='ascii'>\n";
+                    // outfile3 << "\t\t\t\t</DataArray>\n";
+                    // outfile3 << "\t\t\t\t<DataArray type='UInt8' Name='types' format='ascii'>\n";
+                    // outfile3 << "\t\t\t\t</DataArray>\n";
+                    // outfile3 << "\t\t\t</Cells>\n";
+                    // outfile3 << "\t\t</Piece>\n";
+                    // outfile3 << "\t</UnstructuredGrid>\n";
+                    // outfile3 << "</VTKFile>";
 
 
 
-                    std::ofstream outfile4(results_dir + "/HM1_" + std::to_string( (int) pg->tiempo_total ) + ".vtu" );
-                    outfile4 << "<VTKFile type='UnstructuredGrid' version='0.1' byte_order='LittleEndian'> \n";
-                    outfile4 << "\t<UnstructuredGrid>\n";
-                    outfile4 << "\t\t<Piece NumberOfPoints='" << tejido.microambiente.mgrilla.voxeles.size() << "' NumberOfCells='0'>\n";
-                    outfile4 << "\t\t\t<Points>\n";
-                    outfile4 << "\t\t\t\t<DataArray name='Position' type='Float32' NumberOfComponents='3' format='ascii'>\n";
-                    for(long unsigned int j=0; j<tejido.microambiente.mgrilla.voxeles.size(); j++){
-                        outfile4 << "\t\t\t\t" << tejido.microambiente.mgrilla.voxeles[j].centro.x << " " << tejido.microambiente.mgrilla.voxeles[j].centro.y << " " << tejido.microambiente.mgrilla.voxeles[j].centro.z << "\n";
-                    }
-                    outfile4 << "\t\t\t\t</DataArray>\n";
-                    outfile4 << "\t\t\t</Points>\n";
-                    outfile4 << "\t\t\t<PointData  Vectors='vector'>\n";
-                    outfile4 << "\t\t\t\t<DataArray type='Float32' Name='Radio' format='ascii'>\n";
-                    for(long unsigned int j=0; j<tejido.microambiente.mgrilla.voxeles.size(); j++){
-                        outfile4 << "\t\t\t\t" << pg->m_dx << "\n";
-                    }
-                    outfile4 << "\t\t\t\t</DataArray>\n";
-                    outfile4 << "\t\t\t\t<DataArray type='Float32' Name='Oxigeno' format='ascii'>\n";
-                    for(long unsigned int j=0; j<tejido.microambiente.mgrilla.voxeles.size(); j++){
-                        outfile4 << "\t\t\t\t" << tejido.microambiente.vector_de_densidades(j)[0] << "\n";
-                    }
-                    outfile4 << "\t\t\t\t</DataArray>\n";
-                    outfile4 << "\t\t\t\t<DataArray type='Float32' Name='Oncoproteina' format='ascii'>\n";
-                    for(long unsigned int j=0; j<tejido.microambiente.mgrilla.voxeles.size(); j++){
-                        outfile4 << "\t\t\t\t" << tejido.microambiente.vector_de_densidades(j)[1] << "\n";
-                    }
-                    outfile4 << "\t\t\t\t</DataArray>\n";
-                    outfile4 << "\t\t\t</PointData>\n";
-                    outfile4 << "\t\t\t<Cells>\n";
-                    outfile4 << "\t\t\t\t<DataArray type='Int32' Name='connectivity' format='ascii'>\n";
-                    outfile4 << "\t\t\t\t</DataArray>\n";
-                    outfile4 << "\t\t\t\t<DataArray type='Int32' Name='offsets' format='ascii'>\n";
-                    outfile4 << "\t\t\t\t</DataArray>\n";
-                    outfile4 << "\t\t\t\t<DataArray type='UInt8' Name='types' format='ascii'>\n";
-                    outfile4 << "\t\t\t\t</DataArray>\n";
-                    outfile4 << "\t\t\t</Cells>\n";
-                    outfile4 << "\t\t</Piece>\n";
-                    outfile4 << "\t</UnstructuredGrid>\n";
-                    outfile4 << "</VTKFile>";
+                    // std::ofstream outfile4(results_dir + "/HM1_" + std::to_string( (int) pg->tiempo_total ) + ".vtu" );
+                    // outfile4 << "<VTKFile type='UnstructuredGrid' version='0.1' byte_order='LittleEndian'> \n";
+                    // outfile4 << "\t<UnstructuredGrid>\n";
+                    // outfile4 << "\t\t<Piece NumberOfPoints='" << tejido.microambiente.mgrilla.voxeles.size() << "' NumberOfCells='0'>\n";
+                    // outfile4 << "\t\t\t<Points>\n";
+                    // outfile4 << "\t\t\t\t<DataArray name='Position' type='Float32' NumberOfComponents='3' format='ascii'>\n";
+                    // for(long unsigned int j=0; j<tejido.microambiente.mgrilla.voxeles.size(); j++){
+                    //     outfile4 << "\t\t\t\t" << tejido.microambiente.mgrilla.voxeles[j].centro.x << " " << tejido.microambiente.mgrilla.voxeles[j].centro.y << " " << tejido.microambiente.mgrilla.voxeles[j].centro.z << "\n";
+                    // }
+                    // outfile4 << "\t\t\t\t</DataArray>\n";
+                    // outfile4 << "\t\t\t</Points>\n";
+                    // outfile4 << "\t\t\t<PointData  Vectors='vector'>\n";
+                    // outfile4 << "\t\t\t\t<DataArray type='Float32' Name='Radio' format='ascii'>\n";
+                    // for(long unsigned int j=0; j<tejido.microambiente.mgrilla.voxeles.size(); j++){
+                    //     outfile4 << "\t\t\t\t" << pg->m_dx << "\n";
+                    // }
+                    // outfile4 << "\t\t\t\t</DataArray>\n";
+                    // outfile4 << "\t\t\t\t<DataArray type='Float32' Name='Oxigeno' format='ascii'>\n";
+                    // for(long unsigned int j=0; j<tejido.microambiente.mgrilla.voxeles.size(); j++){
+                    //     outfile4 << "\t\t\t\t" << tejido.microambiente.vector_de_densidades(j)[0] << "\n";
+                    // }
+                    // outfile4 << "\t\t\t\t</DataArray>\n";
+                    // outfile4 << "\t\t\t\t<DataArray type='Float32' Name='Oncoproteina' format='ascii'>\n";
+                    // for(long unsigned int j=0; j<tejido.microambiente.mgrilla.voxeles.size(); j++){
+                    //     outfile4 << "\t\t\t\t" << tejido.microambiente.vector_de_densidades(j)[1] << "\n";
+                    // }
+                    // outfile4 << "\t\t\t\t</DataArray>\n";
+                    // outfile4 << "\t\t\t</PointData>\n";
+                    // outfile4 << "\t\t\t<Cells>\n";
+                    // outfile4 << "\t\t\t\t<DataArray type='Int32' Name='connectivity' format='ascii'>\n";
+                    // outfile4 << "\t\t\t\t</DataArray>\n";
+                    // outfile4 << "\t\t\t\t<DataArray type='Int32' Name='offsets' format='ascii'>\n";
+                    // outfile4 << "\t\t\t\t</DataArray>\n";
+                    // outfile4 << "\t\t\t\t<DataArray type='UInt8' Name='types' format='ascii'>\n";
+                    // outfile4 << "\t\t\t\t</DataArray>\n";
+                    // outfile4 << "\t\t\t</Cells>\n";
+                    // outfile4 << "\t\t</Piece>\n";
+                    // outfile4 << "\t</UnstructuredGrid>\n";
+                    // outfile4 << "</VTKFile>";
 
   
   
@@ -454,15 +454,15 @@ int main(int argc, char *argv[]){
 
 
       //Debug
-  std::cout << "Final accumulated probability: " 
-          << std::setprecision(30) << Linfocito::acumulator_probabilities 
-          << std::endl;
+//   std::cout << "Final accumulated probability: " 
+//           << std::setprecision(30) << Linfocito::acumulator_probabilities 
+//           << std::endl;
   // Write the final value to a file
-  std::ofstream file("out/final_accumulated_probability.txt");
-  if (file.is_open()) {
-    file << std::setprecision(30) << Linfocito::acumulator_probabilities;
-    file.close();
-  }
+//   std::ofstream file("out/final_accumulated_probability.txt");
+//   if (file.is_open()) {
+//     file << std::setprecision(30) << Linfocito::acumulator_probabilities;
+//     file.close();
+//   }
 
 	return 0;
 

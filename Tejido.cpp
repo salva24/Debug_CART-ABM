@@ -104,81 +104,30 @@ void Tejido::inicializar_tejido(){
 //     //Célula Cancerosa
 	cdc.celula = crear_celula();
 	cdc.celula->inicializar_celula();
-    // cdc.celula->fenotipo.secrecion.oncoproteina = rng->NormalRandom_CM( pg->imm_mean, pg->imm_sd );
+    cdc.celula->fenotipo.secrecion.oncoproteina = rng->NormalRandom_CM( pg->imm_mean, pg->imm_sd );
 	celulas_para_registrar_en_voxeles.clear();
 
-	//Debug
-  //Debug
-  Celula* pCelula = NULL;
-  bool flag = true;
-    std::ifstream infile("cell_positions.csv");
-    if (!infile.is_open()) {
-      std::cerr << "Error: Could not open cell_positions.csv" << std::endl;
-    } else {
-      std::string line;
-      // Skip the header line
-      std::getline(infile, line);
-      while (std::getline(infile, line)) {
-        std::istringstream iss(line);
-        std::string token;
-        std::vector<double> coords;
-        double oncopr = 0.0;
-
-        // Parse x, y, z
-        for (int i = 0; i < 3; ++i) {
-          if (!std::getline(iss, token, ',')) break;
-          coords.push_back(std::stod(token));
-        }
-        // Parse oncopr
-        if (std::getline(iss, token, ',')) {
-          oncopr = std::stod(token);
-        }
-
-        if (coords.size() == 3) {
-			if(flag){
-				flag=false;
-				cdc.celula->set_posicion( coords[0], coords[1], coords[2] );
-				cdc.celula->fenotipo.secrecion.oncoproteina = oncopr;
-				cdc.registrar_celula(cdc.celula);
-				celulas_para_registrar_en_voxeles.clear();            
-			}else{
-				pCelula = crear_celula();
-				pCelula->inicializar_celula();
-				pCelula->set_posicion( coords[0], coords[1], coords[2] );
-				pCelula->fenotipo.secrecion.oncoproteina = oncopr;
-				cdc.registrar_celula(pCelula);
-				celulas_para_registrar_en_voxeles.clear();
-			}
-        }
-      }
-      infile.close();
-    }
-  //End Debug
-
-	//DEBUGEND
-
-
 	//DEbug Uncomment
-	// //Planos de células sanas
-	// std::vector<Vector> posiciones = crear_esfera_de_celulas(150);
-	// Celula* pCelula = NULL;
+	//Planos de células sanas
+	std::vector<Vector> posiciones = crear_esfera_de_celulas(150);
+	Celula* pCelula = NULL;
 
 
-    // for( long unsigned int i=0; i < posiciones.size(); i++ ){
-    //     if(i==0){
-    //         cdc.celula->set_posicion( posiciones[i] );
-    //         cdc.registrar_celula(cdc.celula);
-    //         celulas_para_registrar_en_voxeles.clear();            
-    //     }else{
-    //         pCelula = crear_celula();
-    //         pCelula->inicializar_celula();
-    //         pCelula->set_posicion( posiciones[i] );
-    //         cdc.registrar_celula(pCelula);
-    //         celulas_para_registrar_en_voxeles.clear();
-    //         }
+    for( long unsigned int i=0; i < posiciones.size(); i++ ){
+        if(i==0){
+            cdc.celula->set_posicion( posiciones[i] );
+            cdc.registrar_celula(cdc.celula);
+            celulas_para_registrar_en_voxeles.clear();            
+        }else{
+            pCelula = crear_celula();
+            pCelula->inicializar_celula();
+            pCelula->set_posicion( posiciones[i] );
+            cdc.registrar_celula(pCelula);
+            celulas_para_registrar_en_voxeles.clear();
+            }
 
-    // }
-	// // //End debug needs to be uncommented
+    }
+	// //End debug needs to be uncommented
 	//ENd Debug needs to be uncommented
 
 	return;

@@ -349,8 +349,8 @@ class Linfocito: public Celula{
 
 	//Debug
 	public:
-		static long double acumulator_probabilities;
-		static long double GetAccumulatedProbabilities() { return acumulator_probabilities; }
+		// static long double acumulator_probabilities; //Debug
+		// static long double GetAccumulatedProbabilities() { return acumulator_probabilities; }  //Debug
 
 		/**
 		 * @brief Constructor for Lymphocyte
