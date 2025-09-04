@@ -230,10 +230,16 @@ int main(int argc, char *argv[]){
 
 ////////////////////////////////////////////////////////////////////////
     tejido.geometria_del_tumor();
-    std::ofstream outfile(results_dir + "/DatosFinales.dat", ios::app);
-    outfile << "#tiempo, volumen, volumen2, radio , celulas tumorales, dead_cancer_cells, todas las celulas, cart_alive \n";
-    outfile.flush();
+    // std::ofstream outfile(results_dir + "/DatosFinales.dat", ios::app);
+    // outfile << "#tiempo, volumen, volumen2, radio , celulas_tumorales, dead_cancer_cells, todas_las_celulas, cart_alive, living_cancer_cells, total_cancer_cells, type1, type2, type3, type4, dead_cancer_cells, average_oncoprotein \n";
+    // outfile.flush();
 
+    //Debug
+    std::ofstream csvfile("out/datos_finales.csv", std::ios::app);
+    if (csvfile.is_open()) {
+    csvfile << "total_days,total_hours,total_minutes,tumor_radius,num_cells,num_tumor_cells,tumor_cells_type1,tumor_cells_type2,tumor_cells_type3,tumor_cells_type4,tumor_cells_type5_dead,num_alive_cart, average_oncoprotein\n";// Header for CSV file
+    }
+    csvfile.flush();
 
 
 
@@ -288,6 +294,18 @@ int main(int argc, char *argv[]){
                 int cancer_muerto = 0;
                 // Count alive CAR-T cells
                 int alive_cart = 0;
+
+                                //Debug
+                // Write detailed cell state data to XYZ file
+                int fallecida;
+                int tipo1=0;
+                int tipo2=0;
+                int tipo3=0;
+                int tipo4=0;
+                int dead_cancer_cells=0;
+                double oncoproteina_total=0.0;
+                int living_cancer_cells=0;
+
                 for( unsigned int i=0; i < todas_las_celulas.size(); i++ ){
                     if(todas_las_celulas[i]->tipo == 0 && todas_las_celulas[i]->fenotipo.muerte.muerta){
                         cancer_muerto = cancer_muerto + 1;
@@ -298,57 +316,128 @@ int main(int argc, char *argv[]){
                         alive_cart++;
                     }
 
+
+                    //Debug mine
+                    //if it is not a CAR-T cell
+                    if (todas_las_celulas[i]->tipo != 2){
+                        // it is not dead
+                        if (!todas_las_celulas[i]->fenotipo.muerte.muerta){
+                            // Determine cell type
+                            if(todas_las_celulas[i]->fenotipo.secrecion.oncoproteina >=1.5 && todas_las_celulas[i]->tipo != 2){
+                                tipo1++;
+                            }else if(todas_las_celulas[i]->fenotipo.secrecion.oncoproteina >=1.0 && todas_las_celulas[i]->fenotipo.secrecion.oncoproteina < 1.5 && todas_las_celulas[i]->tipo != 2){
+                                tipo2++;
+                            }else if(todas_las_celulas[i]->fenotipo.secrecion.oncoproteina >=0.5 && todas_las_celulas[i]->fenotipo.secrecion.oncoproteina < 1.0 && todas_las_celulas[i]->tipo != 2){
+                                tipo3++;
+                            }else if (todas_las_celulas[i]->fenotipo.secrecion.oncoproteina >=0.0 && todas_las_celulas[i]->fenotipo.secrecion.oncoproteina < 0.5 && todas_las_celulas[i]->tipo != 2){
+                                tipo4++;
+                            }
+
+
+                            oncoproteina_total = oncoproteina_total + todas_las_celulas[i]->fenotipo.secrecion.oncoproteina;
+                            living_cancer_cells++;
+                        }else{
+                            // Dead cell
+                            dead_cancer_cells++;
+                        }
+                        
+                    }
+
                 }
+                double average_oncoprotein = living_cancer_cells>0 ? oncoproteina_total / living_cancer_cells : 0.0;
 
 
-                // Write summary data to output file
-                outfile << std::setprecision(12) << pg->tiempo_total << " " << tejido.volumen_del_tumor << " " << tejido.volumen_del_tumor2 << " " << tejido.radio_del_tumor << " " << tejido.celulas_tumorales << " " << cancer_muerto << " " << todas_las_celulas.size() << " " << alive_cart << "\n";
-                outfile.flush();
+                // // Write summary data to output file
+                // outfile << std::setprecision(12) << pg->tiempo_total << " " << tejido.volumen_del_tumor << " " << tejido.volumen_del_tumor2 << " " << tejido.radio_del_tumor << " " << tejido.celulas_tumorales << " " << cancer_muerto << " " << todas_las_celulas.size() << " " << alive_cart << " " << living_cancer_cells << " " << living_cancer_cells+dead_cancer_cells << " " << tipo1 << " " << tipo2 << " " << tipo3 << " " << tipo4 << " " << dead_cancer_cells << " " << average_oncoprotein << "\n";
+                // outfile.flush();
                 m = pg->tiempo_total;
                 
-                // Write detailed cell state data to XYZ file
-                std::ofstream outfile2 (results_dir + "/Datos_" + std::to_string( (int) pg->tiempo_total ) + ".xyz" );
-                outfile2 << todas_las_celulas.size() << "\n";
-                outfile2 << "\n";
-                int fallecida;
-                string adh;
-                int adhint;
-                string nombreciclo;
 
-                // Output each cell's state and properties
-                for( unsigned int i=0; i < todas_las_celulas.size(); i++ ){
-                    int onco = 5;
-                    fallecida = todas_las_celulas[i]->tipo;
+                //Debug
+                csvfile << pg->tiempo_total / (24*60) << "," // total_days
+                     << pg->tiempo_total / 60 << "," // total_hours
+                     << pg->tiempo_total << "," // total_minutes
+                     << tejido.radio_del_tumor << ","
+                     << todas_las_celulas.size() << ","
+                     << living_cancer_cells + dead_cancer_cells << ","
+                     << tipo1 << ","
+                     << tipo2 << ","
+                     << tipo3 << ","
+                     << tipo4 << ","
+                     << dead_cancer_cells << ","
+                     << alive_cart << ","
+                     << average_oncoprotein << "\n";
+                csvfile.flush();
+
+                //NOT NEEDED
+                // // Write detailed cell state data to XYZ file
+                // std::ofstream outfile2 (results_dir + "/Datos_" + std::to_string( (int) pg->tiempo_total ) + ".xyz" );
+                // outfile2 << todas_las_celulas.size() << "\n";
+                // outfile2 << "\n";
+                // int fallecida;
+                // string adh;
+                // int adhint;
+                // string nombreciclo;
+
+                // // Output each cell's state and properties
+                // for( unsigned int i=0; i < todas_las_celulas.size(); i++ ){
+                //     int onco = 5;
+                //     fallecida = todas_las_celulas[i]->tipo;
                     
-                    // Determine cell state based on death status and oncoprotein levels
-                    if(todas_las_celulas[i]->fenotipo.muerte.muerta){
-                        fallecida = 9;
-                        onco = 0;
-                    }else if(todas_las_celulas[i]->fenotipo.secrecion.oncoproteina >=1.5 && todas_las_celulas[i]->tipo != 2){
-                        onco = 1;
-                    }else if(todas_las_celulas[i]->fenotipo.secrecion.oncoproteina >=1.0 && todas_las_celulas[i]->fenotipo.secrecion.oncoproteina < 1.5 && todas_las_celulas[i]->tipo != 2){
-                        onco = 2;
-                    }else if(todas_las_celulas[i]->fenotipo.secrecion.oncoproteina >=0.5 && todas_las_celulas[i]->fenotipo.secrecion.oncoproteina < 1.0 && todas_las_celulas[i]->tipo != 2){
-                        onco = 3;
-                    }else if (todas_las_celulas[i]->fenotipo.secrecion.oncoproteina >=0.0 && todas_las_celulas[i]->fenotipo.secrecion.oncoproteina < 0.5 && todas_las_celulas[i]->tipo != 2){
-                        onco = 4;
-                    }
+                //     // Determine cell state based on death status and oncoprotein levels
+                //     if(todas_las_celulas[i]->fenotipo.muerte.muerta){
+                //         fallecida = 9;
+                //         onco = 0;
+                //     }else if(todas_las_celulas[i]->fenotipo.secrecion.oncoproteina >=1.5 && todas_las_celulas[i]->tipo != 2){
+                //         onco = 1;
+                //     }else if(todas_las_celulas[i]->fenotipo.secrecion.oncoproteina >=1.0 && todas_las_celulas[i]->fenotipo.secrecion.oncoproteina < 1.5 && todas_las_celulas[i]->tipo != 2){
+                //         onco = 2;
+                //     }else if(todas_las_celulas[i]->fenotipo.secrecion.oncoproteina >=0.5 && todas_las_celulas[i]->fenotipo.secrecion.oncoproteina < 1.0 && todas_las_celulas[i]->tipo != 2){
+                //         onco = 3;
+                //     }else if (todas_las_celulas[i]->fenotipo.secrecion.oncoproteina >=0.0 && todas_las_celulas[i]->fenotipo.secrecion.oncoproteina < 0.5 && todas_las_celulas[i]->tipo != 2){
+                //         onco = 4;
+                //     }
                     
-                    nombreciclo = todas_las_celulas[i]->fenotipo.ciclo.pCiclo_Modelo->nombre;
+                //     nombreciclo = todas_las_celulas[i]->fenotipo.ciclo.pCiclo_Modelo->nombre;
                     
-                    // Check for cell adhesion
-                    if(todas_las_celulas[i]->adherida){
-                        adh = "adherida";
-                        adhint = todas_las_celulas[i]->celula_adherida->id;
-                    }else{
-                        adh = "no";
-                        adhint = 0;
-                    }
+                //     // Check for cell adhesion
+                //     if(todas_las_celulas[i]->adherida){
+                //         adh = "adherida";
+                //         adhint = todas_las_celulas[i]->celula_adherida->id;
+                //     }else{
+                //         adh = "no";
+                //         adhint = 0;
+                //     }
                     
-                    // Write cell data to file
-                    outfile2 << todas_las_celulas[i]->id << " " << todas_las_celulas[i]->voxel << " " << todas_las_celulas[i]->posicion.x << " " << todas_las_celulas[i]->posicion.y << " " << todas_las_celulas[i]->posicion.z << " " << todas_las_celulas[i]->fenotipo.geometria.radio << " " << todas_las_celulas[i]->voxel_del_microambiente << " " << todas_las_celulas[i]->vector_de_densidades_mas_cercano()[0] << " " << todas_las_celulas[i]->fenotipo.secrecion.oncoproteina << " " << todas_las_celulas[i]->madre << " " << todas_las_celulas[i]->tipo << " " << fallecida << " " << onco << " " << todas_las_celulas[i]->vector_de_densidades_mas_cercano()[1]<< " " << nombreciclo << " " << adh << " " << adhint << "\n";
-                }
+                //     // Write cell data to file
+                //     outfile2 << todas_las_celulas[i]->id << " " << todas_las_celulas[i]->voxel << " " << todas_las_celulas[i]->posicion.x << " " << todas_las_celulas[i]->posicion.y << " " << todas_las_celulas[i]->posicion.z << " " << todas_las_celulas[i]->fenotipo.geometria.radio << " " << todas_las_celulas[i]->voxel_del_microambiente << " " << todas_las_celulas[i]->vector_de_densidades_mas_cercano()[0] << " " << todas_las_celulas[i]->fenotipo.secrecion.oncoproteina << " " << todas_las_celulas[i]->madre << " " << todas_las_celulas[i]->tipo << " " << fallecida << " " << onco << " " << todas_las_celulas[i]->vector_de_densidades_mas_cercano()[1]<< " " << nombreciclo << " " << adh << " " << adhint << "\n";
+                // }
                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //VISUALIZATION
+
+
                 // The VTK file generation code is commented out but would write visualization files
                
                     //  std::ofstream outfile3 (results_dir + "/PM1_" + std::to_string( (int) pg->tiempo_total ) + ".vtu" );
