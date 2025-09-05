@@ -1301,7 +1301,6 @@ bool& Microambiente::es_nodo_de_dirichlet( int indice_de_voxel ){
 void Microambiente::solver_decaimiento_de_la_difusion__coeficientes_constantes_LOD_3D( double dt ){
 
 
-
 	if( !setup_del_solver_de_difusion_hecho )
 	{
 

@@ -237,7 +237,7 @@ int main(int argc, char *argv[]){
     //Debug
     std::ofstream csvfile("out/datos_finales.csv", std::ios::app);
     if (csvfile.is_open()) {
-    csvfile << "total_days,total_hours,total_minutes,tumor_radius,num_cells,num_tumor_cells,tumor_cells_type1,tumor_cells_type2,tumor_cells_type3,tumor_cells_type4,tumor_cells_type5_dead,num_alive_cart, average_oncoprotein\n";// Header for CSV file
+    csvfile << "total_days,total_hours,total_minutes,tumor_radius,num_cells,num_tumor_cells,tumor_cells_type1,tumor_cells_type2,tumor_cells_type3,tumor_cells_type4,tumor_cells_type5_dead,num_alive_cart, average_oncoprotein, average_level_of_oxygen_cancer_cells\n";// Header for CSV file
     }
     csvfile.flush();
 
@@ -286,7 +286,8 @@ int main(int argc, char *argv[]){
             //std::cout << pg->tiempo_total << "\n";
             //m2 = pg->tiempo_total;
         //}
-        if( fabs(T_esc - tiempo_de_escritura) < tolerancia_de_la_escritura || pg->tiempo_total < 0.01){
+        if(fabs(T_esc - tiempo_de_escritura) < tolerancia_de_la_escritura || pg->tiempo_total < 0.01){
+            
                 // Calculate tumor geometry metrics
                 tejido.geometria_del_tumor();
                 
@@ -305,8 +306,15 @@ int main(int argc, char *argv[]){
                 int dead_cancer_cells=0;
                 double oncoproteina_total=0.0;
                 int living_cancer_cells=0;
+                double oxygen_acumulator=0;
+                int indice_del_oxigeno = 0;//Debug
 
                 for( unsigned int i=0; i < todas_las_celulas.size(); i++ ){
+                    if(todas_las_celulas[i]->tipo == 0){
+                        oxygen_acumulator += (todas_las_celulas[i]->vector_de_densidades_mas_cercano())[indice_del_oxigeno];
+                    }
+
+
                     if(todas_las_celulas[i]->tipo == 0 && todas_las_celulas[i]->fenotipo.muerte.muerta){
                         cancer_muerto = cancer_muerto + 1;
                     }
@@ -344,7 +352,13 @@ int main(int argc, char *argv[]){
                     }
 
                 }
+                int total_cancer_cells = living_cancer_cells + dead_cancer_cells;
                 double average_oncoprotein = living_cancer_cells>0 ? oncoproteina_total / living_cancer_cells : 0.0;
+                double average_level_of_oxygen_cancer_cells = total_cancer_cells>0 ? oxygen_acumulator / total_cancer_cells : 0.0;
+
+                if (pg->tiempo_total < 0.2){ //for day 0
+                    average_level_of_oxygen_cancer_cells = 38.0; // Initial oxygen level
+                }
 
 
                 // // Write summary data to output file
@@ -359,14 +373,15 @@ int main(int argc, char *argv[]){
                      << pg->tiempo_total << "," // total_minutes
                      << tejido.radio_del_tumor << ","
                      << todas_las_celulas.size() << ","
-                     << living_cancer_cells + dead_cancer_cells << ","
+                     << total_cancer_cells << ","
                      << tipo1 << ","
                      << tipo2 << ","
                      << tipo3 << ","
                      << tipo4 << ","
                      << dead_cancer_cells << ","
                      << alive_cart << ","
-                     << average_oncoprotein << "\n";
+                     << average_oncoprotein << ","
+                     << average_level_of_oxygen_cancer_cells << "\n";
                 csvfile.flush();
 
                 //NOT NEEDED

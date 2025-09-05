@@ -245,6 +245,7 @@ void Celula::actualizar_parametros_de_celula_y_muerte_con_o2_y_oncoproteina(Feno
 	static int indice_necrosis;
 
 	static int indice_del_oxigeno = microambiente->encontrar_indice_de_densidad("oxigeno");
+
 	if(indices_iniciados == false){
 
 		if(fenotipo.ciclo.pCiclo_Modelo->codigo == Constantes::ciclo_Ki67){
