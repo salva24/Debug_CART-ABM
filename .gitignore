@@ -7,3 +7,4 @@
 ./results/
 build/
 out/final_accumulated_probability.txt
+!cell_positions.csv

@@ -63,6 +63,7 @@ Tejido::Tejido(){
  * on cancer progression.
  */
 void Tejido::inicializar_tejido(){
+	bool FIXED_INITIAL_TUMOR = true; //Debug
 
     //Microambiente
 	microambiente.inicializar_microambiente();
@@ -100,12 +101,14 @@ void Tejido::inicializar_tejido(){
 
 
 // 	//debug needs to be uncommented
-
 //     //Célula Cancerosa
 	cdc.celula = crear_celula();
 	cdc.celula->inicializar_celula();
     cdc.celula->fenotipo.secrecion.oncoproteina = rng->NormalRandom_CM( pg->imm_mean, pg->imm_sd );
 	celulas_para_registrar_en_voxeles.clear();
+
+	if(!FIXED_INITIAL_TUMOR){// random initial mass
+
 
 	//DEbug Uncomment
 	//Planos de células sanas
@@ -129,7 +132,52 @@ void Tejido::inicializar_tejido(){
     }
 	// //End debug needs to be uncommented
 	//ENd Debug needs to be uncommented
+} else{
 
+	  Celula* pCelula = NULL;
+  bool flag = true;
+    std::ifstream infile("cell_positions.csv");
+    if (!infile.is_open()) {
+      std::cerr << "Error: Could not open cell_positions.csv" << std::endl;
+    } else {
+      std::string line;
+      // Skip the header line
+      std::getline(infile, line);
+      while (std::getline(infile, line)) {
+        std::istringstream iss(line);
+        std::string token;
+        std::vector<double> coords;
+        double oncopr = 0.0;
+
+        // Parse x, y, z
+        for (int i = 0; i < 3; ++i) {
+          if (!std::getline(iss, token, ',')) break;
+          coords.push_back(std::stod(token));
+        }
+        // Parse oncopr
+        if (std::getline(iss, token, ',')) {
+          oncopr = std::stod(token);
+        }
+		if (coords.size() == 3) {
+			if(flag){
+				flag=false;
+				cdc.celula->set_posicion( coords[0], coords[1], coords[2] );
+				cdc.celula->fenotipo.secrecion.oncoproteina = oncopr;
+				cdc.registrar_celula(cdc.celula);
+				celulas_para_registrar_en_voxeles.clear();            
+			}else{
+				pCelula = crear_celula();
+				pCelula->inicializar_celula();
+				pCelula->set_posicion( coords[0], coords[1], coords[2] );
+				pCelula->fenotipo.secrecion.oncoproteina = oncopr;
+				cdc.registrar_celula(pCelula);
+				celulas_para_registrar_en_voxeles.clear();
+			}
+        }
+      }
+      infile.close();
+    }
+}
 	return;
 
 

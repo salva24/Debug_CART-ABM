@@ -1895,7 +1895,6 @@ bool Linfocito::intento_de_apoptosis( Celula* celula_adherida, double dt )
 	if( celula_adherida->fenotipo.secrecion.oncoproteina < limite_de_oncoproteina )
 	{ return false; }
 
-
 	double escala = celula_adherida->fenotipo.secrecion.oncoproteina;
 	escala -= limite_de_oncoproteina;
 	escala /= diferencia_de_oncoproteina;
