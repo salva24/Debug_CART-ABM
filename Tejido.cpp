@@ -63,7 +63,7 @@ Tejido::Tejido(){
  * on cancer progression.
  */
 void Tejido::inicializar_tejido(){
-	bool FIXED_INITIAL_TUMOR = true; //Debug
+	bool FIXED_INITIAL_TUMOR = false; //Debug
 
     //Microambiente
 	microambiente.inicializar_microambiente();
