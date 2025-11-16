@@ -131,6 +131,7 @@ To run a simulation:
 
 The simulation creates output files in a "results" directory (which is created automatically if it doesn't exist):
 
+- `datos_finales.csv` - Summary data for comparison with the model CARTopiaX.
 - `DatosFinales.dat` - Summary data (time, tumor volume, radius, cell counts)
 - `Datos_[time].xyz` - Detailed cell state data at specific time points
 - `PM1_[time].xml` - VTK visualization data for cells (optional)
